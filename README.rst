@@ -2,7 +2,7 @@
 About the Erlang Programming Language and Environment
 =====================================================
 
-:Time-stamp: <2020-04-13 16:09:43, updated by Pierre Rouleau>
+:Time-stamp: <2020-04-13 16:13:08, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -69,8 +69,10 @@ Topic                                                   Comment
                                                         - and several others...
 
 **Erlang Software License**                             As explained in the `Wikipedia Erlang Public License`_ page,
-Erlang/OTP 18.0 and later: `Apache License 2.0`_        Ericsson has changed the license under which Erlang is
-Erlang/OTP prior to 18.0: `Erlang Public License`_      published as of Erlang/OTP version 18.0.
+                                                        Ericsson has changed the license under which Erlang is
+                                                        published as of Erlang/OTP version 18.0.
+Erlang/OTP 18.0 and later: `Apache License 2.0`_
+Erlang/OTP prior to 18.0: `Erlang Public License`_
 
 
 
