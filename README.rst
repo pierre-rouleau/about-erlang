@@ -2,8 +2,8 @@
 About the Erlang Programming Language and Environment
 =====================================================
 
-:Time-stamp: <2020-04-13 14:10:06, updated by Pierre Rouleau>
-:Copyright: (C) 2020 by Pierre Rouleau
+:Time-stamp: <2020-04-13 14:13:29, updated by Pierre Rouleau>
+:Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
 
