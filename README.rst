@@ -2,7 +2,7 @@
 About the Erlang Programming Language and Environment
 =====================================================
 
-:Time-stamp: <2020-04-13 16:13:08, updated by Pierre Rouleau>
+:Time-stamp: <2020-04-15 08:16:11, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -153,28 +153,19 @@ asdf-vm_                                                Package manager - can in
 Installing Erlang
 =================
 
-Installing Erlang on macOS
---------------------------
+Erlang can be installed from source or from pre-built packages.
+Instruction on how to install Erlang depends on the Operating System and are
+available on the `Erlang OTP Download page`_.
+More information, is available in the documents listed below:
 
-As of April 2020 I have identified several ways of installing Erlang on
-macOS.  The following sections provide the details.
-
-Manual installation using Erlang OTP Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Installing Erlang on macOS`_, part of my `macOS Development Environment`_ document.
 
 
 
-Using Homebrew
-~~~~~~~~~~~~~~
+.. _Installing Erlang on macOS: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
+.. _Erlang OTP Download page:   https://www.erlang.org/downloads
+.. _macOS Development Environment: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst
 
 
-Using asdf and kerl
-~~~~~~~~~~~~~~~~~~~
 
-
-Using kerl
-~~~~~~~~~~
-
-
-Using Erlang Installer from Erlang Solutions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------------------------
