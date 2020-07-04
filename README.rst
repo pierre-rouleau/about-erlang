@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 17:28:22, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 17:29:38, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -375,6 +375,8 @@ like:
 
 Here again, listing only the directories at a depth of 2, with the Erlang
 versions I had installed at the time.
+
+.. code:: shell
 
     >
     > tree -d -L 2 -A .erlanginstaller
