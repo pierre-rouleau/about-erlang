@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 17:15:18, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 17:28:22, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -354,7 +354,75 @@ The latest version of this tool installs all versions under the
 available versions and a symlink to the version you identify as a default via
 the erlangInstaller Preference dialog.
 
-Their implementation work fine but the HTML documentation and the Man pages
+Here's what the top level view of the ``~/.erlanginstaller`` directory looks
+like:
+
+.. code:: shell
+
+
+    > tree -L 1 -A .erlanginstaller
+    .erlanginstaller
+    ├── 19.3
+    ├── 20.3.8
+    ├── 21.3.8.7
+    ├── 22.3.4.1
+    ├── 23.0.2
+    ├── available-releases.json
+    └── default -> /Users/roup/.erlangInstaller/22.3.4.1
+
+    6 directories, 1 file
+    >
+
+Here again, listing only the directories at a depth of 2, with the Erlang
+versions I had installed at the time.
+
+    >
+    > tree -d -L 2 -A .erlanginstaller
+    .erlanginstaller
+    ├── 19.3
+    │   ├── bin
+    │   ├── erts-8.3
+    │   ├── lib
+    │   ├── misc
+    │   ├── releases
+    │   └── usr
+    ├── 20.3.8
+    │   ├── bin
+    │   ├── erts-9.3.3
+    │   ├── lib
+    │   ├── misc
+    │   ├── releases
+    │   └── usr
+    ├── 21.3.8.7
+    │   ├── bin
+    │   ├── erts-10.3.5.5
+    │   ├── lib
+    │   ├── misc
+    │   ├── releases
+    │   └── usr
+    ├── 22.3.4.1
+    │   ├── bin
+    │   ├── erts-10.7.2.1
+    │   ├── lib
+    │   ├── misc
+    │   ├── releases
+    │   └── usr
+    ├── 23.0.2
+    │   ├── bin
+    │   ├── doc
+    │   ├── erts-11.0.2
+    │   ├── lib
+    │   ├── misc
+    │   ├── releases
+    │   └── usr
+    └── default -> /Users/roup/.erlangInstaller/22.3.4.1
+
+    37 directories
+    >
+
+With this application you can install or removed versions of Erlang easily.
+
+Their Erlang implementations work fine but the HTML documentation and the Man pages
 are missing.  For those, I download them directly from the `Erlang/OTP download`_
 page and install them inside a directory on my system.  Then I add the path to
 the Man page top-level directory to the beginning of the MANPATH shell
