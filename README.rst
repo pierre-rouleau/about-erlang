@@ -2,7 +2,7 @@
 About the Erlang Programming Language and Environment
 =====================================================
 
-:Time-stamp: <2020-07-04 16:32:14, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 16:45:03, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -153,18 +153,21 @@ asdf-vm_                                                Package manager - can in
 Installing Erlang
 =================
 
-Installing Erlang on macOS
---------------------------
+Erlang can be installed from source or from pre-built packages.
+Instruction on how to install Erlang depends on the Operating System and are
+available on the `Erlang OTP Download page`_.
+More information, is available in the documents listed below:
 
-I describe the various ways I have been installing Erlang on my macOS 10.14.6
-(Mojave). These are:
+- `Installing Erlang on macOS`_, part of my `macOS Development Environment`_ document.
+
 
 - `Using Homebrew`_, the simplest to get going, but probably not what you want to
   use once you build a system with Erlang.
 
+.. _Installing Erlang on macOS: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
+.. _Erlang OTP Download page:   https://www.erlang.org/downloads
+.. _macOS Development Environment: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst
 
-Using Homebrew
-~~~~~~~~~~~~~~
 
 Homebrew_ is a popular package manager for macOS (and now also for Linux).  It
 is very easy to install Erlang with Homebrew.  However, Homebrew installs a
