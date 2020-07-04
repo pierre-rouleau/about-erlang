@@ -2,7 +2,8 @@
 About the Erlang Programming Language and Environment
 =====================================================
 
-:Time-stamp: <2020-07-04 16:45:03, updated by Pierre Rouleau>
+:Home page: https://github.com/pierre-rouleau/about-erlang
+:Time-stamp: <2020-07-04 17:15:18, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -154,19 +155,46 @@ Installing Erlang
 =================
 
 Erlang can be installed from source or from pre-built packages.
+
 Instruction on how to install Erlang depends on the Operating System and are
 available on the `Erlang OTP Download page`_.
-More information, is available in the documents listed below:
 
-- `Installing Erlang on macOS`_, part of my `macOS Development Environment`_ document.
+The following section describes the various ways to install Erlang on macOS.
+
+Installing Erlang on macOS
+--------------------------
+
+To install Erlang on your macOS system you can use one of the following ways:
+
+#. `Using Homebrew`_, the simplest to get going, but also the least flexible way.
+   A good first step for experimentation.
+#. `Using Erlang Installer from Erlang Solutions`_.  With Erlang Solutions'
+   ``ErlangInstaller`` macOS native application you can quickly install
+   pre-built versions of Erlang for macOS and select which one you want to
+   use.  I provide extra information on how to extends this.
+#. `Using Kerl`_ to build from source code using clones of the official Erlang
+   git repositories.
+#. `Using asdf-vm`_ to build from source.  asdf-vm extends Kerl and provide
+   the ability to build lots of other tools, Elixir for instance.
+   At the moment (and from what I currently know) this seems to be a very good
+   choice because you can install Erlang but also Elixir and several other
+   tools with it.
 
 
-- `Using Homebrew`_, the simplest to get going, but probably not what you want to
-  use once you build a system with Erlang.
+Also, see the section titled
+`Manual installation of Erlang OTP Documentation and Man Files`_
+to get a local copy of Erlang HTML documentation and Erlang Man pages.
+
+
+
+Some extra information specific to macOS is available of my `macOS Development Environment`_ document.
 
 .. _Installing Erlang on macOS: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
 .. _Erlang OTP Download page:   https://www.erlang.org/downloads
 .. _macOS Development Environment: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst
+
+Using Homebrew
+~~~~~~~~~~~~~~
 
 
 Homebrew_ is a popular package manager for macOS (and now also for Linux).  It
@@ -514,7 +542,13 @@ the tree command line utility, with a view limited to a depth of 3:
 Using kerl
 ~~~~~~~~~~
 
+...coming soon...
+
+Using asdf-vm
+~~~~~~~~~~~~~
+
+...coming soon...
 
 
-Using asdf and kerl
-~~~~~~~~~~~~~~~~~~~
+..
+   -----------------------------------------------------------------------------
