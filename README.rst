@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 17:29:38, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 17:33:06, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -425,16 +425,10 @@ versions I had installed at the time.
 With this application you can install or removed versions of Erlang easily.
 
 Their Erlang implementations work fine but the HTML documentation and the Man pages
-are missing.  For those, I download them directly from the `Erlang/OTP download`_
-page and install them inside a directory on my system.  Then I add the path to
-the Man page top-level directory to the beginning of the MANPATH shell
-variable list.
-
-
-.. caution:: Be aware that the list of Erlang versions are on the right hand
-             side of the `Erlang/OTP download`_ page but will show **only if
-             your browser window is wide enough!**.
-
+are missing.  You must install these files separately.
+See the section titled
+`Manual installation of Erlang OTP Documentation and Man Files`_ which
+describes how to do it.
 
 I use the same strategy as for Homebrew here and I create shell scripts and
 alias to activate the various Erlang versions instead of using the Erlang
