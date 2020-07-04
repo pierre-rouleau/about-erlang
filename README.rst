@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 19:29:08, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 19:31:51, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -739,7 +739,10 @@ And then to activate a specific version of Erlang you source the corresponding
 activate script located in the directory where you installed Kerl builds (in
 this example this directory is ``~/bin/erls``):
 
-  - ``. ~/bin/erls/21.3/activate``
+.. code:: bash
+
+   . ~/bin/erls/21.3/activate
+
 
 Example: Building Erlang 19.3.6.13
 ++++++++++++++++++++++++++++++++++
@@ -850,6 +853,8 @@ The ``~/.kerl/archives`` stores the compressed tarballs of downloaded Erlang
 archives and the ``~/.kerl/builds`` hold the Erlang builds but not in a layout
 ready for execution).  Here's the layout at 3 directory level deep taken
 after building 19.3.6.13
+
+.. code:: shell
 
     > tree -d -L 3 -A .kerl
     .kerl
