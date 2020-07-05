@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 23:11:22, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 23:35:57, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -374,6 +374,7 @@ can quickly open its Preference dialog to manage Erlang versions and also use
 the menu to launch a shell specialized with the default Erlang version or any
 of the Erlang versions you have installed.
 
+.. image:: res/ei-menu.png
 
 The latest version of this tool installs all versions under the
 ``~/.erlanginstaller`` root (but that can be changed via the Preference
