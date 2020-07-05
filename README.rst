@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 23:35:57, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 00:09:58, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -147,8 +147,7 @@ asdf-vm_                                                Package manager - can in
 .. _Awesome Erlang:                               https://github.com/drobakowski/awesome-erlang
 .. _Spawned Shelter:                              https://spawnedshelter.com
 
-..
-   -----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 
 Installing Erlang
@@ -1100,12 +1099,179 @@ Then I can use the shell:
     >
 
 
+..
+   -----------------------------------------------------------------------------
 
 
 Using asdf-vm
 ~~~~~~~~~~~~~
 
-...coming soon...
+With the asdf-vm_ tool, you can "*manage multiple runtime versions with a
+single CLI tool*".  You can build, install and activate multiple versions of
+Erlang as well as a lot of other things like Elixir and other un-related
+programming languages and tools.  To asdf-vm, Erlang, like Elixir and Python
+is a *plugin*. The concept of *plugin* here applies to a programming language,
+or a specific tool. They are considered at the same level.
+
+The asdf tool does everything.  With it you can list the various languages
+that you want to use, their versions, and install them on the system very
+easily.  When *installing* a version of a tool, it downloads the source code
+and perform the complete build.
+
+The important steps are:
+
+#. `Get and manage asdf -vm itself`_.  These are the instructions to install
+   and manage asdf-vm.
+#. `List available plugins, get the ones you need, manage them.`_  You can
+   list all available plugins (such as Erlang) and all versions available for
+   this *plugin*.  So you can list all Erlang versions you can build with it.
+#. `Get, compile and install a specific version of the plugin.`_  These are
+   the commands you use to build and install something like a version of Erlang.
+
+Once this is all done and you have compiled and installed one or several
+versions of a given *plugin* (sucha as Erlang)  it's possible to `identify a current version`_ of a given
+plugin to be used globally (it persists).  You can also use a command to
+activate that version just for the current shell.
+
+On my system I use the mechanism that activates a specific version of Erlang
+for the shell using the same mechanism as I do for the other 3 ways of dealing
+with Erlang: a ``use-erlang-xx-a`` alias defined in the ``.bashrc`` file to a
+shell script it sources.  The shell script has a name like
+``envfor-erlang-xx-a``.  The ``xx`` is Erlang version number and the ``-a``
+suffix identifies thet asdf-vm toolchain.
+
+
+
+
+
+.. _asdf-vm: https://asdf-vm.com/#/
+.. _Get and manage asdf -vm itself: https://asdf-vm.com/#/core-manage-asdf-vm
+.. _List available plugins, get the ones you need, manage them.: https://asdf-vm.com/#/core-manage-plugins
+.. _Get, compile and install a specific version of the plugin.:  https://asdf-vm.com/#/core-manage-versions
+.. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
+
+
+
+Using asdf to build Erlang 22.3.4.2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code:: shell
+
+    Last login: Fri Jul  3 14:36:46 on ttys004
+    > use-asdf
+    ASDF support now installed in this shell.
+    > asdf plugin list
+    elixir
+    erlang
+    > asdf plugin update --all
+    Updating elixir...
+    Already on 'master'
+    Your branch is up to date with 'origin/master'.
+    Updating erlang...
+    remote: Enumerating objects: 27, done.
+    remote: Counting objects: 100% (27/27), done.
+    remote: Compressing objects: 100% (17/17), done.
+    remote: Total 23 (delta 12), reused 12 (delta 6), pack-reused 0
+    Unpacking objects: 100% (23/23), 8.44 KiB | 664.00 KiB/s, done.
+    From https://github.com/asdf-vm/asdf-erlang
+       13422da..4164f2b  master     -> master
+       13422da..4164f2b  master     -> origin/master
+    Already on 'master'
+    Your branch is up to date with 'origin/master'.
+    > asdf list all erlang
+    R13B03
+    R13B04
+    R14A
+    ...
+    ...
+    ...
+    22.3.4.2
+    23.0-rc1
+    23.0-rc2
+    23.0-rc3
+    23.0
+    23.0.1
+    23.0.2
+    > asdf list erlang
+      21.3
+      22.3.3
+      22.3.4
+      23.0
+    > asdf install erlang 23.0.2
+    asdf_23.0.2 is not a kerl-managed Erlang/OTP installation
+    No build named asdf_23.0.2
+    Downloading OTP-23.0.2.tar.gz to /Users/roup/.asdf/plugins/erlang/kerl-home/archives
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+    100   122  100   122    0     0    416      0 --:--:-- --:--:-- --:--:--   417
+    100 53.7M    0 53.7M    0     0  6988k      0 --:--:--  0:00:07 --:--:-- 8222k
+    Extracting source code
+    Building Erlang/OTP 23.0.2 (asdf_23.0.2), please wait...
+    APPLICATIONS DISABLED (See: /Users/roup/.asdf/plugins/erlang/kerl-home/builds/asdf_23.0.2/otp_build_23.0.2.log)
+     * jinterface     : No Java compiler found
+
+    Building docs...
+    Erlang/OTP 23.0.2 (asdf_23.0.2) has been successfully built
+    Installing Erlang/OTP 23.0.2 (asdf_23.0.2) in /Users/roup/.asdf/installs/erlang/23.0.2...
+    You can activate this installation running the following command:
+    . /Users/roup/.asdf/installs/erlang/23.0.2/activate
+    Later on, you can leave the installation typing:
+    kerl_deactivate
+    Cleaning up compilation products for
+    Cleaned up compilation products for  under /Users/roup/.asdf/plugins/erlang/kerl-home/builds
+    ln: ./erl_call: File exists
+
+    Erlang 23.0.2 has been installed. Activate globally with:
+
+        asdf global erlang 23.0.2
+
+    Activate locally in the current folder with:
+
+        asdf local erlang 23.0.2
+
+    > asdf install erlang 22.3.4.2
+    asdf_22.3.4.2 is not a kerl-managed Erlang/OTP installation
+    No build named asdf_22.3.4.2
+    Downloading OTP-22.3.4.2.tar.gz to /Users/roup/.asdf/plugins/erlang/kerl-home/archives
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+    100   124  100   124    0     0    443      0 --:--:-- --:--:-- --:--:--   442
+    100 53.2M    0 53.2M    0     0  7249k      0 --:--:--  0:00:07 --:--:-- 8223k
+    Extracting source code
+    Building Erlang/OTP 22.3.4.2 (asdf_22.3.4.2), please wait...
+    APPLICATIONS DISABLED (See: /Users/roup/.asdf/plugins/erlang/kerl-home/builds/asdf_22.3.4.2/otp_build_22.3.4.2.log)
+     * jinterface     : No Java compiler found
+
+    Building docs...
+    Erlang/OTP 22.3.4.2 (asdf_22.3.4.2) has been successfully built
+    Installing Erlang/OTP 22.3.4.2 (asdf_22.3.4.2) in /Users/roup/.asdf/installs/erlang/22.3.4.2...
+    You can activate this installation running the following command:
+    . /Users/roup/.asdf/installs/erlang/22.3.4.2/activate
+    Later on, you can leave the installation typing:
+    kerl_deactivate
+    Cleaning up compilation products for
+    Cleaned up compilation products for  under /Users/roup/.asdf/plugins/erlang/kerl-home/builds
+
+    Erlang 22.3.4.2 has been installed. Activate globally with:
+
+        asdf global erlang 22.3.4.2
+
+    Activate locally in the current folder with:
+
+        asdf local erlang 22.3.4.2
+
+    > asdf list erlang
+      21.3
+      22.3.3
+      22.3.4.2
+      22.3.4
+      23.0.2
+      23.0
+    > asdf current
+    elixir         No version set for elixir; please run `asdf <global | local> elixir <version>`
+    erlang         No version set for erlang; please run `asdf <global | local> erlang <version>`
+    >
+
 
 
 ..
