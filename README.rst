@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 17:35:41, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 17:39:46, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1640,6 +1640,6 @@ is:
     exec /usr/local/opt/asdf/bin/asdf exec "erl" "$@"
 
 It uses asdf to execute the erl for the Erlang version identified by the
-file .tool-versions stored in teh current directory.
+file .tool-versions stored in the current directory.
 
 -----------------------------------------------------------------------------
