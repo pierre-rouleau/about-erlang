@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 00:09:58, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 09:34:06, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -98,7 +98,7 @@ Erlang/OTP prior to 18.0: `Erlang Public License`_
 
 `Spawned Shelter`_                                      A collection of articles, videos and books for learning Erlang,
                                                         and other BEAM languages like Elixir, LFE and EFene.
-**Erlang Tools**
+**Erlang Build/Install Tools**
 kerl_                                                   Easy building and installing of Erlang/OTP
 asdf-vm_                                                Package manager - can install Erlang, Elixir and other
                                                         systems.
@@ -631,7 +631,7 @@ the tree command line utility, with a view limited to a depth of 3:
     >
 
 
-Using kerl
+Using Kerl
 ~~~~~~~~~~
 
 If you want to build Erlang from source easily, you can use Kerl_.  This tool
@@ -663,13 +663,19 @@ instructions provided by the Kerl home page describe what to add to your shell
 setup.  Instead of doing that I the same strategy and create a shell script to
 install the environment along with a shell alias to invoke it.
 
-I use the following bash script:
+I use the following ``envfor-building-erlang`` bash script:
 
 .. code:: bash
 
     #!/usr/bin/env bash
-    # Abstract: setup shell to build Erlang with Kerl.  Source it with: for-building-erlang
-    # Last Modified Time-stamp: <2020-07-03 10:50:20, updated by Pierre Rouleau>
+    # Abstract: setup shell to build Erlang with Kerl.
+    # Last Modified Time-stamp: <2020-07-04 18:25:13, updated by Pierre Rouleau>
+    # -----------------------------------------------------------------------------
+    #
+    # This file *must* be sourced.
+    #
+    # Run with: for-building-erlang
+    #
     # -----------------------------------------------------------------------------
     # References:
     # - Adopting Erlang - Setup : https://adoptingerlang.org/docs/development/setup/
@@ -1107,7 +1113,8 @@ Using asdf-vm
 ~~~~~~~~~~~~~
 
 With the asdf-vm_ tool, you can "*manage multiple runtime versions with a
-single CLI tool*".  You can build, install and activate multiple versions of
+single CLI tool*" (as written on the asdf-vm_ site).
+You can build, install and activate multiple versions of
 Erlang as well as a lot of other things like Elixir and other un-related
 programming languages and tools.  To asdf-vm, Erlang, like Elixir and Python
 is a *plugin*. The concept of *plugin* here applies to a programming language,
@@ -1118,15 +1125,69 @@ that you want to use, their versions, and install them on the system very
 easily.  When *installing* a version of a tool, it downloads the source code
 and perform the complete build.
 
-The important steps are:
 
+Since asdf uses Kerl, the shell must be setup and similar to the way Kerl_ is
+setup as described in `Using Kerl`_ and `Setting the environment for Kerl`_.
+
+For asdf-vm_ I wrote the ``use-asdf`` alias to the ``envfor-asdf`` script that
+it sources.
+
+The ``envfor-asdf`` script is shown here:
+
+.. code:: bash
+
+    #!/usr/bin/env bash
+    # Abstract: Install asdf into a shell : tool to build/manage Erlang, Elixir, Ruby, NodeJs
+    # Last Modified Time-stamp: <2020-07-03 14:35:47, updated by Pierre Rouleau>
+    # -----------------------------------------------------------------------------
+    # This file *must* be sourced.
+    #
+    # Run with: use-asdf
+    #
+    # -----------------------------------------------------------------------------
+    # References:
+    # - Manage asdf-vm          : https://asdf-vm.com/#/core-manage-asdf-vm
+    # - Adopting Erlanf - Setup : https://adoptingerlang.org/docs/development/setup/
+    #
+    # -----------------------------------------------------------------------------
+    if [ "$ROUP_ENVFOR_ASDF" == "" ]; then
+        export ROUP_ENVFOR_ASDF=1
+        export KERL_BUILD_DOCS=yes
+        export KERL_INSTALL_MANPAGES=yes
+        export KERL_INSTALL_HTMLDOCS=yes
+        . $(brew --prefix asdf)/asdf.sh
+        . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+        printf "ASDF support now installed in this shell.\n"
+        settitle "Using ASDF"
+    else
+        printf "Shell is already setup for ASDF!\n"
+        return 1
+    fi
+    # -----------------------------------------------------------------------------
+
+
+The alias in my ``.bashrc`` file is:
+
+.. code:: shell
+
+  alias use-asdf='source envfor-asdf'
+
+
+Then, to install a new version of Erlang using asdf_vm_,  the important steps are:
+
+#. Set the shell for asdf-vm_ by executing the ``use-asdf`` alias to the
+   ``envfor-asdf`` script it sources.
+#. Open a shell and setup Kerl_ by executing the ``for-building-erlang`` alias
+   to the ``envfor-building-erlang`` script.
 #. `Get and manage asdf -vm itself`_.  These are the instructions to install
-   and manage asdf-vm.
+   and manage asdf-vm.  You have to do this the very first time and then only
+   when you want tu upgrade asdf-vm_ itself.
 #. `List available plugins, get the ones you need, manage them.`_  You can
    list all available plugins (such as Erlang) and all versions available for
    this *plugin*.  So you can list all Erlang versions you can build with it.
 #. `Get, compile and install a specific version of the plugin.`_  These are
    the commands you use to build and install something like a version of Erlang.
+
 
 Once this is all done and you have compiled and installed one or several
 versions of a given *plugin* (sucha as Erlang)  it's possible to `identify a current version`_ of a given
@@ -1140,10 +1201,6 @@ shell script it sources.  The shell script has a name like
 ``envfor-erlang-xx-a``.  The ``xx`` is Erlang version number and the ``-a``
 suffix identifies thet asdf-vm toolchain.
 
-
-
-
-
 .. _asdf-vm: https://asdf-vm.com/#/
 .. _Get and manage asdf -vm itself: https://asdf-vm.com/#/core-manage-asdf-vm
 .. _List available plugins, get the ones you need, manage them.: https://asdf-vm.com/#/core-manage-plugins
@@ -1154,6 +1211,38 @@ suffix identifies thet asdf-vm toolchain.
 
 Using asdf to build Erlang 22.3.4.2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here I build 2 different versions of Erlang with asdf-vm_: Erlang 23.0.2 and
+22.3.4.2 with the following commands.
+
+First I set the envionment:
+
+- ``use-asdf``
+
+Then I check what is available:
+
+- ``asdf plugin list``
+- ``asdf plugin update --all``
+- ``asdf list all erlang``
+
+I perform the 2 builds:
+
+- ``asdf install erlang 23.0.2``
+- ``asdf install erlang 22.3.4.2``
+
+And list the Erlang versions I have built with asdf-vm_ so far.
+
+- ``asdf list erlang``
+
+The asdf_vm_ can identify a version of each *plugin* as being the global
+current version.  I list them with the following command and see that I did
+not set any since I use a shell script to do that .  However, to have the
+version used automatically on system startup you would probably want to
+identify a global current version.
+
+- ``asdf current``
+
+Here's the session:
 
 .. code:: shell
 
@@ -1272,7 +1361,81 @@ Using asdf to build Erlang 22.3.4.2
     erlang         No version set for erlang; please run `asdf <global | local> erlang <version>`
     >
 
+Running Erlang built with asdf
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-..
-   -----------------------------------------------------------------------------
+I use the same strategy as for the others.
+In my ``.bashrc`` vile I have aliases to source the shell scripts I need:
+
+.. code:: shell
+
+    # Erlang, Elixir, Ruby, NodeJs : ASDF shell
+    # -----------------------------------------
+    alias use-asdf='source envfor-asdf'
+    alias use-erlang-21-a='source envfor-erlang-21-a'
+    alias use-erlang-22-a='source envfor-erlang-22-a'
+    alias use-erlang-23-a='source envfor-erlang-23-a'
+
+The script ``envfor-erlang-23-a`` installs Erlang 23.0.2 built with asdf-vm_.
+Here's the script:
+
+.. code:: bash
+
+    #!/usr/bin/env bash
+    # Abstract: Install Erlang 23.0.2 (built with asdf/native Clang)
+    # Last Modified Time-stamp: <2020-07-05 09:26:34, updated by Pierre Rouleau>
+    # -----------------------------------------------------------------------------
+    # This file *must* be sourced.
+    #
+    # Run with: use-erlang-23-a
+    #
+    #
+    # This script uses:
+    # - `use-asdf` alias to source the `envfor-asdf` script,
+    # - `asdf` command to activate Erlang 23.0.2 locally.
+    # - settitle script to set the terminal title.
+
+    # -----------------------------------------------------------------------------
+    if [ "$DIR_ERLANG_DEV" == "" ]; then
+        export DIR_ERLANG_DEV="$HOME/dev/erlang"
+        MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
+        export MANPATH
+        echo "+ Erlang 23.0.2 (built with asdf-vm/native Clang) environment set."
+        echo "+ Using OTP-23 Man pages."
+        use-asdf
+        asdf local erlang 23.0.2
+        settitle "Erlang 23.0.2a asdf/Native"
+    else
+        echo "! Erlang environment was already set for this shell."
+    fi
+
+    # -----------------------------------------------------------------------------
+
+And here's a session using it to install Erlang 23.0.2:
+
+.. code:: shell
+
+    Last login: Sun Jul  5 09:25:56 on ttys003
+    > use-erlang-23-
+    use-erlang-23-a   use-erlang-23-ei  use-erlang-23-kn
+    > use-erlang-23-a
+    + Erlang 23.0.2 (built with asdf-vm/native Clang) environment set.
+    + Using OTP-23 Man pages.
+    ASDF support now installed in this shell.
+    > asdf current
+    elixir         No version set for elixir; please run `asdf <global | local> elixir <version>`
+    erlang         23.0.2   (set by /Users/roup/.tool-versions)
+    > which erl
+    /Users/roup/.asdf/shims/erl
+    > version-erl
+    23.0.2
+    > man -w erl
+    /Users/roup/docs/Erlang/otp-23.0/man/man/man1/erl.1
+    > man -w lists
+    /Users/roup/docs/Erlang/otp-23.0/man/man/man3/lists.3
+    >
+
+
+
+-----------------------------------------------------------------------------
