@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 16:35:45, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 17:05:21, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1447,6 +1447,7 @@ Here's the script:
         export MANPATH
         echo "+ Erlang 23.0.2 (built with asdf-vm/native Clang) environment set."
         echo "+ Using OTP-23 Man pages."
+        echo "Note: asdf is leaving a .tool-version in the current directory!"
         use-asdf
         asdf local erlang 23.0.2
         settitle "Erlang 23.0.2a asdf/Native"
@@ -1466,6 +1467,7 @@ And here's a session using it to install Erlang 23.0.2:
     > use-erlang-23-a
     + Erlang 23.0.2 (built with asdf-vm/native Clang) environment set.
     + Using OTP-23 Man pages.
+    Note: asdf is leaving a .tool-version in the current directory!
     ASDF support now installed in this shell.
     > asdf current
     elixir         No version set for elixir; please run `asdf <global | local> elixir <version>`
@@ -1480,18 +1482,30 @@ And here's a session using it to install Erlang 23.0.2:
     /Users/roup/docs/Erlang/otp-23.0/man/man/man3/lists.3
     >
 
+**A word of caution**
 
-.. caution: The asdf environment are based on the value stored in the file
-            system.  Therefore, for a given *plugin*, and there for Erlang,
-            what I have is a mechanism to set a version of Erlang for a
-            shell, but it is not possible to run multiple versions of Erlang
-            on the same system at the same time using the same file system.
+The asdf software stores the version of the tools used inside a file
+called ``.tool-version`` inside the current directory where the asdf commands
+were executed.  This can be quite useful: if you use several versions of
+several tools you can create a directory that will be the current directory
+where you will use all of these tool at the version specified inside the
+file ``.tool-version``.  Once set up, open a shell, execute ``use-asdf`` and
+then the version of the tool will be identified by the ``.tool-version`` file
+stored in the current directory.  So **asdf is sensitive to the current
+directory where the erl command is issued**.
 
-This means that if you open 2 shells and execute ``use-erlang-23-a`` in the
+Unlike the other tools (Erlang Solutions' Erlang Installer, Kerl-built
+versions), you cannot use the same directory in 2 different shells and launch
+2 different versions of Erlang, on in each shell.
+
+It's possible to run multiple versions of Erlang at the same time, but they
+must each be instantiated from a shell that has a different current directory.
+
+With asdf  if you open 2 shells and execute ``use-erlang-23-a`` in the
 first shell and then inside another shell execute ``use-erlang22-a`` in that
-other shells, both shells will now use the Erlang set up by
-``use-erlang-22-a`` because they both use the same shim file which now points
-to the Erlang version 22.x.y.z.
+other shells, **from the same directory** both shells will now use the Erlang set up by
+``use-erlang-22-a`` because they both use the same shim file identified by the
+same ``.tool-version`` file.
 
 
 asdf Directory Layout
