@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-04 19:31:51, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-04 23:11:22, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -312,7 +312,7 @@ The ``.bashrc`` file holds the alias:
    alias use-erlang='source envfor-erlang-22.3.4'
 
 
-To use it I start a new Bash sell and type ``use-erlang``, as shown here:
+To use it I start a new Bash shell and type ``use-erlang``, as shown here:
 
 .. code:: bash
 
@@ -351,20 +351,36 @@ system available in the shell.  It runs Erlang code from the command line:
 Using Erlang Installer from Erlang Solutions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Erlang Solutions`_ provide a tool called the Erlang Installer that allows the
+`Erlang Solutions`_ provide a macOS application called the Erlang Installer that allows the
 installation of several versions of Erlang on a macOS computer.  You can get
 that tool on `Erlang Solution Download page`_.  Select Erlang OTP and the Mac
 OS X platform and you should get a link to ErlangInstaller.1.0.2.dmg_ or
 something more recent.
 
-With this tool you can install several pre-compiled versions of Erlang for
-macOS.  It's a bit like Homebrew except that it's easier to download several
-versions and have several versions on your system.
+With this GUI tool you can install or remove several pre-compiled versions of Erlang for
+macOS.
+
+.. image:: res/erlanginstaller.png
+
+
+With the Preferences dialog of ErlangInstaller, you can select one version you
+can use by default, specify the directory where the application stores its
+files and identify the application used for launching shells.
+
+.. image:: res/erlanginstaller-preferences.png
+
+When the ErlangInstaller application runs, it show up in macOS menu bar you
+can quickly open its Preference dialog to manage Erlang versions and also use
+the menu to launch a shell specialized with the default Erlang version or any
+of the Erlang versions you have installed.
+
 
 The latest version of this tool installs all versions under the
-``~/.erlanginstaller`` root, along with a JSON file that contains a list of
+``~/.erlanginstaller`` root (but that can be changed via the Preference
+dialog),
+along with a JSON file that contains a list of
 available versions and a symlink to the version you identify as a default via
-the erlangInstaller Preference dialog.
+the ErlangInstaller application Preference dialog.
 
 Here's what the top level view of the ``~/.erlanginstaller`` directory looks
 like:
