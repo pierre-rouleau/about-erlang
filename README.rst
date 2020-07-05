@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 12:59:38, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 13:01:07, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1241,7 +1241,7 @@ Example: Building Erlang 22.3.4.2
 Here I build 2 different versions of Erlang with asdf-vm_: Erlang 23.0.2 and
 22.3.4.2 with the following commands.
 
-First I set the envionment:
+First I set the environment:
 
 - ``use-asdf``
 
