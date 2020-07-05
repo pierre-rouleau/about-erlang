@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 09:39:00, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 12:37:47, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -667,18 +667,18 @@ instructions provided by the Kerl home page describe what to add to your shell
 setup.  Instead of doing that I the same strategy and create a shell script to
 install the environment along with a shell alias to invoke it.
 
-I use the following ``envfor-building-erlang`` bash script:
+I use the following ``envfor-kerl`` bash script:
 
 .. code:: bash
 
     #!/usr/bin/env bash
     # Abstract: setup shell to build Erlang with Kerl.
-    # Last Modified Time-stamp: <2020-07-04 18:25:13, updated by Pierre Rouleau>
+    # Last Modified Time-stamp: <2020-07-05 12:29:17, updated by Pierre Rouleau>
     # -----------------------------------------------------------------------------
     #
     # This file *must* be sourced.
     #
-    # Run with: for-building-erlang
+    # Run with: use-kerl
     #
     # -----------------------------------------------------------------------------
     # References:
@@ -697,7 +697,7 @@ I use the following ``envfor-building-erlang`` bash script:
     # -----------------------------------------------------------------------------
     if [ "$ROUP_FOR_BUILDING_ERLANG" == "" ]; then
         export ROUP_FOR_BUILDING_ERLANG=$PATH
-        SSL_PATH=/usr/local/Cellar/openssl/1.0.2r/
+        SSL_PATH=/usr/local/Cellar/openssl@1.1/1.1.1g/
         export KERL_BUILD_BACKEND="git"
         export KERL_CONFIGURE_OPTIONS="--without-javac --with-dynamic-trace=dtrace --with-ssl=${SSL_PATH}"
         export KERL_BUILD_DOCS=yes
@@ -740,7 +740,7 @@ The 2 aliases I have in my ``.bashrc`` file for these are the following:
 
 .. code:: bash
 
-    alias for-building-erlang='source envfor-building-erlang'
+    alias use-kerl='source envfor-kerl'
     alias use-gmake='source envfor-gmake'
 
 Kerl Commands
@@ -775,7 +775,7 @@ Example: Building Erlang 19.3.6.13
 
 Below you can see the commands use to:
 
-- setup a new shell with Kerl: ``for-building-erlang``,
+- setup a new shell with Kerl: ``use-kerl``,
 - use Kerl to list all available Erlang versions: ``kerl update releases``,
 - use Kerl to build Erlang 19.3.6.13: ``kerl build 19.3.6.13 19.3.6.13``,
 - use Kerl to install Erlang 19.3.6.13 in ~/bin/erls: ``kerl install 19.3.6.13
@@ -787,7 +787,7 @@ Erlang's JInterface.
 .. code:: shell
 
     Last login: Sat Jul  4 18:25:03 on ttys014
-    > for-building-erlang
+    > use-kerl
     Now using the Homebrew-installed GNU Make in this shell
     GNU Make 4.3
     Built for x86_64-apple-darwin18.7.0
@@ -1129,9 +1129,19 @@ that you want to use, their versions, and install them on the system very
 easily.  When *installing* a version of a tool, it downloads the source code
 and perform the complete build.
 
+On my system I did not have to setup the version of OpenSSL to use with
+asdf-vm as I had to do with Kerl.  asdf was able to detect the latest version
+of OpenSSL I have on my system (as of this writing, version 1.1.1g released
+April 21, 2020).
 
-Since asdf uses Kerl, the shell must be setup and similar to the way Kerl_ is
-setup as described in `Using Kerl`_ and `Setting the environment for Kerl`_.
+.. _asdf-vm: https://asdf-vm.com/#/
+.. _Get and manage asdf -vm itself: https://asdf-vm.com/#/core-manage-asdf-vm
+.. _List available plugins, get the ones you need, manage them.: https://asdf-vm.com/#/core-manage-plugins
+.. _Get, compile and install a specific version of the plugin.:  https://asdf-vm.com/#/core-manage-versions
+.. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
+
+Seeting the Environment for asdf
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For asdf-vm_ I wrote the ``use-asdf`` alias to the ``envfor-asdf`` script that
 it sources.
@@ -1181,8 +1191,6 @@ Then, to install a new version of Erlang using asdf_vm_,  the important steps ar
 
 #. Set the shell for asdf-vm_ by executing the ``use-asdf`` alias to the
    ``envfor-asdf`` script it sources.
-#. Open a shell and setup Kerl_ by executing the ``for-building-erlang`` alias
-   to the ``envfor-building-erlang`` script.
 #. `Get and manage asdf -vm itself`_.  These are the instructions to install
    and manage asdf-vm.  You have to do this the very first time and then only
    when you want tu upgrade asdf-vm_ itself.
@@ -1204,14 +1212,6 @@ with Erlang: a ``use-erlang-xx-a`` alias defined in the ``.bashrc`` file to a
 shell script it sources.  The shell script has a name like
 ``envfor-erlang-xx-a``.  The ``xx`` is Erlang version number and the ``-a``
 suffix identifies thet asdf-vm toolchain.
-
-.. _asdf-vm: https://asdf-vm.com/#/
-.. _Get and manage asdf -vm itself: https://asdf-vm.com/#/core-manage-asdf-vm
-.. _List available plugins, get the ones you need, manage them.: https://asdf-vm.com/#/core-manage-plugins
-.. _Get, compile and install a specific version of the plugin.:  https://asdf-vm.com/#/core-manage-versions
-.. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
-
-
 
 Using asdf to build Erlang 22.3.4.2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1365,6 +1365,22 @@ Here's the session:
     erlang         No version set for erlang; please run `asdf <global | local> erlang <version>`
     >
 
+At the end of asdf build, asdf removes the build log file.  There might be an
+option to keep it, but I have been too lazy to look for it.  Instead, if I
+want to look into the log I use Emacs and open the log file in auto-revert
+mode.  I can then watch the build and save a copy somewhere.
+
+.. note::  You may be interested by my `PEL project`_ which describes lots of Emacs commands
+           in extensive PDF table files and provide an Emacs system that minimizes the
+           need to know Emacs Lisp. See the `PEL File Management PDF table`_ for info on the
+           auto-revert mode command.
+
+
+
+.. _PEL project:                   https://github.com/pierre-rouleau/pel
+.. _PEL File Management PDF table: https://github.com/pierre-rouleau/pel/blob/master/doc/pdf/file-mngt.pdf
+
+
 Running Erlang built with asdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1441,5 +1457,136 @@ And here's a session using it to install Erlang 23.0.2:
     >
 
 
+asdf Directory Layout
+^^^^^^^^^^^^^^^^^^^^^
+
+The directory used by asdf-vm is ``~/.asdf``.  The top directory contains no
+files, it holds only sub-directories.  This is teh layout of this directory
+tree shown with a depth of 3:
+
+.. code:: shell
+
+          > tree -L 4 -d  -A .asdf
+          .asdf
+          ├── installs
+          │   ├── elixir
+          │   │   ├── 1.10.0
+          │   │   │   ├── bin
+          │   │   │   ├── lib
+          │   │   │   └── man
+          │   │   ├── 1.10.1
+          │   │   │   ├── bin
+          │   │   │   ├── lib
+          │   │   │   └── man
+          │   │   ├── 1.10.2
+          │   │   │   ├── bin
+          │   │   │   ├── lib
+          │   │   │   └── man
+          │   │   └── 1.10.3
+          │   │       ├── bin
+          │   │       ├── lib
+          │   │       └── man
+          │   └── erlang
+          │       ├── 21.3
+          │       │   ├── bin
+          │       │   ├── erts-10.3
+          │       │   ├── lib
+          │       │   ├── misc
+          │       │   ├── releases
+          │       │   └── usr
+          │       ├── 22.3.3
+          │       │   ├── bin
+          │       │   ├── doc
+          │       │   ├── erts-10.7.1
+          │       │   ├── lib
+          │       │   ├── man
+          │       │   ├── misc
+          │       │   ├── releases
+          │       │   └── usr
+          │       ├── 22.3.4
+          │       │   ├── bin
+          │       │   ├── doc
+          │       │   ├── erts-10.7.2
+          │       │   ├── lib
+          │       │   ├── man
+          │       │   ├── misc
+          │       │   ├── releases
+          │       │   └── usr
+          │       ├── 22.3.4.2
+          │       │   ├── bin
+          │       │   ├── doc
+          │       │   ├── erts-10.7.2.1
+          │       │   ├── lib
+          │       │   ├── man
+          │       │   ├── misc
+          │       │   ├── releases
+          │       │   └── usr
+          │       ├── 23.0
+          │       │   ├── bin
+          │       │   ├── doc
+          │       │   ├── erts-11.0
+          │       │   ├── lib
+          │       │   ├── misc
+          │       │   ├── releases
+          │       │   └── usr
+          │       └── 23.0.2
+          │           ├── bin
+          │           ├── doc
+          │           ├── erts-11.0.2
+          │           ├── lib
+          │           ├── misc
+          │           ├── releases
+          │           └── usr
+          ├── plugins
+          │   ├── elixir
+          │   │   ├── bin
+          │   │   └── shims
+          │   └── erlang
+          │       ├── bin
+          │       └── kerl-home
+          │           └── archives
+          ├── repository
+          │   └── plugins
+          ├── shims
+          └── tmp
+
+          81 directories
+          >
+
+
+The ``~/.asdf/shims`` directory holds a set of script files that invoke the
+real Erlang commands via an asdf command.
+
+On my system I have installed some versions of Erlang and Elixir with asdf,
+and the shims I see are shown here:
+
+.. code:: shell
+
+
+    > ls -F .asdf/shims
+    cdv*                            elixirc*                        etop*                           snmpc*
+    codeline_preprocessing.escript* emem*                           iex*                            start*
+    cpu_sup*                        epmd*                           memsup*                         start_erl*
+    ct_run*                         erl*                            mix*                            to_erl*
+    dialyzer*                       erl_call*                       odbcserver*                     typer*
+    diameterc*                      erlc*                           run_erl*                        xml_from_edoc.escript*
+    elixir*                         escript*                        runcgi.sh*
+    >
+
+The content of ``~/.asdf/shims/erl`` which is used to invoke the Erlang shell
+is:
+
+.. code:: bash
+
+    #!/usr/bin/env bash
+    # asdf-plugin: erlang 21.3
+    # asdf-plugin: erlang 23.0
+    # asdf-plugin: erlang 22.3.3
+    # asdf-plugin: erlang 22.3.4
+    # asdf-plugin: erlang 23.0.2
+    # asdf-plugin: erlang 22.3.4.2
+    exec /usr/local/opt/asdf/bin/asdf exec "erl" "$@"
+
+It uses asdf to execute erl.
 
 -----------------------------------------------------------------------------
