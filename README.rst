@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 13:01:07, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 16:35:45, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1140,7 +1140,7 @@ April 21, 2020).
 .. _Get, compile and install a specific version of the plugin.:  https://asdf-vm.com/#/core-manage-versions
 .. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
 
-Seeting the Environment for asdf
+Setting the Environment for asdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For asdf-vm_ I wrote the ``use-asdf`` alias to the ``envfor-asdf`` script that
@@ -1172,6 +1172,8 @@ The ``envfor-asdf`` script is shown here:
         . $(brew --prefix asdf)/asdf.sh
         . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
         printf "ASDF support now installed in this shell.\n"
+        printf "ASDF uses "
+        $(brew --prefix openssl)/bin/openssl version
         settitle "Using ASDF"
     else
         printf "Shell is already setup for ASDF!\n"
@@ -1275,6 +1277,7 @@ Here's the session:
     Last login: Fri Jul  3 14:36:46 on ttys004
     > use-asdf
     ASDF support now installed in this shell.
+    asdf uses OpenSSL 1.1.1g  21 Apr 2020
     > asdf plugin list
     elixir
     erlang
@@ -1406,7 +1409,6 @@ mode.  I can then watch the build and save a copy somewhere.
 Running Erlang built with asdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
 I use the same strategy as for the others.
 In my ``.bashrc`` vile I have aliases to source the shell scripts I need:
 
@@ -1477,6 +1479,19 @@ And here's a session using it to install Erlang 23.0.2:
     > man -w lists
     /Users/roup/docs/Erlang/otp-23.0/man/man/man3/lists.3
     >
+
+
+.. caution: The asdf environment are based on the value stored in the file
+            system.  Therefore, for a given *plugin*, and there for Erlang,
+            what I have is a mechanism to set a version of Erlang for a
+            shell, but it is not possible to run multiple versions of Erlang
+            on the same system at the same time using the same file system.
+
+This means that if you open 2 shells and execute ``use-erlang-23-a`` in the
+first shell and then inside another shell execute ``use-erlang22-a`` in that
+other shells, both shells will now use the Erlang set up by
+``use-erlang-22-a`` because they both use the same shim file which now points
+to the Erlang version 22.x.y.z.
 
 
 asdf Directory Layout
