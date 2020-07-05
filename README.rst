@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 09:34:06, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 09:39:00, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -99,9 +99,12 @@ Erlang/OTP prior to 18.0: `Erlang Public License`_
 `Spawned Shelter`_                                      A collection of articles, videos and books for learning Erlang,
                                                         and other BEAM languages like Elixir, LFE and EFene.
 **Erlang Build/Install Tools**
-kerl_                                                   Easy building and installing of Erlang/OTP
+Homebrew_                                               Install pre-built version of Erlang.
+`Erlang Solutions`_ ErlangInstaller_                    Install pre-built versions of Erlang with macOS GUI
+                                                        application ErlangInstaller_ froom `Erlang Solutions`_.
+kerl_                                                   Easy building and installing of Erlang/OTP from source.
 asdf-vm_                                                Package manager - can install Erlang, Elixir and other
-                                                        systems.
+                                                        systems from source.
 
 **Erlang Libraries**
 `Erlang Libraries @ Erlang.org`_                        Describes what is an Erlang OTP library.
@@ -534,6 +537,7 @@ To use this, I start a new shell and I issue the ``use-erlang-23-ei`` command:
     >
 
 .. _Erlang Solutions: https://www.erlang-solutions.com
+.. _ErlangInstaller:
 .. _Erlang Solution Download page: https://www.erlang-solutions.com/resources/download.html
 .. _ErlangInstaller.1.0.2.dmg: https://packages.erlang-solutions.com/os-x-installer/ErlangInstaller1.0.2.dmg
 .. _Erlang/OTP download: https://www.erlang.org/downloads
