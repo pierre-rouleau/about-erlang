@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 12:37:47, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 12:59:38, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1213,8 +1213,30 @@ shell script it sources.  The shell script has a name like
 ``envfor-erlang-xx-a``.  The ``xx`` is Erlang version number and the ``-a``
 suffix identifies thet asdf-vm toolchain.
 
-Using asdf to build Erlang 22.3.4.2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+asdf commands
+^^^^^^^^^^^^^
+
+The asdf commands must be installed in the shell.  For that I execute my
+``use-asdf`` alias to source my ``envfor-asdf`` script.  Once done, you can
+use all asdf commands to:
+
+- `update asdf-vm`_
+- `manage asdf plugins`_
+- `manage asdf plugins versions`_ (eg. build and install new versions of Erlang).
+
+More information is available on the asdf-vm_ site.
+
+
+.. _update asdf-vm: https://asdf-vm.com/#/core-manage-asdf-vm
+.. _manage asdf plugins: https://asdf-vm.com/#/core-manage-plugins
+.. _manage asdf plugins versions: https://asdf-vm.com/#/core-manage-versions
+
+
+
+
+Example: Building Erlang 22.3.4.2
++++++++++++++++++++++++++++++++++
 
 Here I build 2 different versions of Erlang with asdf-vm_: Erlang 23.0.2 and
 22.3.4.2 with the following commands.
