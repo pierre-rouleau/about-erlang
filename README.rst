@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 17:05:21, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-05 17:35:41, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1508,6 +1508,7 @@ other shells, **from the same directory** both shells will now use the Erlang se
 same ``.tool-version`` file.
 
 
+
 asdf Directory Layout
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1638,6 +1639,7 @@ is:
     # asdf-plugin: erlang 22.3.4.2
     exec /usr/local/opt/asdf/bin/asdf exec "erl" "$@"
 
-It uses asdf to execute erl.
+It uses asdf to execute the erl for the Erlang version identified by the
+file .tool-versions stored in teh current directory.
 
 -----------------------------------------------------------------------------
