@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-05 17:39:46, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:01:31, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -84,13 +84,29 @@ Erlang/OTP prior to 18.0: `Erlang Public License`_
 `Category:Erlang (programming language) @ Wikipedia`_   Links to Wikipedia pages related to Erlang and its libraries.
 
 
+**Erlang Code Guidelines**
+`Ericsson Erlang Programming Rules and Conventions`_   Written by Klass Eriksson, Mike Williams and Joe Armstrong.
+                                                       Describes th eprogramming rules and conventions of Erlang
+                                                       programming.
 
-**Erlang Sites: Books**
-`Erlang Books @ Erlang Central`_
+
+**Erlang Online Books**
+`Learn You Some Erlang for Great Good!`_               An introduction to Erlang written by Fred Hébert.
+`The Erlang Runtime System`_                           Written by Erik Stenman, this book focuses on tuning Erlang
+                                                       installation and describes how Erlang works.
+
+**Erlang online Courses**
+`Concurrent Programming in Erlang`_
+`Erlang Master Classes @ University of Kent`_
 
 **Erlang Devoted Sites**
 `Erlang Central`_ - Erlang Community                    A community of Erlang developers with links to documentation,
-                                                        books and several packages and libraries.
+                                                        books and several packages and libraries.  See the related
+                                                        sites:
+
+                                                        - `Erlang Central @ GitHub`_
+                                                        - `Erlang Books @ Erlang Central`_
+
 
 `Erlang Solutions`_                                     An organization devoted to Erlang based software solutions,
                                                         which provides design services but also provides open source
@@ -111,6 +127,20 @@ asdf-vm_                                                Package manager - can in
 
 `Awesome Erlang`_                                       A curated list of amazingly awesome Erlang libraries.
 
+**Related Topics**
+`The Actor Model @ wikipedia`_                          Presentation of the Actor Model. See also:
+
+                                                        - `Actor Model of Computation: Scalable Robust
+                                                          Information Systems`_ from `Carl Hewitt`_
+                                                        - Youtube video: `Hewitt, Meijer and Szyperski: The Actor
+                                                          Model`_
+
+
+`It's Actors All the Way Down`_                         A collection of topics related to the Actor Model in relation
+                                                        with Humus, a pure Actor Model programming language.  Some
+                                                        articles compare Erlang to the pure Actor Model:
+
+                                                        - `Erlang-style Mailboxes`_
 
 ======================================================= ===============================================================
 
@@ -149,6 +179,18 @@ asdf-vm_                                                Package manager - can in
 .. _Erlang Libraries @ Erlang.org:                http://erlang.org/faq/libraries.html
 .. _Awesome Erlang:                               https://github.com/drobakowski/awesome-erlang
 .. _Spawned Shelter:                              https://spawnedshelter.com
+.. _Erlang Central @ GitHub:                      https://github.com/ErlangCentral
+.. _The Erlang Runtime System:                    https://blog.stenmans.org/theBeamBook/
+.. _Learn You Some Erlang for Great Good!:        https://blog.stenmans.org/theBeamBook/
+.. _Ericsson Erlang Programming Rules and Conventions: http://www.erlang.se/doc/programming_rules.shtml#REF17122
+.. _The Actor Model @ wikipedia:                  http://www.erlang.se/doc/programming_rules.shtml#REF17122
+.. _It's Actors All the Way Down:                 http://www.dalnefre.com/wp/
+.. _Erlang-style Mailboxes:                       http://www.dalnefre.com/wp/2011/10/erlang-style-mailboxes/
+.. _Actor Model of Computation\: Scalable Robust Information Systems: https://arxiv.org/abs/1008.1459
+.. _Carl Hewitt:                                  https://en.wikipedia.org/wiki/Carl_Hewitt
+.. _Hewitt, Meijer and Szyperski\: The Actor Model: https://www.youtube.com/watch?v=7erJ1DV_Tlo&feature=youtu.be
+.. _Erlang Master Classes @ University of Kent:   https://www.cs.kent.ac.uk/ErlangMasterClasses/#
+.. _Concurrent Programming in Erlang:             https://www.futurelearn.com/courses/concurrent-programming-erlang/
 
 -----------------------------------------------------------------------------
 
