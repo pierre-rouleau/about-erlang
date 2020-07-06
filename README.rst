@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:18:58, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:20:26, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -102,6 +102,7 @@ Topic                                                   Comment
 
 **Erlang online Courses**
 `University of Kent`_ & FutureLearn  Erlang Courses     The following courses are available:
+
                                                         - `Functional Programming in Erlang`_
                                                         - `Concurrent Programming in Erlang`_
                                                         - `Erlang Master Classes @ University of Kent`_
