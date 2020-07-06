@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 16:13:10, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 16:15:21, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -65,8 +65,10 @@ Topic                                                   Comment
                                                         - `Erlang/rebar3 @ Github`_
                                                         - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang
                                                           OTP image on Docker Hub)
-                                                             - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
-                                                          artifacts)
+
+                                                          - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
+                                                            artifacts)
+
                                                         - `Erlang/EEP @ Github`_  (Erlang Enhancement Proposals)
                                                         - and several others...
 
