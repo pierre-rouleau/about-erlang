@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:21:30, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 16:13:10, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -96,9 +96,21 @@ Topic                                                   Comment
 
 **Erlang Online Books**
 `Learn You Some Erlang for Great Good!`_                An comprehensive introduction to Erlang written by
-                                                        Fred Hébert.
+                                                        `Fred Hébert`_.
+
+`Stuff Goes Bad: Erlang in Anger`_                      A "*collection of tips and tricks to help understand where
+                                                        failures come from*" and code to help debug Erlang systems.
+                                                        Written by `Fred Hébert`_.
+`Adopting Erlang`_                                      A book on Erlang system, how to build, how to use
+                                                        in production. Collectively written by
+                                                        the `adoptingerlang project contributors`_ which includes
+                                                        Tristan Sloughter and `Fred Hébert`_.
+
+
 `The Erlang Runtime System`_                            Written by Erik Stenman, this book focuses on tuning Erlang
                                                         installation and describes how Erlang works.
+
+`Learn X in Y minutes, where X=erlang`_                 Not a book, but a quick overview.
 
 **Erlang online Courses**
 `University of Kent`_ & FutureLearn  Erlang Courses     The following courses are available:
@@ -201,6 +213,11 @@ asdf-vm_                                                Package manager - can in
 .. _Concurrent Programming in Erlang:             https://www.futurelearn.com/courses/concurrent-programming-erlang/
 .. _Functional Programming in Erlang:             https://www.futurelearn.com/courses/functional-programming-erlang/
 .. _University of Kent:                           https://www.kent.ac.uk/
+.. _Adopting Erlang:                              https://adoptingerlang.org
+.. _Stuff Goes Bad\: Erlang in Anger:             https://www.erlang-in-anger.com
+.. _adoptingerlang project contributors:          https://github.com/adoptingerlang/adoptingerlang/graphs/contributors
+.. _Fred Hébert:                                  https://ferd.ca
+.. _Learn X in Y minutes, where X=erlang:         https://learnxinyminutes.com/docs/erlang/
 
 -----------------------------------------------------------------------------
 
