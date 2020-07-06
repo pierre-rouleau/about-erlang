@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 16:15:21, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 16:49:18, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -95,6 +95,10 @@ Topic                                                   Comment
                                                         Describes the programming rules and conventions of Erlang
                                                         programming.
 
+**Erlang Quick-Sheets**
+`Learn X in Y minutes, where X=erlang`_                 A quick overview of Erlang.
+`Erlang Concurrent Programming`_                        An Erlang.org quick presentation on Erlang's concurrent
+                                                        programming concepts.
 
 **Erlang Online Books**
 `Learn You Some Erlang for Great Good!`_                An comprehensive introduction to Erlang written by
@@ -112,7 +116,6 @@ Topic                                                   Comment
 `The Erlang Runtime System`_                            Written by Erik Stenman, this book focuses on tuning Erlang
                                                         installation and describes how Erlang works.
 
-`Learn X in Y minutes, where X=erlang`_                 Not a book, but a quick overview.
 
 **Erlang online Courses**
 `University of Kent`_ & FutureLearn  Erlang Courses     The following courses are available:
@@ -220,6 +223,7 @@ asdf-vm_                                                Package manager - can in
 .. _adoptingerlang project contributors:          https://github.com/adoptingerlang/adoptingerlang/graphs/contributors
 .. _Fred Hébert:                                  https://ferd.ca
 .. _Learn X in Y minutes, where X=erlang:         https://learnxinyminutes.com/docs/erlang/
+.. _Erlang Concurrent Programming:                https://www.erlang.org/course/concurrent-programming
 
 -----------------------------------------------------------------------------
 
