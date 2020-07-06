@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:20:26, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:21:30, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -90,7 +90,7 @@ Topic                                                   Comment
 
 **Erlang Code Guidelines**
 `Ericsson Erlang Programming Rules and Conventions`_    Written by Klass Eriksson, Mike Williams and Joe Armstrong.
-                                                        Describes th eprogramming rules and conventions of Erlang
+                                                        Describes the programming rules and conventions of Erlang
                                                         programming.
 
 
