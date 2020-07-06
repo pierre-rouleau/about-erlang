@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:01:31, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:07:39, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -63,9 +63,10 @@ Topic                                                   Comment
                                                         - `Erlang/OTP @ Github`_
                                                         - `Erlang/Erlang-org @ Github`_ (the Erlang website)
                                                         - `Erlang/rebar3 @ Github`_
-                                                        - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang OTP
-                                                          image on Docker Hub)
-                                                        - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP artifacts)
+                                                        - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang
+                                                          OTP image on Docker Hub)
+                                                        - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
+                                                          artifacts)
                                                         - `Erlang/EEP @ Github`_  (Erlang Enhancement Proposals)
                                                         - and several others...
 
@@ -85,15 +86,15 @@ Erlang/OTP prior to 18.0: `Erlang Public License`_
 
 
 **Erlang Code Guidelines**
-`Ericsson Erlang Programming Rules and Conventions`_   Written by Klass Eriksson, Mike Williams and Joe Armstrong.
-                                                       Describes th eprogramming rules and conventions of Erlang
-                                                       programming.
+`Ericsson Erlang Programming Rules and Conventions`_    Written by Klass Eriksson, Mike Williams and Joe Armstrong.
+                                                        Describes th eprogramming rules and conventions of Erlang
+                                                        programming.
 
 
 **Erlang Online Books**
-`Learn You Some Erlang for Great Good!`_               An introduction to Erlang written by Fred Hébert.
-`The Erlang Runtime System`_                           Written by Erik Stenman, this book focuses on tuning Erlang
-                                                       installation and describes how Erlang works.
+`Learn You Some Erlang for Great Good!`_                An introduction to Erlang written by Fred Hébert.
+`The Erlang Runtime System`_                            Written by Erik Stenman, this book focuses on tuning Erlang
+                                                        installation and describes how Erlang works.
 
 **Erlang online Courses**
 `Concurrent Programming in Erlang`_
