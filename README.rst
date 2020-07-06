@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:11:14, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:18:58, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -65,7 +65,7 @@ Topic                                                   Comment
                                                         - `Erlang/rebar3 @ Github`_
                                                         - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang
                                                           OTP image on Docker Hub)
-                                                        - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
+                                                             - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
                                                           artifacts)
                                                         - `Erlang/EEP @ Github`_  (Erlang Enhancement Proposals)
                                                         - and several others...
@@ -95,13 +95,16 @@ Topic                                                   Comment
 
 
 **Erlang Online Books**
-`Learn You Some Erlang for Great Good!`_                An introduction to Erlang written by Fred Hébert.
+`Learn You Some Erlang for Great Good!`_                An comprehensive introduction to Erlang written by
+                                                        Fred Hébert.
 `The Erlang Runtime System`_                            Written by Erik Stenman, this book focuses on tuning Erlang
                                                         installation and describes how Erlang works.
 
 **Erlang online Courses**
-`Concurrent Programming in Erlang`_
-`Erlang Master Classes @ University of Kent`_
+`University of Kent`_ & FutureLearn  Erlang Courses     The following courses are available:
+                                                        - `Functional Programming in Erlang`_
+                                                        - `Concurrent Programming in Erlang`_
+                                                        - `Erlang Master Classes @ University of Kent`_
 
 **Erlang Devoted Sites**
 `Erlang Central`_ - Erlang Community                    A community of Erlang developers with links to documentation,
@@ -195,6 +198,8 @@ asdf-vm_                                                Package manager - can in
 .. _Hewitt, Meijer and Szyperski\: The Actor Model: https://www.youtube.com/watch?v=7erJ1DV_Tlo&feature=youtu.be
 .. _Erlang Master Classes @ University of Kent:   https://www.cs.kent.ac.uk/ErlangMasterClasses/#
 .. _Concurrent Programming in Erlang:             https://www.futurelearn.com/courses/concurrent-programming-erlang/
+.. _Functional Programming in Erlang:             https://www.futurelearn.com/courses/functional-programming-erlang/
+.. _University of Kent:                           https://www.kent.ac.uk/
 
 -----------------------------------------------------------------------------
 
