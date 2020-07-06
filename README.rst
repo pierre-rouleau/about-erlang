@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-06 15:09:06, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-06 15:11:14, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -83,7 +83,9 @@ Topic                                                   Comment
 `Erlang (programming language) @ Wikipedia`_            Outsider's view of the Erlang programming language with some
                                                         history, language overview  and several links to interesting
                                                         articles and sites.
-`Category:Erlang (programming language) @ Wikipedia`_   Links to Wikipedia pages related to Erlang and its libraries.
+
+                                                        - `Category:Erlang (programming language) @ Wikipedia`_
+                                                          Links to Wikipedia pages related to Erlang and its libraries.
 
 
 **Erlang Code Guidelines**
