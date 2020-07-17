@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-17 17:13:03, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-17 17:13:50, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1811,7 +1811,7 @@ I wrote the following Bash script to simplify the process:
 
 Here's a session that demonstrates the above:
 
-.. code::
+.. code:: shell
 
     Last login: Fri Jul 17 17:00:30 on ttys004
     > echo $MANPATH
