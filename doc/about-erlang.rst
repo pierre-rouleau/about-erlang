@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-17 17:10:55, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-17 17:13:03, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1772,7 +1772,7 @@ create the whatis file in that directory and will not touch anything else.
 
 I wrote the following Bash script to simplify the process:
 
-.. code::
+.. code::  bash
 
     #!/usr/bin/env bash
     # Name: make-local-whatis
