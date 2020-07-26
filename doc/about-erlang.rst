@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-26 08:42:43, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-26 08:44:01, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -1974,7 +1974,7 @@ tree of a each specific Erlang versions I am interested in.
 
 For example, the man man files for Erlang 17.5 are stored inside
 the directory ``~/docs/Erlang/otp-17.5/man``.  Here's a partial tree view
-of the directory tree:
+of the directory tree (I removed several lines for clarity):
 
 .. code:: shell
 
