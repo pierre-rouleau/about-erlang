@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-26 14:44:14, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-26 14:50:41, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -172,6 +172,11 @@ kerl_                                                     Easy building and inst
 asdf-vm_                                                  Package manager - can install Erlang, Elixir and other
                                                           systems from source.
 
+**Erlang Development Tools**
+`10 Essential Erlang Tools for Erlang Developers`_        A Pluralsight guide written by Brujo Benavides describing
+                                                          several very useful tools.
+
+
 **Erlang Libraries**
 `Erlang Libraries @ Erlang.org`_                          Describes what is an Erlang OTP library.
 
@@ -257,6 +262,7 @@ asdf-vm_                                                  Package manager - can 
 .. _The Erlware Blog:                             http://blog.erlware.org/
 .. _Property-Based Testing with PropEr, Erlang and Elixir: http://propertesting.com/
 .. _Inaka's Erlang Coding Standards & Guidelines: https://github.com/inaka/erlang_guidelines
+.. _10 Essential Erlang Tools for Erlang Developers: https://www.pluralsight.com/guides/10-essential-erlang-tools-for-erlang-developers
 
 -----------------------------------------------------------------------------
 
