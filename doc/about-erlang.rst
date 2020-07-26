@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-26 08:44:01, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-26 14:44:14, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -94,6 +94,8 @@ Topic                                                     Comment
 `Ericsson Erlang Programming Rules and Conventions`_      Written by Klass Eriksson, Mike Williams and Joe Armstrong.
                                                           Describes the programming rules and conventions of Erlang
                                                           programming.
+
+`Inaka's Erlang Coding Standards & Guidelines`_           Inaka's corporate Erlang Guideline.
 
 **Erlang Quick-Sheets**
 `Learn X in Y minutes, where X=erlang`_                   A quick overview of Erlang.
@@ -254,6 +256,7 @@ asdf-vm_                                                  Package manager - can 
 .. _Relx Erlang release assembler tool:           https://github.com/erlware/relx
 .. _The Erlware Blog:                             http://blog.erlware.org/
 .. _Property-Based Testing with PropEr, Erlang and Elixir: http://propertesting.com/
+.. _Inaka's Erlang Coding Standards & Guidelines: https://github.com/inaka/erlang_guidelines
 
 -----------------------------------------------------------------------------
 
