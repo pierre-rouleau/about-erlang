@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-26 14:50:41, updated by Pierre Rouleau>
+:Time-stamp: <2020-07-31 16:36:33, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -96,6 +96,8 @@ Topic                                                     Comment
                                                           programming.
 
 `Inaka's Erlang Coding Standards & Guidelines`_           Inaka's corporate Erlang Guideline.
+
+`EDoc User's Guide`_
 
 **Erlang Quick-Sheets**
 `Learn X in Y minutes, where X=erlang`_                   A quick overview of Erlang.
@@ -263,6 +265,7 @@ asdf-vm_                                                  Package manager - can 
 .. _Property-Based Testing with PropEr, Erlang and Elixir: http://propertesting.com/
 .. _Inaka's Erlang Coding Standards & Guidelines: https://github.com/inaka/erlang_guidelines
 .. _10 Essential Erlang Tools for Erlang Developers: https://www.pluralsight.com/guides/10-essential-erlang-tools-for-erlang-developers
+.. _EDoc User's Guide:                            http://erlang.org/doc/apps/edoc/chapter.html
 
 -----------------------------------------------------------------------------
 
@@ -1975,7 +1978,7 @@ because you downloaded the entire Erlang source package and built Erlang
 yourself, or because you are using an pre-built version of Erlang or for
 whatever else reason.
 
-One way to consolidate all of that is to use symbolink links.  What I did is
+One way to consolidate all of that is to use symbolic links.  What I did is
 to place symlinks inside the edts directory to the locations where I stored
 the Erlang man files.  In my case I stored all Erlang documentation files
 inside the ``~/docs/Erlang`` directory which contains the entire documentation
