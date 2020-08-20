@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 18:47:08, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 18:49:12, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -126,18 +126,18 @@ Topic                        Content
                                  =========================================== ===========================================
                                  From `erlang.org reference data types`_     From `LYSEFGG`_
                                  =========================================== ===========================================
-                                 - Terms_
-                                 - `Numbers,`_                               - Numbers_,
-                                 - `atoms,`_                                 - atoms_ and Variables_,
-                                 - boolean_,                                 - `boolean and comparison operators`_,
-                                 - pid_
-                                 - `port identifier`_
-                                 - reference_
-                                 - "strings_" and `escape sequences`_
-                                 - `bit strings and binaries,`_              - bit strings
-                                 - {`tuples,`_}  and records_                - {tuples_},
-                                 - [`lists,`_]                               - [lists_], `list comprehensions`_
-                                 - map_ and `map expressions`_
+                                 Terms_
+                                 `Numbers,`_                                 Numbers_,
+                                 `atoms,`_                                   atoms_ and Variables_,
+                                 boolean_,                                   `boolean and comparison operators`_,
+                                 pid_
+                                 `port identifier`_
+                                 reference_
+                                 "strings_" and `escape sequences`_
+                                 `bit strings and binaries,`_                bit strings
+                                 {`tuples,`_}  and records_                  {tuples_},
+                                 [`lists,`_]                                 [lists_], `list comprehensions`_
+                                 map_ and `map expressions`_
                                  =========================================== ===========================================
 
 
