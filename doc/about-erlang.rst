@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 22:47:39, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 23:01:06, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -101,8 +101,11 @@ Topic                                                     Comment
 
 **Quick-Sheets**
                                                           - `Learn X in Y minutes, where X=erlang`_
+
                                                              - A quick overview of Erlang.
+
                                                           - `Erlang Concurrent Programming`_
+
                                                             - An Erlang.org quick presentation on Erlang's concurrent
                                                               programming concepts.
 
@@ -150,37 +153,47 @@ Topic                                                     Comment
                                                           - PropEr Testing
 
 **Online Courses**                                        List of online sites providing Erlang courses.
-`University of Kent`_ & FutureLearn  Erlang Courses       The following courses are available:
+                                                          - `University of Kent`_ & FutureLearn  Erlang Courses
 
-                                                          - `Functional Programming in Erlang`_
-                                                          - `Concurrent Programming in Erlang`_
-                                                          - `Erlang Master Classes @ University of Kent`_
+                                                            - The following courses are available:
 
-**Erlang Devoted Sites**
-`Erlang Central`_ - Erlang Community                      A community of Erlang developers with links to documentation,
-                                                          books and several packages and libraries.  See the related
-                                                          sites:
+                                                              - `Functional Programming in Erlang`_
+                                                              - `Concurrent Programming in Erlang`_
+                                                              - `Erlang Master Classes @ University of Kent`_
 
-                                                          - `Erlang Central @ GitHub`_
-                                                          - `Erlang Books @ Erlang Central`_
+**Organizations**
+                                                          - `Erlang.org`_ , the official Erlang/OTP home.
+                                                          - `Erlang Solutions`_
 
+                                                            - An organization devoted to Erlang based software solutions,
+                                                              which provides design services but also provides open
+                                                              source and pre-package Erlang installations.
 
-`Erlang Solutions`_                                       An organization devoted to Erlang based software solutions,
-                                                          which provides design services but also provides open source
-                                                          and pre-package Erlang installations.
+                                                          - Erlware_
 
-Erlware_                                                  Erlware is an umbrella organization dedicated to bringing
-                                                          high quality, well tested, reusable libraries and tools to
-                                                          the Erlang community. They provide the `Erlware Commons`_
-                                                          Erlang library, the `Relx Erlang release assembler tool`_,
-                                                          the Joxa Lisp BEAM language, and training.
-                                                          See also: `The Erlware Blog`_
+                                                            - Erlware is an umbrella organization dedicated to bringing
+                                                              high quality, well tested, reusable libraries and tools to
+                                                              the Erlang community. They provide the `Erlware Commons`_
+                                                              Erlang library, the `Relx Erlang release assembler tool`_,
+                                                              the Joxa Lisp BEAM language, and training.
+                                                              See also: `The Erlware Blog`_
 
+                                                          - `Spawned Shelter`_
 
+                                                            - A collection of articles, videos and books for learning
+                                                              Erlang, and other BEAM languages like Elixir, LFE and
+                                                              EFene.
 
+                                                          - `Erlang Central`_
 
-`Spawned Shelter`_                                        A collection of articles, videos and books for learning Erlang,
-                                                          and other BEAM languages like Elixir, LFE and EFene.
+                                                            - A community of Erlang developers with links to
+                                                              documentation,
+                                                              books and several packages and libraries.  See the related
+                                                              sites:
+
+                                                              - `Erlang Central @ GitHub`_
+                                                              - `Erlang Books @ Erlang Central`_
+
 
 **Build/Install Tools**                                   List of software tools for building and installing Erlang.
 Homebrew_                                                 Install pre-built version of Erlang.
@@ -217,7 +230,7 @@ asdf-vm_                                                  Package manager - can 
 ========================================================= ===============================================================
 
 
-
+.. _erlang.org:
 .. _Erlang Project Homepage:                      https://www.erlang.org
 .. _Erlang On-Line Documentation, Books & Papers: https://www.erlang.org/docs
 .. _Joe Armstrong:                                https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
