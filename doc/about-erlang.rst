@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 19:08:08, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 19:11:25, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -121,25 +121,24 @@ Topic                        Content
 
                              - **Data Types**
 
-                               == ============================================ ============================================
-                               #  From `erlang.org reference data types`_      From `LYSEFGG`_
-                               == ============================================ ============================================
-                               1  - Terms_
-                               2  - `Numbers,`_                                - Numbers_,
-                               3  - `atoms,`_                                  - atoms_ and Variables_,
-                               4  - boolean_,                                  - `boolean and comparison operators`_,
-                               5  - pid_ (`Erlang process`_ identifier)
-                               6  - `port identifier`_
-                                    (`Erlang port`_ identifier)
-                               7  - reference_
-                               8  - "strings_" and `escape sequences`_
-                               9  - `bit strings and binaries,`_               - bit strings
-                               10 - {`tuples,`_}  and records_                 - {tuples_},
-                               11 - [`lists,`_]                                - [lists_], `list comprehensions`_
-                               12 - map_ and `map expressions`_
-                               13 - `type conversions`_
-                               14 - `Fun (functional object)`_
-                               == ============================================ ============================================
+                               ============================================ ===============================================
+                               From `erlang.org reference data types`_      From `LYSEFGG`_
+                               ============================================ ===============================================
+                               - Terms_
+                               - `Numbers,`_                                - Numbers_,
+                               - `atoms,`_                                  - atoms_ and Variables_,
+                               - boolean_,                                  - `boolean and comparison operators`_,
+                               - pid_ (`Erlang process`_ identifier)
+                               - `port identifier`_ (`Erlang port`_ IDs)
+                               - reference_
+                               - "strings_" and `escape sequences`_
+                               - `bit strings and binaries,`_               - bit strings
+                               - {`tuples,`_}  and records_                 - {tuples_},
+                               - [`lists,`_]                                - [lists_], `list comprehensions`_
+                               - map_ and `map expressions`_
+                               - `type conversions`_
+                               - `Fun (functional object)`_
+                               ============================================ ===============================================
 
 
                              **Erlang Tools**
