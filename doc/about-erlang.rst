@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 22:44:04, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 22:47:39, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -100,9 +100,11 @@ Topic                                                     Comment
 `EDoc User's Guide`_
 
 **Quick-Sheets**
-`Learn X in Y minutes, where X=erlang`_                   A quick overview of Erlang.
-`Erlang Concurrent Programming`_                          An Erlang.org quick presentation on Erlang's concurrent
-                                                          programming concepts.
+                                                          - `Learn X in Y minutes, where X=erlang`_
+                                                             - A quick overview of Erlang.
+                                                          - `Erlang Concurrent Programming`_
+                                                            - An Erlang.org quick presentation on Erlang's concurrent
+                                                              programming concepts.
 
 **Paper Books**                                           Books on Erlang. A list is also available on the
                                                           `Erlang/OTP Documentation`_ page.
