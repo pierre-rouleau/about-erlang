@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 23:12:30, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 23:16:13, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -79,17 +79,6 @@ Topic                                                     Comment
                                                           - Erlang/OTP 18.0 and later: `Apache License 2.0`_
                                                           - Erlang/OTP prior to 18.0: `Erlang Public License`_
 
-
-
-**Sites: References**
-`Erlang (programming language) @ Wikipedia`_              Outsider's view of the Erlang programming language with some
-                                                          history, language overview  and several links to interesting
-                                                          articles and sites.
-
-                                                          - `Category:Erlang (programming language) @ Wikipedia`_
-                                                            Links to Wikipedia pages related to Erlang and its libraries.
-
-
 **Code Guidelines**
                                                           - `Ericsson Erlang Programming Rules and Conventions`_
 
@@ -114,6 +103,18 @@ Topic                                                     Comment
 
                                                             - An Erlang.org quick presentation on Erlang's concurrent
                                                               programming concepts.
+
+**Introduction**
+                                                          - `Erlang (programming language) @ Wikipedia`_
+
+                                                            - Outsider's view of the Erlang programming language with
+                                                              some history, language overview and several links to
+                                                              interesting articles and sites.
+
+                                                            - `Category:Erlang (programming language) @ Wikipedia`_
+
+                                                              - Links to Wikipedia pages related to Erlang and its
+                                                                libraries.
 
 **Paper Books**                                           Books on Erlang. A list is also available on the
                                                           `Erlang/OTP Documentation`_ page.
