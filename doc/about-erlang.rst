@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 23:16:13, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 23:29:51, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -118,6 +118,8 @@ Topic                                                     Comment
 
 **Paper Books**                                           Books on Erlang. A list is also available on the
                                                           `Erlang/OTP Documentation`_ page.
+
+                                                          .. image:: res/books-01.png
 
                                                           - `Erlang and OTP in Action`_
 
