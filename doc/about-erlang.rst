@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 14:37:49, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 18:47:08, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -123,11 +123,22 @@ Topic                        Content
 
                                - Basic data types:
 
-                                 - atoms_ and Variables_,
-                                 - Numbers_, `boolean and comparison operators`_,
-                                 - {tuples_},
-                                 - [lists_], `list comprehensions`_
-                                 - "strings"
+                                 =========================================== ===========================================
+                                 From `erlang.org reference data types`_     From `LYSEFGG`_
+                                 =========================================== ===========================================
+                                 - Terms_
+                                 - `Numbers,`_                               - Numbers_,
+                                 - `atoms,`_                                 - atoms_ and Variables_,
+                                 - boolean_,                                 - `boolean and comparison operators`_,
+                                 - pid_
+                                 - `port identifier`_
+                                 - reference_
+                                 - "strings_" and `escape sequences`_
+                                 - `bit strings and binaries,`_              - bit strings
+                                 - {`tuples,`_}  and records_                - {tuples_},
+                                 - [`lists,`_]                               - [lists_], `list comprehensions`_
+                                 - map_ and `map expressions`_
+                                 =========================================== ===========================================
 
 
                              **Erlang Tools**
@@ -307,6 +318,7 @@ Topic                        Content
 .. _Erlang/OTP Documentation:                     https://erlang.org/doc/
 .. _Erlang/OTP Documentation with Search:         https://erlang.org/doc/search/
 .. _erldocs.com:                                  https://erldocs.com/
+.. _erlang.org reference data types:              https://erlang.org/doc/reference_manual/data_types.html
 .. _Erlang Reference Manual - User's Guide:       https://erlang.org/doc/reference_manual/users_guide.html
 .. _Efficiency Guide - User's Guide:              https://erlang.org/doc/efficiency_guide/users_guide.html
 .. _Systems Principles - User's Guide:            https://erlang.org/doc/system_principles/system_principles.html
@@ -377,7 +389,21 @@ Topic                        Content
 .. _lists:                                        https://learnyousomeerlang.com/starting-out-for-real#lists
 .. _list comprehensions:                          https://learnyousomeerlang.com/starting-out-for-real#list-comprehensions
 .. _Erlang Man Page Index:                        https://erlang.org/doc/man_index.html
-
+.. _Numbers,:                                     https://erlang.org/doc/reference_manual/data_types.html#number
+.. _atoms,:                                       https://erlang.org/doc/reference_manual/data_types.html#atom
+.. _bit strings and binaries,:                    https://erlang.org/doc/reference_manual/data_types.html#bit-strings-and-binaries
+.. _boolean:                                      https://erlang.org/doc/reference_manual/data_types.html#boolean
+.. _reference:                                    https://erlang.org/doc/reference_manual/data_types.html#reference
+.. _pid:                                          https://erlang.org/doc/reference_manual/data_types.html#pid
+.. _port identifier:                              https://erlang.org/doc/reference_manual/data_types.html#port-identifier
+.. _Terms:                                        https://erlang.org/doc/reference_manual/data_types.html#terms
+.. _tuples,:                                      https://erlang.org/doc/reference_manual/data_types.html#tuple
+.. _lists,:                                       https://erlang.org/doc/reference_manual/data_types.html#list
+.. _strings:                                      https://erlang.org/doc/reference_manual/data_types.html#string
+.. _records:                                      https://erlang.org/doc/reference_manual/data_types.html#record
+.. _escape sequences:                             https://erlang.org/doc/reference_manual/data_types.html#escape-sequences
+.. _map:                                          https://erlang.org/doc/reference_manual/data_types.html#map
+.. _map expressions:                              https://erlang.org/doc/reference_manual/expressions.html#map_expressions
 
 -----------------------------------------------------------------------------
 
