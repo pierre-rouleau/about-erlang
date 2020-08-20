@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:38:04, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:56:10, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -123,8 +123,8 @@ Topic                        Content
 
                                  - atoms_ and Variables_,
                                  - Numbers_, `boolean and comparison operators`_,
-                                 - {tuples}_,
-                                 - [lists]_, `list comprehensions`_
+                                 - {tuples_},
+                                 - [lists_], `list comprehensions`_
                                  - "strings"
 
 
@@ -359,9 +359,9 @@ Topic                        Content
 .. _Numbers:                                      https://learnyousomeerlang.com/starting-out-for-real#numbers
 .. _atoms:                                        https://learnyousomeerlang.com/starting-out-for-real#atoms
 .. _Variables:                                    https://learnyousomeerlang.com/starting-out-for-real#invariable-variables
-.. _{tuples}:                                     https://learnyousomeerlang.com/starting-out-for-real#tuples
+.. _tuples:                                     https://learnyousomeerlang.com/starting-out-for-real#tuples
 .. _boolean and comparison operators:             https://learnyousomeerlang.com/starting-out-for-real#bool-and-compare
-.. _[lists]:                                      https://learnyousomeerlang.com/starting-out-for-real#lists
+.. _lists:                                      https://learnyousomeerlang.com/starting-out-for-real#lists
 .. _list comprehensions:                          https://learnyousomeerlang.com/starting-out-for-real#list-comprehensions
 
 
