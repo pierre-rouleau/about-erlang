@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-07-31 16:36:33, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 20:03:04, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -81,7 +81,7 @@ Topic                                                     Comment
 
 
 
-**Erlang Sites: References**
+**Sites: References**
 `Erlang (programming language) @ Wikipedia`_              Outsider's view of the Erlang programming language with some
                                                           history, language overview  and several links to interesting
                                                           articles and sites.
@@ -90,7 +90,7 @@ Topic                                                     Comment
                                                             Links to Wikipedia pages related to Erlang and its libraries.
 
 
-**Erlang Code Guidelines**
+**Code Guidelines**
 `Ericsson Erlang Programming Rules and Conventions`_      Written by Klass Eriksson, Mike Williams and Joe Armstrong.
                                                           Describes the programming rules and conventions of Erlang
                                                           programming.
@@ -99,12 +99,13 @@ Topic                                                     Comment
 
 `EDoc User's Guide`_
 
-**Erlang Quick-Sheets**
+**Quick-Sheets**
 `Learn X in Y minutes, where X=erlang`_                   A quick overview of Erlang.
 `Erlang Concurrent Programming`_                          An Erlang.org quick presentation on Erlang's concurrent
                                                           programming concepts.
 
-**Erlang Paper Books**
+**Paper Books**                                           Books on Erlang. A list is also available on the
+                                                          `Erlang/OTP Documentation`_ page.
 `Erlang and OTP in Action`_                               Written by Martin Logan, Eric Merrit and Richard Clarsson.
                                                           Published in 2010.
                                                           Very well written, concise and effective must read book
@@ -112,10 +113,11 @@ Topic                                                     Comment
                                                           Example code in `GitHub Erlang and OTP in Action`_.
 
 `Property-Based Testing with PropEr, Erlang and Elixir`_  An intermediate/advanced book on property testing in
-                                                          Erlang and Elixir, written by `Fred Hebert`_.
+                                                          Erlang and Elixir, written by `Fred Hébert`_, published
+                                                          by The Pragmatic Bookshelf, 2019.
 
 
-**Erlang Online Books**
+**Online Books**
 `Learn You Some Erlang for Great Good!`_                  An comprehensive introduction to Erlang written by
                                                           `Fred Hébert`_.
 
@@ -134,7 +136,7 @@ PropEr Testing
                                                           installation and describes how Erlang works.
 
 
-**Erlang online Courses**
+**Online Courses**                                        List of online sites providing Erlang courses.
 `University of Kent`_ & FutureLearn  Erlang Courses       The following courses are available:
 
                                                           - `Functional Programming in Erlang`_
@@ -166,7 +168,8 @@ Erlware_                                                  Erlware is an umbrella
 
 `Spawned Shelter`_                                        A collection of articles, videos and books for learning Erlang,
                                                           and other BEAM languages like Elixir, LFE and EFene.
-**Erlang Build/Install Tools**
+
+**Build/Install Tools**                                   List of software tools for building and installing Erlang.
 Homebrew_                                                 Install pre-built version of Erlang.
 `Erlang Solutions`_ ErlangInstaller_                      Install pre-built versions of Erlang with macOS GUI
                                                           application ErlangInstaller_ froom `Erlang Solutions`_.
@@ -174,14 +177,13 @@ kerl_                                                     Easy building and inst
 asdf-vm_                                                  Package manager - can install Erlang, Elixir and other
                                                           systems from source.
 
-**Erlang Development Tools**
+**Development Tools**                                     Articles on Erlang development tools.
 `10 Essential Erlang Tools for Erlang Developers`_        A Pluralsight guide written by Brujo Benavides describing
                                                           several very useful tools.
 
 
-**Erlang Libraries**
+**Libraries**                                             List of Erlang source code libraries.
 `Erlang Libraries @ Erlang.org`_                          Describes what is an Erlang OTP library.
-
 `Awesome Erlang`_                                         A curated list of amazingly awesome Erlang libraries.
 
 **Related Topics**
