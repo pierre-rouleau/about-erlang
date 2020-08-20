@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 14:36:37, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 14:37:49, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -137,9 +137,9 @@ Topic                        Content
                                - `The Shell <https://learnyousomeerlang.com/starting-out#the-shell>`_ ,
                                  `Shell Commands <https://learnyousomeerlang.com/starting-out#shell-commands>`_
                                  (at `LYSEFGG`_).
-                               - Man pages `Shell <https://erlang.org/doc/man/shell.html>`_.
+                               - Man pages: `Shell <https://erlang.org/doc/man/shell.html>`_.
                                - Related modules:
-                                 `shell_default module <https://erlang.org/doc/man/shell_default.html>`_,
+                                 `shell_default <https://erlang.org/doc/man/shell_default.html>`_,
                                  `shell_docs <https://erlang.org/doc/man/shell_docs.html>`_.
 
 **Introduction**             - `Erlang (programming language) @ Wikipedia`_
