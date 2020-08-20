@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 20:03:04, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 22:44:04, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -106,35 +106,46 @@ Topic                                                     Comment
 
 **Paper Books**                                           Books on Erlang. A list is also available on the
                                                           `Erlang/OTP Documentation`_ page.
-`Erlang and OTP in Action`_                               Written by Martin Logan, Eric Merrit and Richard Clarsson.
-                                                          Published in 2010.
-                                                          Very well written, concise and effective must read book
-                                                          to learn Erlang and OTP.
-                                                          Example code in `GitHub Erlang and OTP in Action`_.
 
-`Property-Based Testing with PropEr, Erlang and Elixir`_  An intermediate/advanced book on property testing in
-                                                          Erlang and Elixir, written by `Fred Hébert`_, published
-                                                          by The Pragmatic Bookshelf, 2019.
+                                                          - `Erlang and OTP in Action`_
 
+                                                            - Written by Martin Logan, Eric Merrit and Richard Clarsson.
+                                                              Published in 2010.
+                                                            - Very well written, concise and effective must read book
+                                                              to learn Erlang and OTP.
+                                                            -  Example code in `GitHub Erlang and OTP in Action`_.
+
+                                                          - `Property-Based Testing with PropEr, Erlang and Elixir`_
+
+                                                            - An intermediate/advanced book on property testing in
+                                                              Erlang and Elixir, written by `Fred Hébert`_, published
+                                                              by The Pragmatic Bookshelf, 2019.
 
 **Online Books**
-`Learn You Some Erlang for Great Good!`_                  An comprehensive introduction to Erlang written by
-                                                          `Fred Hébert`_.
+                                                          - `Learn You Some Erlang for Great Good!`_
 
-PropEr Testing
+                                                            - A comprehensive introduction to Erlang written by
+                                                              `Fred Hébert`_.
 
-`Stuff Goes Bad: Erlang in Anger`_                        A "*collection of tips and tricks to help understand where
-                                                          failures come from*" and code to help debug Erlang systems.
-                                                          Written by `Fred Hébert`_.
-`Adopting Erlang`_                                        A book on Erlang system, how to build, how to use
-                                                          in production. Collectively written by
-                                                          the `adoptingerlang project contributors`_ which includes
-                                                          Tristan Sloughter and `Fred Hébert`_.
+                                                          - `Stuff Goes Bad: Erlang in Anger`_
 
+                                                            - A "*collection of tips and tricks to help understand where
+                                                              failures come from*" and code to help debug Erlang systems.
+                                                            - Written by `Fred Hébert`_.
 
-`The Erlang Runtime System`_                              Written by Erik Stenman, this book focuses on tuning Erlang
-                                                          installation and describes how Erlang works.
+                                                          - `Adopting Erlang`_
 
+                                                            - A book on Erlang system, how to build, how to use
+                                                              in production. Collectively written by
+                                                              the `adoptingerlang project contributors`_ which includes
+                                                              Tristan Sloughter and `Fred Hébert`_.
+
+                                                          - `The Erlang Runtime System`_
+
+                                                            - Written by Erik Stenman, this book focuses on tuning Erlang
+                                                              installation and describes how Erlang works.
+
+                                                          - PropEr Testing
 
 **Online Courses**                                        List of online sites providing Erlang courses.
 `University of Kent`_ & FutureLearn  Erlang Courses       The following courses are available:
