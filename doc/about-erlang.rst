@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 23:29:51, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 08:57:02, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -21,245 +21,244 @@ Learning Erlang
 ===============
 
 
-========================================================= ===============================================================
-Topic                                                     Comment
-========================================================= ===============================================================
+============================ ============================================================================================
+Topic                        Content
+============================ ============================================================================================
 **Authority**
-`Erlang Project Homepage`_                                Erlang/OTP project home page.
-                                                          They control all official releases, provide
-                                                          the official implementation, documentation,
-                                                          tools and reference to important books and
-                                                          documents.
+`Erlang Project Homepage`_   Erlang/OTP project home page.
+                             They control all official releases, provide
+                             the official implementation, documentation,
+                             tools and reference to important books and
+                             documents.
 
-`Erlang On-Line Documentation, Books & Papers`_           Official documentation about Erlang and OTP with links to
-                                                          books and `Joe Armstrong`_ paper.  This includes:
+                             - `Erlang On-Line Documentation, Books & Papers`_:
 
-                                                          - `Erlang/OTP Documentation`_ (latest official version)
-                                                          - `Erlang/OTP Documentation with Search`_ (works in Chrome,
-                                                            Firefox 74.0.1 but not in Safari 13.1).
-                                                          - `Erlang/OTP FAQ`_
-                                                          - erldocs.com_, an alternative to the official Erlang
-                                                            documentation.
-                                                          - `Erlang Reference Manual - User's Guide`_
-                                                          - `Efficiency Guide - User's Guide`_
-                                                          - `Systems Principles - User's Guide`_
-                                                          - `OTP Design Principles - User's Guide`_
-                                                          - `OTP Versions Tree`_
+                             Official documentation about Erlang and OTP with links to
+                             books and `Joe Armstrong`_ paper.  This includes:
 
-`Erlang Community`_                                       Erlang.org page listing, among other things:
+                             - `Erlang/OTP Documentation`_ (latest official version)
+                             - `Erlang/OTP Documentation with Search`_ (works in Chrome,
+                               Firefox 74.0.1, Safari 13.2 but not in Safari 13.1).
+                             - `Erlang/OTP FAQ`_
+                             - erldocs.com_, an alternative to the official Erlang
+                               documentation.
+                             - `Erlang Reference Manual - User's Guide`_
+                             - `Efficiency Guide - User's Guide`_
+                             - `Systems Principles - User's Guide`_
+                             - `OTP Design Principles - User's Guide`_
+                             - `OTP Versions Tree`_
 
-                                                          - Erlang Development repositories  (see below)
-                                                          - Erlang IDE and editor support
-                                                          - Free online courses
-                                                          - Erlang Tutorials
-                                                          - Mailing Lists
-                                                          - Chat
-                                                          - StackOverflow Q&A
-                                                          - Erlang Resources
+`Erlang Community`_          Erlang.org page listing, among other things:
 
-**Erlang GitHub Repositories**
-`Erlang @ Github`_                                        Holds the official Erlang repositories:
+                             - Erlang Development repositories  (see below)
+                             - Erlang IDE and editor support
+                             - Free online courses
+                             - Erlang Tutorials
+                             - Mailing Lists
+                             - Chat
+                             - StackOverflow Q&A
+                             - Erlang Resources
 
-                                                          - `Erlang/OTP @ Github`_
-                                                          - `Erlang/Erlang-org @ Github`_ (the Erlang website)
-                                                          - `Erlang/rebar3 @ Github`_
-                                                          - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang
-                                                            OTP image on Docker Hub)
+`Erlang @ Github`_           Github holds the official Erlang repositories:
 
-                                                            - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
-                                                              artifacts)
+                             - `Erlang/OTP @ Github`_
+                             - `Erlang/Erlang-org @ Github`_ (the Erlang website)
+                             - `Erlang/rebar3 @ Github`_
+                             - `Erlang/docker-erlang-otp @ Github`_ (the Official Erlang
+                               OTP image on Docker Hub)
 
-                                                          - `Erlang/EEP @ Github`_  (Erlang Enhancement Proposals)
-                                                          - and several others...
+                               - `Erlang/cd @ Github`_ (continuous delivery of Erlang/OTP
+                                 artifacts)
 
-**Erlang Software License**                               As explained in the `Wikipedia Erlang Public License`_ page,
-                                                          Ericsson changed the license under which Erlang is
-                                                          published as of Erlang/OTP version 18.0.
+                             - `Erlang/EEP @ Github`_  (Erlang Enhancement Proposals)
+                             - and several others...
 
-                                                          - Erlang/OTP 18.0 and later: `Apache License 2.0`_
-                                                          - Erlang/OTP prior to 18.0: `Erlang Public License`_
+**Erlang Software License**  As explained in the `Wikipedia Erlang Public License`_ page,
+                             Ericsson changed the license under which Erlang is
+                             published as of Erlang/OTP version 18.0.
 
-**Code Guidelines**
-                                                          - `Ericsson Erlang Programming Rules and Conventions`_
+                             - Erlang/OTP 18.0 and later: `Apache License 2.0`_
+                             - Erlang/OTP prior to 18.0: `Erlang Public License`_
 
-                                                            - Written by Klass Eriksson, Mike Williams and Joe Armstrong.
-                                                              Describes the programming rules and conventions of Erlang
-                                                              programming.
+**Code Guidelines**          - `Ericsson Erlang Programming Rules and Conventions`_
 
-                                                          - `Inaka's Erlang Coding Standards & Guidelines`_
+                               - Written by Klass Eriksson, Mike Williams and Joe Armstrong.
+                                 Describes the programming rules and conventions of Erlang
+                                 programming.
 
-                                                            - Inaka's corporate Erlang Guideline.
+                             - `Inaka's Erlang Coding Standards & Guidelines`_
 
-                                                          - `EDoc User's Guide`_
+                               - Inaka's corporate Erlang Guideline.
 
-                                                            - How to document Erlang code with EDoc annotations.
+                             - `EDoc User's Guide`_
+
+                               - How to document Erlang code with EDoc annotations.
 
 **Quick-Sheets**
-                                                          - `Learn X in Y minutes, where X=erlang`_
+                             - `Learn X in Y minutes, where X=erlang`_
 
-                                                            - A quick overview of Erlang.
+                               - A quick overview of Erlang.
 
-                                                          - `Erlang Concurrent Programming`_
+                             - `Erlang Concurrent Programming`_
 
-                                                            - An Erlang.org quick presentation on Erlang's concurrent
-                                                              programming concepts.
+                               - An Erlang.org quick presentation on Erlang's concurrent
+                                 programming concepts.
 
-**Introduction**
-                                                          - `Erlang (programming language) @ Wikipedia`_
+**Introduction**             - `Erlang (programming language) @ Wikipedia`_
 
-                                                            - Outsider's view of the Erlang programming language with
-                                                              some history, language overview and several links to
-                                                              interesting articles and sites.
+                               - Outsider's view of the Erlang programming language with
+                                 some history, language overview and several links to
+                                 interesting articles and sites.
 
-                                                            - `Category:Erlang (programming language) @ Wikipedia`_
+                               - `Category:Erlang (programming language) @ Wikipedia`_
 
-                                                              - Links to Wikipedia pages related to Erlang and its
-                                                                libraries.
+                                 - Links to Wikipedia pages related to Erlang and its
+                                   libraries.
 
-**Paper Books**                                           Books on Erlang. A list is also available on the
-                                                          `Erlang/OTP Documentation`_ page.
+**Paper Books**              Books on Erlang. A list is also available on the
+                             `Erlang/OTP Documentation`_ page.
 
-                                                          .. image:: res/books-01.png
+                             .. image:: res/books-01.png
 
-                                                          - `Erlang and OTP in Action`_
+                             - `Erlang and OTP in Action`_
 
-                                                            - Written by Martin Logan, Eric Merrit and Richard Clarsson.
-                                                              Published in 2010.
-                                                            - Very well written, concise and effective must read book
-                                                              to learn Erlang and OTP.
-                                                            -  Example code in `GitHub Erlang and OTP in Action`_.
+                               - Written by Martin Logan, Eric Merrit and Richard Clarsson.
+                                 Published in 2010.
+                               - Very well written, concise and effective must read book
+                                 to learn Erlang and OTP.
+                               -  Example code in `GitHub Erlang and OTP in Action`_.
 
-                                                          - `Property-Based Testing with PropEr, Erlang and Elixir`_
+                             - `Property-Based Testing with PropEr, Erlang and Elixir`_
 
-                                                            - An intermediate/advanced book on property testing in
-                                                              Erlang and Elixir, written by `Fred Hébert`_, published
-                                                              by The Pragmatic Bookshelf, 2019.
+                               - An intermediate/advanced book on property testing in
+                                 Erlang and Elixir, written by `Fred Hébert`_, published
+                                 by The Pragmatic Bookshelf, 2019.
 
 **Online Books**
-                                                          - `Learn You Some Erlang for Great Good!`_
+                             - `Learn You Some Erlang for Great Good!`_
 
-                                                            - A comprehensive introduction to Erlang written by
-                                                              `Fred Hébert`_.
+                               - A comprehensive introduction to Erlang written by
+                                 `Fred Hébert`_.  Also in print. No starch press. 2013
 
-                                                          - `Stuff Goes Bad: Erlang in Anger`_
+                             - `Stuff Goes Bad: Erlang in Anger`_
 
-                                                            - A "*collection of tips and tricks to help understand where
-                                                              failures come from*" and code to help debug Erlang systems.
-                                                            - Written by `Fred Hébert`_.
+                               - A "*collection of tips and tricks to help understand where
+                                 failures come from*" and code to help debug Erlang systems.
+                               - Written by `Fred Hébert`_.
 
-                                                          - `Adopting Erlang`_
+                             - `Adopting Erlang`_
 
-                                                            - A book on Erlang system, how to build, how to use
-                                                              in production. Collectively written by
-                                                              the `adoptingerlang project contributors`_ which includes
-                                                              Tristan Sloughter and `Fred Hébert`_.
+                               - A book on Erlang system, how to build, how to use
+                                 in production. Collectively written by
+                                 the `adoptingerlang project contributors`_ which includes
+                                 Tristan Sloughter and `Fred Hébert`_.
 
-                                                          - `The Erlang Runtime System`_
+                             - `The Erlang Runtime System`_
 
-                                                            - Written by Erik Stenman, this book focuses on tuning Erlang
-                                                              installation and describes how Erlang works.
+                               - Written by Erik Stenman, this book focuses on tuning Erlang
+                                 installation and describes how Erlang works.
 
-                                                          - PropEr Testing
+                             - PropEr Testing
 
-**Online Courses**                                        List of online sites providing Erlang courses.
+**Online Courses**           List of online sites providing Erlang courses.
 
-                                                          - `University of Kent`_ & FutureLearn  Erlang Courses
+                             - `University of Kent`_ & FutureLearn  Erlang Courses
 
-                                                            - The following courses are available:
+                               - The following courses are available:
 
-                                                              - `Functional Programming in Erlang`_
-                                                              - `Concurrent Programming in Erlang`_
-                                                              - `Erlang Master Classes @ University of Kent`_
+                                 - `Functional Programming in Erlang`_
+                                 - `Concurrent Programming in Erlang`_
+                                 - `Erlang Master Classes @ University of Kent`_
 
 **Organizations**
-                                                          - `Erlang.org`_ , the official Erlang/OTP home.
-                                                          - `Erlang Solutions`_
+                             - `Erlang.org`_ , the official Erlang/OTP home.
+                             - `Erlang Solutions`_
 
-                                                            - An organization devoted to Erlang based software solutions,
-                                                              which provides design services but also provides open
-                                                              source and pre-package Erlang installations.
+                               - An organization devoted to Erlang based software solutions,
+                                 which provides design services but also provides open
+                                 source and pre-package Erlang installations.
 
-                                                          - Erlware_
+                             - Erlware_
 
-                                                            - Erlware is an umbrella organization dedicated to bringing
-                                                              high quality, well tested, reusable libraries and tools to
-                                                              the Erlang community. They provide the `Erlware Commons`_
-                                                              Erlang library, the `Relx Erlang release assembler tool`_,
-                                                              the Joxa Lisp BEAM language, and training.
-                                                              See also: `The Erlware Blog`_
+                               - Erlware is an umbrella organization dedicated to bringing
+                                 high quality, well tested, reusable libraries and tools to
+                                 the Erlang community. They provide the `Erlware Commons`_
+                                 Erlang library, the `Relx Erlang release assembler tool`_,
+                                 the Joxa Lisp BEAM language, and training.
+                                 See also: `The Erlware Blog`_
 
-                                                          - `Spawned Shelter`_
+                             - `Spawned Shelter`_
 
-                                                            - A collection of articles, videos and books for learning
-                                                              Erlang, and other BEAM languages like Elixir, LFE and
-                                                              EFene.
+                               - A collection of articles, videos and books for learning
+                                 Erlang, and other BEAM languages like Elixir, LFE and
+                                 EFene.
 
-                                                          - `Erlang Central`_
+                             - `Erlang Central`_
 
-                                                            - A community of Erlang developers with links to
-                                                              documentation,
-                                                              books and several packages and libraries.  See the related
-                                                              sites:
+                               - A community of Erlang developers with links to
+                                 documentation,
+                                 books and several packages and libraries.  See the related
+                                 sites:
 
-                                                              - `Erlang Central @ GitHub`_
-                                                              - `Erlang Books @ Erlang Central`_
+                                 - `Erlang Central @ GitHub`_
+                                 - `Erlang Books @ Erlang Central`_
 
 
-**Build/Install Tools**                                   List of software tools for building and installing Erlang.
+**Build/Install Tools**      List of software tools for building and installing Erlang.
 
-                                                          - Homebrew_
+                             - Homebrew_
 
-                                                            - Installs pre-built version of Erlang.
+                               - Installs pre-built version of Erlang.
 
-                                                          - `Erlang Solutions`_ ErlangInstaller_
+                             - `Erlang Solutions`_ ErlangInstaller_
 
-                                                            - Installs pre-built versions of Erlang with macOS GUI
-                                                              application ErlangInstaller_ froom `Erlang Solutions`_.
+                               - Installs pre-built versions of Erlang with macOS GUI
+                                 application ErlangInstaller_ froom `Erlang Solutions`_.
 
-                                                          - kerl_
+                             - kerl_
 
-                                                            - Easy building and installing of Erlang/OTP from source.
+                               - Easy building and installing of Erlang/OTP from source.
 
-                                                          - asdf-vm_
+                             - asdf-vm_
 
-                                                            - Package manager - can install Erlang, Elixir and other
-                                                              tools and systems from source. For Erlang, uses kerl_.
+                               - Package manager - can install Erlang, Elixir and other
+                                 tools and systems from source. For Erlang, uses kerl_.
 
-**Development Tools**                                     Articles on Erlang development tools.
+**Development Tools**        Articles on Erlang development tools.
 
-                                                          - `10 Essential Erlang Tools for Erlang Developers`_
+                             - `10 Essential Erlang Tools for Erlang Developers`_
 
-                                                            - A Pluralsight guide written by Brujo Benavides describing
-                                                              several very useful tools.
+                               - A Pluralsight guide written by Brujo Benavides describing
+                                 several very useful tools.
 
-**Libraries**                                             List of Erlang source code libraries.
+**Libraries**                List of Erlang source code libraries.
 
-                                                          - `Erlang Libraries @ Erlang.org`_
+                             - `Erlang Libraries @ Erlang.org`_
 
-                                                            - Describes what is an Erlang OTP library.
+                               - Describes what is an Erlang OTP library.
 
-                                                          - `Awesome Erlang`_
+                             - `Awesome Erlang`_
 
-                                                            - A curated list of amazingly awesome Erlang libraries.
+                               - A curated list of amazingly awesome Erlang libraries.
 
 **Related Topics**
-                                                          - `The Actor Model @ wikipedia`_
+                             - `The Actor Model @ wikipedia`_
 
-                                                            - Presentation of the Actor Model. See also:
+                               - Presentation of the Actor Model. See also:
 
-                                                              - `Actor Model of Computation: Scalable Robust
-                                                                Information Systems`_ from `Carl Hewitt`_
-                                                              - Youtube video: `Hewitt, Meijer and Szyperski: The Actor
-                                                                Model`_
-                                                              - `It's Actors All the Way Down`_
+                                 - `Actor Model of Computation: Scalable Robust
+                                   Information Systems`_ from `Carl Hewitt`_
+                                 - Youtube video: `Hewitt, Meijer and Szyperski: The Actor
+                                   Model`_
+                                 - `It's Actors All the Way Down`_
 
-                                                                - A collection of topics related to the Actor Model
-                                                                  in relation with Humus, a pure Actor Model programming
-                                                                  language.  Some
-                                                                  articles compare Erlang to the pure Actor Model:
+                                   - A collection of topics related to the Actor Model
+                                     in relation with Humus, a pure Actor Model programming
+                                     language.  Some
+                                     articles compare Erlang to the pure Actor Model:
 
-                                                                  - `Erlang-style Mailboxes`_
-========================================================= ===============================================================
+                                     - `Erlang-style Mailboxes`_
+============================ ============================================================================================
 
 
 .. _erlang.org:
