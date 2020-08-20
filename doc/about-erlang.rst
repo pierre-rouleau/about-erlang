@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:01:20, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:16:54, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -103,6 +103,20 @@ Topic                        Content
 
                                - An Erlang.org quick presentation on Erlang's concurrent
                                  programming concepts.
+
+**References**
+                             - Data Types:
+
+                               - `Types and Function Specifications`_  (at `erlang.org`_).
+
+                                 - `Types (or lack thereof)`_ (at `LYSEFGG`_).
+                                 - `Type Specifications and Erlang`_ (at `LYSEFGG`_).
+
+                               - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
+
+                                 - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala
+                                   University, Sweden).
+
 
 **Introduction**             - `Erlang (programming language) @ Wikipedia`_
 
@@ -297,6 +311,7 @@ Topic                        Content
 .. _Spawned Shelter:                              https://spawnedshelter.com
 .. _Erlang Central @ GitHub:                      https://github.com/ErlangCentral
 .. _The Erlang Runtime System:                    https://blog.stenmans.org/theBeamBook/
+.. _LYSEFGG:
 .. _Learn You Some Erlang for Great Good!:        https://blog.stenmans.org/theBeamBook/
 .. _Ericsson Erlang Programming Rules and Conventions: http://www.erlang.se/doc/programming_rules.shtml#REF17122
 .. _The Actor Model @ wikipedia:                  http://www.erlang.se/doc/programming_rules.shtml#REF17122
@@ -325,6 +340,10 @@ Topic                        Content
 .. _Inaka's Erlang Coding Standards & Guidelines: https://github.com/inaka/erlang_guidelines
 .. _10 Essential Erlang Tools for Erlang Developers: https://www.pluralsight.com/guides/10-essential-erlang-tools-for-erlang-developers
 .. _EDoc User's Guide:                            http://erlang.org/doc/apps/edoc/chapter.html
+.. _Types and Function Specifications:            https://erlang.org/doc/reference_manual/typespec.html
+.. _TypEr\: A Type Annotator of Erlang Code:      http://user.it.uu.se/~tobiasl/publications/typer.pdf
+.. _Types (or lack thereof):                      https://learnyousomeerlang.com/types-or-lack-thereof
+.. _Type Specifications and Erlang:               https://learnyousomeerlang.com/dialyzer#plt
 
 -----------------------------------------------------------------------------
 
