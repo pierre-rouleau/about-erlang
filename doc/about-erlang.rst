@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 23:01:06, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 23:03:43, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -102,7 +102,7 @@ Topic                                                     Comment
 **Quick-Sheets**
                                                           - `Learn X in Y minutes, where X=erlang`_
 
-                                                             - A quick overview of Erlang.
+                                                            - A quick overview of Erlang.
 
                                                           - `Erlang Concurrent Programming`_
 
@@ -153,6 +153,7 @@ Topic                                                     Comment
                                                           - PropEr Testing
 
 **Online Courses**                                        List of online sites providing Erlang courses.
+
                                                           - `University of Kent`_ & FutureLearn  Erlang Courses
 
                                                             - The following courses are available:
