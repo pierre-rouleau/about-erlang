@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:56:10, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 14:36:37, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -46,6 +46,7 @@ Topic                        Content
                              - `Efficiency Guide - User's Guide`_
                              - `Systems Principles - User's Guide`_
                              - `OTP Design Principles - User's Guide`_
+                             - `Erlang Man Page Index`_
                              - `OTP Versions Tree`_
 
                              The site also holds the following `Erlang Community`_ information:
@@ -104,7 +105,8 @@ Topic                        Content
                                - An Erlang.org quick presentation on Erlang's concurrent
                                  programming concepts.
 
-**References**
+**References**               **Erlang - Sequential**
+
                              - **Types**:
 
                                - Types:
@@ -128,6 +130,17 @@ Topic                        Content
                                  - "strings"
 
 
+                             **Erlang Tools**
+
+                             - **Erlang Shell**
+
+                               - `The Shell <https://learnyousomeerlang.com/starting-out#the-shell>`_ ,
+                                 `Shell Commands <https://learnyousomeerlang.com/starting-out#shell-commands>`_
+                                 (at `LYSEFGG`_).
+                               - Man pages `Shell <https://erlang.org/doc/man/shell.html>`_.
+                               - Related modules:
+                                 `shell_default module <https://erlang.org/doc/man/shell_default.html>`_,
+                                 `shell_docs <https://erlang.org/doc/man/shell_docs.html>`_.
 
 **Introduction**             - `Erlang (programming language) @ Wikipedia`_
 
@@ -359,10 +372,11 @@ Topic                        Content
 .. _Numbers:                                      https://learnyousomeerlang.com/starting-out-for-real#numbers
 .. _atoms:                                        https://learnyousomeerlang.com/starting-out-for-real#atoms
 .. _Variables:                                    https://learnyousomeerlang.com/starting-out-for-real#invariable-variables
-.. _tuples:                                     https://learnyousomeerlang.com/starting-out-for-real#tuples
+.. _tuples:                                       https://learnyousomeerlang.com/starting-out-for-real#tuples
 .. _boolean and comparison operators:             https://learnyousomeerlang.com/starting-out-for-real#bool-and-compare
-.. _lists:                                      https://learnyousomeerlang.com/starting-out-for-real#lists
+.. _lists:                                        https://learnyousomeerlang.com/starting-out-for-real#lists
 .. _list comprehensions:                          https://learnyousomeerlang.com/starting-out-for-real#list-comprehensions
+.. _Erlang Man Page Index:                        https://erlang.org/doc/man_index.html
 
 
 -----------------------------------------------------------------------------
