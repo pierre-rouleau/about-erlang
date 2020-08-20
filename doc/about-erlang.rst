@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 08:57:02, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:01:20, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -48,9 +48,9 @@ Topic                        Content
                              - `OTP Design Principles - User's Guide`_
                              - `OTP Versions Tree`_
 
-`Erlang Community`_          Erlang.org page listing, among other things:
+                             The site also holds the following `Erlang Community`_ information:
 
-                             - Erlang Development repositories  (see below)
+                             - Erlang Development repositories (on Github, see next row  below)
                              - Erlang IDE and editor support
                              - Free online courses
                              - Erlang Tutorials
