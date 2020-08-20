@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 19:11:25, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 19:14:42, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -137,7 +137,7 @@ Topic                        Content
                                - [`lists,`_]                                - [lists_], `list comprehensions`_
                                - map_ and `map expressions`_
                                - `type conversions`_
-                               - `Fun (functional object)`_
+                               - `Fun`_ and `Fun expressions`_
                                ============================================ ===============================================
 
 
@@ -405,9 +405,10 @@ Topic                        Content
 .. _map:                                          https://erlang.org/doc/reference_manual/data_types.html#map
 .. _map expressions:                              https://erlang.org/doc/reference_manual/expressions.html#map_expressions
 .. _type conversions:                             https://erlang.org/doc/reference_manual/data_types.html#type-conversions
-.. _Fun (functional object):                      https://erlang.org/doc/reference_manual/data_types.html#fun
 .. _Erlang process:                               https://erlang.org/doc/reference_manual/processes.html
 .. _Erlang port:                                  https://erlang.org/doc/reference_manual/ports.html
+.. _Fun:                                          https://erlang.org/doc/reference_manual/data_types.html#fun
+.. _Fun expressions:                              https://erlang.org/doc/reference_manual/expressions.html#funs
 
 -----------------------------------------------------------------------------
 
