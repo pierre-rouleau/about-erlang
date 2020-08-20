@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:21:30, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:38:04, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -107,15 +107,26 @@ Topic                        Content
 **References**
                              - **Types**:
 
-                               - `Types and Function Specifications`_  (at `erlang.org`_).
+                               - Types:
 
-                                 - `Types (or lack thereof)`_ (at `LYSEFGG`_).
-                                 - `Type Specifications and Erlang`_ (at `LYSEFGG`_).
+                                 - `Types and Function Specifications`_  (at `erlang.org`_).
 
-                               - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
+                                   - `Types (or lack thereof)`_ (at `LYSEFGG`_).
+                                   - `Type Specifications and Erlang`_ (at `LYSEFGG`_).
 
-                                 - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala
-                                   University, Sweden).
+                                 - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
+
+                                   - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala
+                                     University, Sweden).
+
+                               - Basic data types:
+
+                                 - atoms_ and Variables_,
+                                 - Numbers_, `boolean and comparison operators`_,
+                                 - {tuples}_,
+                                 - [lists]_, `list comprehensions`_
+                                 - "strings"
+
 
 
 **Introduction**             - `Erlang (programming language) @ Wikipedia`_
@@ -150,6 +161,7 @@ Topic                        Content
 
 **Online Books**
                              - `Learn You Some Erlang for Great Good!`_
+                               (`TOC <https://learnyousomeerlang.com/content>`_)
 
                                - A comprehensive introduction to Erlang written by
                                  `Fred Hébert`_.  Also in print. No starch press. 2013
@@ -344,6 +356,14 @@ Topic                        Content
 .. _TypEr\: A Type Annotator of Erlang Code:      http://user.it.uu.se/~tobiasl/publications/typer.pdf
 .. _Types (or lack thereof):                      https://learnyousomeerlang.com/types-or-lack-thereof
 .. _Type Specifications and Erlang:               https://learnyousomeerlang.com/dialyzer#plt
+.. _Numbers:                                      https://learnyousomeerlang.com/starting-out-for-real#numbers
+.. _atoms:                                        https://learnyousomeerlang.com/starting-out-for-real#atoms
+.. _Variables:                                    https://learnyousomeerlang.com/starting-out-for-real#invariable-variables
+.. _{tuples}:                                     https://learnyousomeerlang.com/starting-out-for-real#tuples
+.. _boolean and comparison operators:             https://learnyousomeerlang.com/starting-out-for-real#bool-and-compare
+.. _[lists]:                                      https://learnyousomeerlang.com/starting-out-for-real#lists
+.. _list comprehensions:                          https://learnyousomeerlang.com/starting-out-for-real#list-comprehensions
+
 
 -----------------------------------------------------------------------------
 
