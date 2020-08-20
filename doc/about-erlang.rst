@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:18:26, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:21:30, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -312,7 +312,7 @@ Topic                        Content
 .. _Erlang Central @ GitHub:                      https://github.com/ErlangCentral
 .. _The Erlang Runtime System:                    https://blog.stenmans.org/theBeamBook/
 .. _LYSEFGG:
-.. _Learn You Some Erlang for Great Good!:        https://blog.stenmans.org/theBeamBook/
+.. _Learn You Some Erlang for Great Good!:        https://learnyousomeerlang.com
 .. _Ericsson Erlang Programming Rules and Conventions: http://www.erlang.se/doc/programming_rules.shtml#REF17122
 .. _The Actor Model @ wikipedia:                  http://www.erlang.se/doc/programming_rules.shtml#REF17122
 .. _It's Actors All the Way Down:                 http://www.dalnefre.com/wp/
