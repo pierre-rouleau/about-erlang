@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 09:16:54, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 09:18:26, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -105,7 +105,7 @@ Topic                        Content
                                  programming concepts.
 
 **References**
-                             - Data Types:
+                             - **Types**:
 
                                - `Types and Function Specifications`_  (at `erlang.org`_).
 
