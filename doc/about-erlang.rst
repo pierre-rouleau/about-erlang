@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-19 23:03:43, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-19 23:12:30, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -91,13 +91,19 @@ Topic                                                     Comment
 
 
 **Code Guidelines**
-`Ericsson Erlang Programming Rules and Conventions`_      Written by Klass Eriksson, Mike Williams and Joe Armstrong.
-                                                          Describes the programming rules and conventions of Erlang
-                                                          programming.
+                                                          - `Ericsson Erlang Programming Rules and Conventions`_
 
-`Inaka's Erlang Coding Standards & Guidelines`_           Inaka's corporate Erlang Guideline.
+                                                            - Written by Klass Eriksson, Mike Williams and Joe Armstrong.
+                                                              Describes the programming rules and conventions of Erlang
+                                                              programming.
 
-`EDoc User's Guide`_
+                                                          - `Inaka's Erlang Coding Standards & Guidelines`_
+
+                                                            - Inaka's corporate Erlang Guideline.
+
+                                                          - `EDoc User's Guide`_
+
+                                                            - How to document Erlang code with EDoc annotations.
 
 **Quick-Sheets**
                                                           - `Learn X in Y minutes, where X=erlang`_
@@ -197,37 +203,59 @@ Topic                                                     Comment
 
 
 **Build/Install Tools**                                   List of software tools for building and installing Erlang.
-Homebrew_                                                 Install pre-built version of Erlang.
-`Erlang Solutions`_ ErlangInstaller_                      Install pre-built versions of Erlang with macOS GUI
-                                                          application ErlangInstaller_ froom `Erlang Solutions`_.
-kerl_                                                     Easy building and installing of Erlang/OTP from source.
-asdf-vm_                                                  Package manager - can install Erlang, Elixir and other
-                                                          systems from source.
+
+                                                          - Homebrew_
+
+                                                            - Installs pre-built version of Erlang.
+
+                                                          - `Erlang Solutions`_ ErlangInstaller_
+
+                                                            - Installs pre-built versions of Erlang with macOS GUI
+                                                              application ErlangInstaller_ froom `Erlang Solutions`_.
+
+                                                          - kerl_
+
+                                                            - Easy building and installing of Erlang/OTP from source.
+
+                                                          - asdf-vm_
+
+                                                            - Package manager - can install Erlang, Elixir and other
+                                                              tools and systems from source. For Erlang, uses kerl_.
 
 **Development Tools**                                     Articles on Erlang development tools.
-`10 Essential Erlang Tools for Erlang Developers`_        A Pluralsight guide written by Brujo Benavides describing
-                                                          several very useful tools.
 
+                                                          - `10 Essential Erlang Tools for Erlang Developers`_
+
+                                                            - A Pluralsight guide written by Brujo Benavides describing
+                                                              several very useful tools.
 
 **Libraries**                                             List of Erlang source code libraries.
-`Erlang Libraries @ Erlang.org`_                          Describes what is an Erlang OTP library.
-`Awesome Erlang`_                                         A curated list of amazingly awesome Erlang libraries.
+
+                                                          - `Erlang Libraries @ Erlang.org`_
+
+                                                            - Describes what is an Erlang OTP library.
+
+                                                          - `Awesome Erlang`_
+
+                                                            - A curated list of amazingly awesome Erlang libraries.
 
 **Related Topics**
-`The Actor Model @ wikipedia`_                            Presentation of the Actor Model. See also:
+                                                          - `The Actor Model @ wikipedia`_
 
-                                                          - `Actor Model of Computation: Scalable Robust
-                                                            Information Systems`_ from `Carl Hewitt`_
-                                                          - Youtube video: `Hewitt, Meijer and Szyperski: The Actor
-                                                            Model`_
+                                                            - Presentation of the Actor Model. See also:
 
+                                                              - `Actor Model of Computation: Scalable Robust
+                                                                Information Systems`_ from `Carl Hewitt`_
+                                                              - Youtube video: `Hewitt, Meijer and Szyperski: The Actor
+                                                                Model`_
+                                                              - `It's Actors All the Way Down`_
 
-`It's Actors All the Way Down`_                           A collection of topics related to the Actor Model in relation
-                                                          with Humus, a pure Actor Model programming language.  Some
-                                                          articles compare Erlang to the pure Actor Model:
+                                                                - A collection of topics related to the Actor Model
+                                                                  in relation with Humus, a pure Actor Model programming
+                                                                  language.  Some
+                                                                  articles compare Erlang to the pure Actor Model:
 
-                                                          - `Erlang-style Mailboxes`_
-
+                                                                  - `Erlang-style Mailboxes`_
 ========================================================= ===============================================================
 
 
