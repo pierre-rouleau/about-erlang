@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 22:44:31, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 22:48:19, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -634,21 +634,21 @@ something more recent.
 With this GUI tool you can install or remove several pre-compiled versions of Erlang for
 macOS.
 
-.. image:: res/erlanginstaller.png
+.. image:: ../res/erlanginstaller.png
 
 
 With the Preferences dialog of ErlangInstaller, you can select one version you
 can use by default, specify the directory where the application stores its
 files and identify the application used for launching shells.
 
-.. image:: res/erlanginstaller-preferences.png
+.. image:: ../res/erlanginstaller-preferences.png
 
 When the ErlangInstaller application runs, it show up in macOS menu bar you
 can quickly open its Preference dialog to manage Erlang versions and also use
 the menu to launch a shell specialized with the default Erlang version or any
 of the Erlang versions you have installed.
 
-.. image:: res/ei-menu.png
+.. image:: ../res/ei-menu.png
 
 The latest version of this tool installs all versions under the
 ``~/.erlanginstaller`` root (but that can be changed via the Preference
