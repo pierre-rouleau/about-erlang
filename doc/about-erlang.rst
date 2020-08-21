@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 22:40:02, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 22:42:05, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -127,11 +127,6 @@ Topic                        Content
                                - Terms_
                                - `Numbers,`_                                          - Numbers_ [1]_,
                                - `atoms,`_                                            - atoms_ and Variables_ [1]_.
-                                                                                        Variables start with an uppercase letter,
-                                                                                        optionally with an underscore to
-                                                                                        identify that it is not required in
-                                                                                        argument list or
-                                                                                        pattern match expressions.
                                - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_,
                                - pid_ (`Erlang process`_ identifier)
                                - `port identifier`_ (`Erlang port`_ IDs)
