@@ -3,9 +3,9 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 23:21:57, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-21 09:16:43, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
-:License: `MIT <LICENSE>`_
+:License: `MIT <../LICENSE>`_
 
 
 This document is a top level view of Erlang and its environment; it provides
@@ -126,13 +126,13 @@ Topic                        Content
                                - Terms_
                                - `Numbers,`_                                          - Numbers_ [1]_, supports `Bignums`_ but `not in math functions`_.
                                - `atoms,`_                                            - atoms_ and Variables_ [1]_.
-                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_,
+                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_.
                                - pid_ (`Erlang process`_ identifier)
                                - `port identifier`_ (`Erlang port`_ IDs)
                                - reference_
                                - "strings_" and `escape sequences`_
                                - `bit strings and binaries,`_                         - bit strings
-                               - {`tuples,`_}  and records_                           - {tuples_} [1]_,
+                               - {`tuples,`_}  and records_                           - {tuples_} [1]_
                                - [`lists,`_]                                          - [lists_], `list comprehensions`_ [1]_
                                - map_ and `map expressions`_
                                - `type conversions`_
@@ -317,7 +317,7 @@ Topic                        Content
 ============================ ===========================================================================================================================
 
 
-.. _erlang.org:                                   https://www.erlang.org
+.. _erlang.org:
 .. _Erlang Project Homepage:                      https://www.erlang.org
 .. _Erlang On-Line Documentation, Books & Papers: https://www.erlang.org/docs
 .. _Joe Armstrong:                                https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
