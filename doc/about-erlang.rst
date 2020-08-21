@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 23:07:48, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 23:21:57, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -116,8 +116,7 @@ Topic                        Content
 
                                - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
 
-                                 - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala
-                                   University, Sweden).
+                                 - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala University, Sweden).
 
                              - **Data Types**
 
@@ -2218,3 +2217,11 @@ still work in progress at the moment.
 
 
 -----------------------------------------------------------------------------
+
+..
+   Emacs settings: line length is 151 because GitHub fails to render tables
+   embedded in tables properly when a row takes more than 1 line and also
+   fails when the line is longer than that.
+   Local Variables:
+   fill-column: 151
+   End:
