@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 19:14:42, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 22:08:17, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -21,9 +21,9 @@ Learning Erlang
 ===============
 
 
-============================ ==============================================================================================
+============================ ===============================================================================================================
 Topic                        Content
-============================ ==============================================================================================
+============================ ===============================================================================================================
 **Authority**
 `Erlang Project Homepage`_   Erlang/OTP project home page.
                              They control all official releases, provide
@@ -121,25 +121,32 @@ Topic                        Content
 
                              - **Data Types**
 
-                               ============================================ ===============================================
-                               From `erlang.org reference data types`_      From `LYSEFGG`_
-                               ============================================ ===============================================
+                               ====================================================== ======================================================
+                               From `erlang.org reference data types`_                From `LYSEFGG`_
+                               ====================================================== ======================================================
                                - Terms_
-                               - `Numbers,`_                                - Numbers_,
-                               - `atoms,`_                                  - atoms_ and Variables_,
-                               - boolean_,                                  - `boolean and comparison operators`_,
+                               - `Numbers,`_                                          - Numbers_,
+                               - `atoms,`_                                            - atoms_ and Variables_,
+                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_,
                                - pid_ (`Erlang process`_ identifier)
                                - `port identifier`_ (`Erlang port`_ IDs)
                                - reference_
                                - "strings_" and `escape sequences`_
-                               - `bit strings and binaries,`_               - bit strings
-                               - {`tuples,`_}  and records_                 - {tuples_},
-                               - [`lists,`_]                                - [lists_], `list comprehensions`_
+                               - `bit strings and binaries,`_                         - bit strings
+                               - {`tuples,`_}  and records_                           - {tuples_},
+                               - [`lists,`_]                                          - [lists_], `list comprehensions`_
                                - map_ and `map expressions`_
                                - `type conversions`_
                                - `Fun`_ and `Fun expressions`_
-                               ============================================ ===============================================
+                               ====================================================== ======================================================
 
+                             - **Erlang Functions**
+
+                               ====================================================== ======================================================
+                               From `erlang.org reference data types`_                From `LYSEFGG`_
+                               ====================================================== ======================================================
+                               - Built-in-Functions: `BIFs concept`_, `list of BIFs`_
+                               ====================================================== ======================================================
 
                              **Erlang Tools**
 
@@ -308,7 +315,7 @@ Topic                        Content
                                      articles compare Erlang to the pure Actor Model:
 
                                      - `Erlang-style Mailboxes`_
-============================ ==============================================================================================
+============================ ===============================================================================================================
 
 
 .. _erlang.org:
@@ -409,6 +416,8 @@ Topic                        Content
 .. _Erlang port:                                  https://erlang.org/doc/reference_manual/ports.html
 .. _Fun:                                          https://erlang.org/doc/reference_manual/data_types.html#fun
 .. _Fun expressions:                              https://erlang.org/doc/reference_manual/expressions.html#funs
+.. _BIFs concept:                                 https://erlang.org/doc/reference_manual/functions.html#built-in-functions--bifs-
+.. _list of BIFs:                                 https://erlang.org/doc/man/erlang.html
 
 -----------------------------------------------------------------------------
 
