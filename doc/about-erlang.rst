@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 22:16:28, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 22:22:04, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -122,19 +122,19 @@ Topic                        Content
                              - **Data Types**
 
                                ====================================================== ======================================================
-                               From `erlang.org reference data types`_                From `LYSEFGG`_
+                               From `erlang.org reference data types`_                Other
                                ====================================================== ======================================================
                                - Terms_
-                               - `Numbers,`_                                          - Numbers_,
-                               - `atoms,`_                                            - atoms_ and Variables_,
-                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_,
+                               - `Numbers,`_                                          - Numbers_ [1]_,
+                               - `atoms,`_                                            - atoms_ and Variables_ [1]_,
+                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_,
                                - pid_ (`Erlang process`_ identifier)
                                - `port identifier`_ (`Erlang port`_ IDs)
                                - reference_
                                - "strings_" and `escape sequences`_
                                - `bit strings and binaries,`_                         - bit strings
-                               - {`tuples,`_}  and records_                           - {tuples_},
-                               - [`lists,`_]                                          - [lists_], `list comprehensions`_
+                               - {`tuples,`_}  and records_                           - {tuples_} [1]_,
+                               - [`lists,`_]                                          - [lists_], `list comprehensions`_ [1]_
                                - map_ and `map expressions`_
                                - `type conversions`_
                                - `Fun`_ and `Fun expressions`_
@@ -143,7 +143,7 @@ Topic                        Content
                              - **Erlang Functions**
 
                                ====================================================== ======================================================
-                               From `erlang.org - User's Guide`_                      From `LYSEFGG`_
+                               From `erlang.org - User's Guide`_                      Other
                                ====================================================== ======================================================
                                - Built-in-Functions: `BIFs concept`_, `list of BIFs`_
                                ====================================================== ======================================================
@@ -419,6 +419,8 @@ Topic                        Content
 .. _Fun expressions:                              https://erlang.org/doc/reference_manual/expressions.html#funs
 .. _BIFs concept:                                 https://erlang.org/doc/reference_manual/functions.html#built-in-functions--bifs-
 .. _list of BIFs:                                 https://erlang.org/doc/man/erlang.html
+
+.. [1] From `Learn You Some Erlang for Great Good!`_
 
 -----------------------------------------------------------------------------
 
