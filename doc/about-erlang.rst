@@ -3,7 +3,7 @@ About the Erlang Programming Language and Environment
 =====================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-20 22:08:17, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-20 22:16:28, updated by Pierre Rouleau>
 :Copyright: Copyright © 2020 by Pierre Rouleau
 :License: `MIT <LICENSE>`_
 
@@ -143,7 +143,7 @@ Topic                        Content
                              - **Erlang Functions**
 
                                ====================================================== ======================================================
-                               From `erlang.org reference data types`_                From `LYSEFGG`_
+                               From `erlang.org - User's Guide`_                      From `LYSEFGG`_
                                ====================================================== ======================================================
                                - Built-in-Functions: `BIFs concept`_, `list of BIFs`_
                                ====================================================== ======================================================
@@ -318,7 +318,7 @@ Topic                        Content
 ============================ ===============================================================================================================
 
 
-.. _erlang.org:
+.. _erlang.org:                                   https://www.erlang.org
 .. _Erlang Project Homepage:                      https://www.erlang.org
 .. _Erlang On-Line Documentation, Books & Papers: https://www.erlang.org/docs
 .. _Joe Armstrong:                                https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
@@ -326,6 +326,7 @@ Topic                        Content
 .. _Erlang/OTP Documentation with Search:         https://erlang.org/doc/search/
 .. _erldocs.com:                                  https://erldocs.com/
 .. _erlang.org reference data types:              https://erlang.org/doc/reference_manual/data_types.html
+.. _erlang.org - User's Guide:                    https://erlang.org/doc/reference_manual/users_guide.html
 .. _Erlang Reference Manual - User's Guide:       https://erlang.org/doc/reference_manual/users_guide.html
 .. _Efficiency Guide - User's Guide:              https://erlang.org/doc/efficiency_guide/users_guide.html
 .. _Systems Principles - User's Guide:            https://erlang.org/doc/system_principles/system_principles.html
