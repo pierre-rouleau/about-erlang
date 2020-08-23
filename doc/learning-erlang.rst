@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-22 23:09:22, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-22 23:12:08, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -228,40 +228,41 @@ Language References
 ============================ ===========================================================================================================================
 Topic                        Content
 ============================ ===========================================================================================================================
-**1 - Sequential Erlang**
+**Erlang - Sequential**
 
-**Type Specifications**
+                             - **Type Specifications**
 
-                             - `Types and Function Specifications`_  (at `erlang.org`_).
+                               - `Types and Function Specifications`_  (at `erlang.org`_).
 
-                               - `Types (or lack thereof)`_ (at `LYSEFGG`_).
-                               - `Type Specifications and Erlang`_ (at `LYSEFGG`_).
+                                 - `Types (or lack thereof)`_ (at `LYSEFGG`_).
+                                 - `Type Specifications and Erlang`_ (at `LYSEFGG`_).
 
-                             - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
+                               - `TypEr: A Type Annotator of Erlang Code`_   (at `erlang.org`_).
 
-                               - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl, Sogonas paper, Uppsala University, Sweden).
+                                 - `TypEr: A Type Annotator of Erlang Code`_ (Lindahl & Sogonas paper, Uppsala University, Sweden).
 
-**Data Types**
-                             ====================================================== ==================================================================
-                             From `erlang.org reference data types`_                Complementary Information
-                             ====================================================== ==================================================================
-                             - Terms_
-                             - `Numbers,`_                                          - Numbers_ [1]_, supports `Bignums`_ but `not in math functions`_.
-                             - `atoms,`_                                            - atoms_ and Variables_ [1]_.
-                             - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_.
-                             - pid_ (`Erlang process`_ identifier)
-                             - `port identifier`_ (`Erlang port`_ IDs)
-                             - reference_
-                             - "strings_" and `escape sequences`_
-                             - `bit strings and binaries,`_                         - bit strings
-                             - {`tuples,`_}  and records_                           - {tuples_} [1]_
-                             - [`lists,`_]                                          - [lists_], `list comprehensions`_ [1]_
-                             - map_ and `map expressions`_
-                             - `type conversions`_
-                             - `Fun`_ and `Fun expressions`_
-                             ====================================================== ==================================================================
+                             - **Data Types**
 
-**Erlang Functions**
+                               ====================================================== ==================================================================
+                               From `erlang.org reference data types`_                Complementary Information
+                               ====================================================== ==================================================================
+                               - Terms_
+                               - `Numbers,`_                                          - Numbers_ [1]_, supports `Bignums`_ but `not in math functions`_.
+                               - `atoms,`_                                            - atoms_ and Variables_ [1]_.
+                               - boolean_: ``true`` and ``false``                     - `boolean and comparison operators`_ [1]_.
+                               - pid_ (`Erlang process`_ identifier)
+                               - `port identifier`_ (`Erlang port`_ IDs)
+                               - reference_
+                               - "strings_" and `escape sequences`_
+                               - `bit strings and binaries,`_                         - bit strings
+                               - {`tuples,`_}  and records_                           - {tuples_} [1]_
+                               - [`lists,`_]                                          - [lists_], `list comprehensions`_ [1]_
+                               - map_ and `map expressions`_
+                               - `type conversions`_
+                               - `Fun`_ and `Fun expressions`_
+                               ====================================================== ==================================================================
+
+                             - **Erlang Functions**
 
                                ====================================================== ==================================================================
                                From `erlang.org - User's Guide`_                      Other
@@ -269,17 +270,17 @@ Topic                        Content
                                - Built-in-Functions: `BIFs concept`_, `list of BIFs`_
                                ====================================================== ==================================================================
 
-**2 - Erlang Tools**
+**Erlang Tools**
 
-**Erlang Shell**
+                             - **Erlang Shell**
 
-                             - `The Shell <https://learnyousomeerlang.com/starting-out#the-shell>`_ ,
-                               `Shell Commands <https://learnyousomeerlang.com/starting-out#shell-commands>`_
-                               (at `LYSEFGG`_).
-                             - Man pages: `Shell <https://erlang.org/doc/man/shell.html>`_.
-                             - Related modules:
-                               `shell_default <https://erlang.org/doc/man/shell_default.html>`_,
-                               `shell_docs <https://erlang.org/doc/man/shell_docs.html>`_.
+                               - `The Shell <https://learnyousomeerlang.com/starting-out#the-shell>`_ ,
+                                 `Shell Commands <https://learnyousomeerlang.com/starting-out#shell-commands>`_
+                                 (at `LYSEFGG`_).
+                               - Man pages: `Shell <https://erlang.org/doc/man/shell.html>`_.
+                               - Related modules:
+                                 `shell_default <https://erlang.org/doc/man/shell_default.html>`_,
+                                 `shell_docs <https://erlang.org/doc/man/shell_docs.html>`_.
 ============================ ===========================================================================================================================
 
 
