@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-22 23:12:08, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-22 23:13:05, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -228,7 +228,7 @@ Language References
 ============================ ===========================================================================================================================
 Topic                        Content
 ============================ ===========================================================================================================================
-**Erlang - Sequential**
+**Sequential Erlang**
 
                              - **Type Specifications**
 
