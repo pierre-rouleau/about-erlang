@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-22 22:49:34, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-22 22:51:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -225,7 +225,9 @@ Language References
 ===================
 
 
-
+============================ ===========================================================================================================================
+Topic                        Content
+============================ ===========================================================================================================================
 **References**               **Erlang - Sequential**
 
                              - **Type Specifications**
@@ -291,7 +293,6 @@ Development Resources
 ============================ ===========================================================================================================================
 Topic                        Content
 ============================ ===========================================================================================================================
-
 **Build/Install Tools**      List of software tools for building and installing Erlang.
 
                              - Homebrew_
