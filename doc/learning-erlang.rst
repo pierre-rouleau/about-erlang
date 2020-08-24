@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-22 23:13:05, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-23 20:58:43, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -452,7 +452,14 @@ Topic                        Content
 .. _BIFs concept:                                 https://erlang.org/doc/reference_manual/functions.html#built-in-functions--bifs-
 .. _list of BIFs:                                 https://erlang.org/doc/man/erlang.html
 .. _Bignums:                                      https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic
-.. _not in math functions:                        https://stackoverflow.com/questions/19893708/will-erlang-have-bignums-for-math-functions
+.. _not in math functions:         https://stackoverflow.com/questions/19893708/will-erlang-have-bignums-for-math-functions
+.. _Homebrew home page:
+.. _Homebrew:                      https://brew.sh
+.. _Erlang Solutions:              https://www.erlang-solutions.com
+.. _ErlangInstaller:
+.. _Erlang Solution Download page: https://www.erlang-solutions.com/resources/download.html
+.. _ErlangInstaller.1.0.2.dmg:     https://packages.erlang-solutions.com/os-x-installer/ErlangInstaller1.0.2.dmg
+.. _Erlang/OTP download:           https://www.erlang.org/downloads
 
 
 
