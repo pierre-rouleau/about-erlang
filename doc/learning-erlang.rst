@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-23 20:58:43, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-23 21:01:20, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -293,7 +293,7 @@ Development Resources
 ============================ ===========================================================================================================================
 Topic                        Content
 ============================ ===========================================================================================================================
-**Build/Install Tools**      List of software tools for building and installing Erlang.
+**Build/Install Tools**      List of software tools for `building and installing Erlang`_.
 
                              - Homebrew_
 
@@ -460,6 +460,7 @@ Topic                        Content
 .. _Erlang Solution Download page: https://www.erlang-solutions.com/resources/download.html
 .. _ErlangInstaller.1.0.2.dmg:     https://packages.erlang-solutions.com/os-x-installer/ErlangInstaller1.0.2.dmg
 .. _Erlang/OTP download:           https://www.erlang.org/downloads
+.. _building and installing Erlang: installing-erlang.rst
 
 
 
