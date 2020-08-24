@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-23 21:01:20, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-23 21:21:11, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -228,6 +228,11 @@ Language References
 ============================ ===========================================================================================================================
 Topic                        Content
 ============================ ===========================================================================================================================
+**Language Specifications**  - `Core Erlang 1.0.3 language specifications`_, November 26, 2004, by
+                               Richard Carlsson, Björn Gustavsson, Erik Johansson, Thomas Lindgren, Sven-Olof Nyström, Mikael Pettersson
+                               and Robert Virding
+                             - `Github repo of an Erlang Language specification draft`_.
+
 **Sequential Erlang**
 
                              - **Type Specifications**
@@ -267,7 +272,7 @@ Topic                        Content
                                ====================================================== ==================================================================
                                From `erlang.org - User's Guide`_                      Other
                                ====================================================== ==================================================================
-                               - Built-in-Functions: `BIFs concept`_, `list of BIFs`_
+                               - Built-in-Functions: `BIFs concept`_, `list of BIFs`_ `What are BIFs?`_ an email written by Robert Virding in 2009
                                ====================================================== ==================================================================
 
 **Erlang Tools**
@@ -461,6 +466,10 @@ Topic                        Content
 .. _ErlangInstaller.1.0.2.dmg:     https://packages.erlang-solutions.com/os-x-installer/ErlangInstaller1.0.2.dmg
 .. _Erlang/OTP download:           https://www.erlang.org/downloads
 .. _building and installing Erlang: installing-erlang.rst
+.. _What are BIFs?:                http://erlang.org/pipermail/erlang-questions/2009-October/046899.html
+.. _Core Erlang 1.0.3 language specifications:   https://www.it.uu.se/research/group/hipe/cerl/doc/core_erlang-1.0.3.pdf
+.. _Github repo of an Erlang Language specification draft: https://github.com/erlang/spec
+
 
 
 
