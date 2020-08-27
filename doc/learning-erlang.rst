@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-27 10:57:39, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-27 10:59:41, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -270,10 +270,10 @@ Topic                        Content
                              - **Erlang Functions**
 
                                ====================================================== ==================================================================
-                               From `erlang.org - User's Guide`_                      Other
+                               From `erlang.org - User's Guide`_                      Complementary Information
                                ====================================================== ==================================================================
                                - `Function names`_ are `atoms`_                       - Like atoms, function names can use single quotes.
-                               - Built-in-Functions: `BIFs concept`_, `list of BIFs`_ - `What are BIFs?`_ an email written by Robert Virding in 2009.
+                               - Built-in-Functions: `BIFs concept`_, `list of BIFs`_ `What are BIFs?`_ an email written by Robert Virding in 2009.
                                ====================================================== ==================================================================
 
 **Erlang Tools**
