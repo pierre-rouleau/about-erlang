@@ -3,7 +3,7 @@ Learning Erlang
 ===============
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-27 11:01:41, updated by Pierre Rouleau>
+:Time-stamp: <2020-08-27 11:26:10, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -272,7 +272,7 @@ Topic                        Content
                                ====================================================== ==================================================================
                                From `erlang.org - User's Guide`_                      Complementary Information
                                ====================================================== ==================================================================
-                               - `Function names`_ are `atoms`_                       - Like atoms, function names can use single quotes.
+                               - `Function names`_ are `atoms`_                       - But Erlang compiler rejects all but ``[a-z][a-zA-Z_]*``
                                - Built-in-Functions: `BIFs concept`_, `list of BIFs`_ - `What are BIFs?`_ 2009 Robert Virding email.
                                ====================================================== ==================================================================
 
