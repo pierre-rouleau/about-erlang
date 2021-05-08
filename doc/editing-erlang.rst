@@ -3,7 +3,7 @@ Editing Erlang Source Code
 ==========================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-08 15:44:34, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-08 19:46:54, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -21,14 +21,6 @@ A large number of programmer editors support Erlang.
     - `PEL Topic Index PDF`_ (best viewed in browser that renders PDF inline,
       like Firefox).
     - The `𝕻𝔩 - Erlang PDF`_, which describes Erlang specific commands and key bindings.
-
-
-
-
-
-
-
-
 
 .. _Source code editors for Erlang Wikipedia page: https://en.wikipedia.org/wiki/Source_code_editors_for_Erlang
 .. _PEL, the Pragmatic Environment Library for Emacs:  https://github.com/pierre-rouleau/pel#readme
