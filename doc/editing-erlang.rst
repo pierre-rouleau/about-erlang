@@ -3,12 +3,13 @@ Editing Erlang Source Code
 ==========================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-08 15:43:54, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-08 15:44:34, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 
 A large number of programmer editors support Erlang.
+
 - The `Source code editors for Erlang Wikipedia page`_ lists several of them.
 - I use Emacs and added specialized support for Erlang in
   `PEL, the Pragmatic Environment Library for Emacs`_.
