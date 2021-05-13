@@ -3,8 +3,8 @@ Installing Erlang
 =================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2020-08-22 22:27:22, updated by Pierre Rouleau>
-:Copyright:  Copyright © 2020, Pierre Rouleau
+:Time-stamp: <2021-05-13 11:53:55, updated by Pierre Rouleau>
+:Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. contents::  **Table of Contents**
@@ -210,7 +210,9 @@ OS X platform and you should get a link to ErlangInstaller.1.0.2.dmg_ or
 something more recent.
 
 With this GUI tool you can install or remove several pre-compiled versions of Erlang for
-macOS.
+macOS.  The tool is not always up to date, however.  In the past I had to update
+Erlang Solutions to request updates to the tool so it can download the latest
+Erlang versions.  They normally fixed the problem quickly.
 
 .. image:: ../res/erlanginstaller.png
 
