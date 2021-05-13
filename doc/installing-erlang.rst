@@ -3,7 +3,7 @@ Installing Erlang
 =================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-13 11:56:45, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-13 15:01:22, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -196,8 +196,15 @@ system available in the shell.  It runs Erlang code from the command line:
     # -----------------------------------------------------------------------------
 
 
+Note:
+  If you encounter Homebrew specific problems, the best place to get help is the
+  `Homebrew/discussions on GitHub`_.  Search for something similar, otherwise start
+  a new discussion asking for help.
+
+
 .. _Homebrew home page:
 .. _Homebrew: https://brew.sh
+.. _Homebrew/discussions on GitHub: https://github.com/Homebrew/discussions/discussions
 
 
 Using Erlang Installer from Erlang Solutions
