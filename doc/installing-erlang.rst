@@ -3,7 +3,7 @@ Installing Erlang
 =================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-13 15:01:22, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-13 23:45:12, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -60,12 +60,17 @@ Some extra information specific to macOS is available of my `macOS Development E
 Using Homebrew
 --------------
 
+Homebrew_ is a popular package manager for macOS (and now also for Linux).
 
-Homebrew_ is a popular package manager for macOS (and now also for Linux).  It
-is very easy to install Erlang with Homebrew.  However, Homebrew installs a
-version that it will eventually want to upgrade.  It is fine when just
-experimenting with Erlang but this will not help you if you want to create a
-system that will be running for a long time.
+**Pros**:  It is very easy to install Erlang with Homebrew. See the
+instructions below.
+
+**Cons**: Homebrew installs a version that it will eventually want to
+upgrade. It is fine when just experimenting with Erlang but this will not help
+you if you want to create a system that will be running for a long time.
+It's possible to prevent homebrew from upgrading it by using the ``brew pin
+erlang`` command though.  See `Homebrew FAQ`_.
+
 
 - First, install the Homebrew command line utility (``brew``)using the
   instructions right on the `Homebrew home page`_.
@@ -201,10 +206,10 @@ Note:
   `Homebrew/discussions on GitHub`_.  Search for something similar, otherwise start
   a new discussion asking for help.
 
-
 .. _Homebrew home page:
 .. _Homebrew: https://brew.sh
 .. _Homebrew/discussions on GitHub: https://github.com/Homebrew/discussions/discussions
+.. _Homebrew FAQ:  https://docs.brew.sh/FAQ
 
 
 Using Erlang Installer from Erlang Solutions
