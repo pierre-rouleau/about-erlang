@@ -3,7 +3,7 @@ Install Erlang Using Erlang Installer from Erlang Solutions
 ===========================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 17:33:29, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 17:37:21, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -203,6 +203,7 @@ To use this, I start a new shell and I issue the ``use-erlang-23-ei`` command:
 .. _Erlang Solution Download page: https://www.erlang-solutions.com/resources/download.html
 .. _ErlangInstaller.1.0.2.dmg: https://packages.erlang-solutions.com/os-x-installer/ErlangInstaller1.0.2.dmg
 .. _Erlang/OTP download: https://www.erlang.org/downloads
+.. _Manual installation of Erlang OTP Documentation and Man Files: installing-erlang-man-files.rst
 
 
 
