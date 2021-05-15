@@ -3,8 +3,8 @@ Installing Erlang with Homebrew
 ===============================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 16:43:25, updated by Pierre Rouleau>
-:Copyright:  Copyright © 2021, Pierre Rouleau
+:Time-stamp: <2021-05-15 16:45:09, updated by Pierre Rouleau>
+:Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. contents::  **Table of Contents**
