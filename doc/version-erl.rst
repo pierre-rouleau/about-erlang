@@ -3,8 +3,8 @@ The version-erl script: print Erlang's version on stdout
 ========================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 16:36:07, updated by Pierre Rouleau>
-:Copyright:  Copyright © 2021, Pierre Rouleau
+:Time-stamp: <2021-05-15 16:39:27, updated by Pierre Rouleau>
+:Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. contents::  **Table of Contents**
