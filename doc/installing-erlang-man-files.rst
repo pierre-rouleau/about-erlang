@@ -3,7 +3,7 @@ Install Erlang OTP Documentation and Man Files
 ==============================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 17:54:09, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 17:54:58, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -33,7 +33,7 @@ the Windows binaries.
 .. caution::
    ⚠️  Be aware that the list of Erlang versions are on the right hand
    side of the `Erlang/OTP download`_ page but will show **only if
-   your browser window is wide enough!**.
+   your browser window is wide enough!**
 
 I normally store these files in the ``~/docs`` directory and rename the
 directory extracted from the zip tarballs downloaded from the `Erlang/OTP
