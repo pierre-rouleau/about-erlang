@@ -3,7 +3,7 @@ Building Erlang From Source Using Kerl
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 18:14:46, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 19:40:46, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -17,7 +17,7 @@ Using Kerl
 
 If you want to build Erlang from source easily, you can use Kerl_.  This tool
 is a shell script that controls the build.  It attempts to be shell agnostic
-and requires only ``curl`` and ``git`` as dependencies.
+and requires only curl_ and git_ as dependencies.
 
 On macOS, to use Kerl, you also need XCode_ and a recent version of OpenSSL_.
 The OpenSSL_ version that is available on macOS is outdated.
@@ -483,10 +483,13 @@ Then I can use the shell:
 
 .. ---------------------------------------------------------------------------
 
+
 .. _Kerl: https://github.com/kerl/kerl
 .. _XCode: https://developer.apple.com/xcode/
 .. _OpenSSL: https://en.wikipedia.org/wiki/OpenSSL
 .. _Homebrew: https://brew.sh
+.. _curl: https://en.wikipedia.org/wiki/CURL
+.. _git: https://en.wikipedia.org/wiki/Git
 
 
 .. ---------------------------------------------------------------------------
