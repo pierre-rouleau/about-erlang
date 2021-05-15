@@ -3,7 +3,7 @@ Building Erlang From Source Using Kerl
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 18:11:45, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 18:14:46, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -400,11 +400,6 @@ directory and some don't.  At this point I do not know why that is the case.
     81 directories
     >
 
-
-.. _Kerl: https://github.com/kerl/kerl
-.. _XCode: https://developer.apple.com/xcode/
-.. _OpenSSL: https://en.wikipedia.org/wiki/OpenSSL
-
 Launching a shell with a Kerl-built Erlang
 ------------------------------------------
 
@@ -485,5 +480,13 @@ Then I can use the shell:
     ok
     2> >
     >
+
+.. ---------------------------------------------------------------------------
+
+.. _Kerl: https://github.com/kerl/kerl
+.. _XCode: https://developer.apple.com/xcode/
+.. _OpenSSL: https://en.wikipedia.org/wiki/OpenSSL
+.. _Homebrew: https://brew.sh
+
 
 .. ---------------------------------------------------------------------------
