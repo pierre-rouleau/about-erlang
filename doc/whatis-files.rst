@@ -3,7 +3,7 @@ Creating whatis files for man pages
 ===================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 15:38:15, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 15:40:24, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -168,7 +168,7 @@ Here's a session that demonstrates using the above script:
 
 
 .. _whatis utility: https://en.wikipedia.org/wiki/Apropos_(Unix)#Related_utilities
-.. _makewhatis command line utility: https://man.openbsd.org/makewhatis.
+.. _makewhatis command line utility: https://man.openbsd.org/makewhatis
 .. _Erlang/OTP download: https://www.erlang.org/downloads
 
 .. ---------------------------------------------------------------------------
