@@ -3,7 +3,7 @@ Building Erlang From Source Using Kerl
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 20:54:00, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 21:00:07, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -52,11 +52,8 @@ For the macOS I use the following:
 - `The envfor-gmake script`_ that activates the GNU Make installed using
   Homebrew.  This is required on macOS because the system make is an older
   version.
-- `Two bashrc alias commands`_ , ``use-kerl`` and ``use-gmake``
-
-
-
-
+- `Two bashrc alias commands`_ , ``use-kerl`` and ``use-gmake`` that I can use
+  on the command line.
 
 
 The envfor-kerl script
