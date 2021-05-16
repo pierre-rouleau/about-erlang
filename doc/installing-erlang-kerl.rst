@@ -3,7 +3,7 @@ Building Erlang From Source Using Kerl
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 19:40:46, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-15 20:54:00, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -34,7 +34,7 @@ native compiler nor with LLVM 10.
 
 Depending on what you have on your system, you may have to install other tools
 to perform the build with Kerl.  You might need to install GNU Make for
-instance.  Use Homebrew to install those tools.
+instance.  On macOS, use Homebrew to install those tools.
 
 
 Setting the environment for Kerl
@@ -45,18 +45,37 @@ instructions provided by the Kerl home page describe what to add to your shell
 setup.  Instead of doing that I the same strategy and create a shell script to
 install the environment along with a shell alias to invoke it.
 
-I use the following ``envfor-kerl`` bash script:
+For the macOS I use the following:
+
+- `The envfor-kerl script`_ that sets the environment variables needed by Kerl.
+  This script is not executable; it must be sourced.
+- `The envfor-gmake script`_ that activates the GNU Make installed using
+  Homebrew.  This is required on macOS because the system make is an older
+  version.
+- `Two bashrc alias commands`_ , ``use-kerl`` and ``use-gmake``
+
+
+
+
+
+
+The envfor-kerl script
+~~~~~~~~~~~~~~~~~~~~~~
+
+I use the following ``envfor-kerl`` script that must be sourced:
 
 .. code:: bash
 
-    #!/usr/bin/env bash
+    # Sourced script.  -*- mode: sh; -*-
+    # Name:     envfor-kerl
     # Abstract: setup shell to build Erlang with Kerl.
-    # Last Modified Time-stamp: <2020-07-05 12:29:17, updated by Pierre Rouleau>
+    # Last Modified Time-stamp: <2021-05-15 20:06:00, updated by Pierre Rouleau>
     # -----------------------------------------------------------------------------
+    # Description:
     #
-    # This file *must* be sourced.
+    #   This file *must* be sourced.
     #
-    # Run with: use-kerl
+    #   Run with: use-kerl
     #
     # -----------------------------------------------------------------------------
     # References:
@@ -72,41 +91,67 @@ I use the following ``envfor-kerl`` bash script:
     #    - example:   kerl install 22.0 ~/bin/erls/22.0/
     #  - to activate: . {target path}/activate
     #    - example:   . ~/bin/erls/22.0/activate
+    #
     # -----------------------------------------------------------------------------
     if [ "$ROUP_FOR_BUILDING_ERLANG" == "" ]; then
-        export ROUP_FOR_BUILDING_ERLANG=$PATH
-        SSL_PATH=/usr/local/Cellar/openssl@1.1/1.1.1g/
-        export KERL_BUILD_BACKEND="git"
-        export KERL_CONFIGURE_OPTIONS="--without-javac --with-dynamic-trace=dtrace --with-ssl=${SSL_PATH}"
-        export KERL_BUILD_DOCS=yes
-        export KERL_INSTALL_MANPAGES=yes
-        export KERL_INSTALL_HTMLDOCS=yes
-        use-gmake
+        SSL_PATH=/usr/local/Cellar/openssl@1.1/1.1.1k/
+        echo "$SSL_PATH"
+        if [ -f "$SSL_PATH/bin/openssl" ]; then
+            export ROUP_FOR_BUILDING_ERLANG=$PATH
+            export KERL_BUILD_BACKEND="git"
+            export KERL_CONFIGURE_OPTIONS="--without-javac --with-dynamic-trace=dtrace --with-ssl=${SSL_PATH}"
+            export KERL_BUILD_DOCS=yes
+            export KERL_INSTALL_MANPAGES=yes
+            export KERL_INSTALL_HTMLDOCS=yes
+            use-gmake
+        else
+            echo "Error: $SSL_PATH does not exists!"
+            echo "       Where is Homebrew's OpenSSL?"
+            echo "       Perhaps Homebrew updated it to another version?"
+            echo " Update envfor-kerl script with the proper OpenSSL path!"
+            return 2
+        fi
     else
         printf "Shell is already setup for building Erlang!\n"
         return 1
     fi
     # -----------------------------------------------------------------------------
 
+The envfor-gmake script
+~~~~~~~~~~~~~~~~~~~~~~~
 
-This uses another source script: ``envfor-gmake``, invoked via the
-``use-gmake`` alias:
+The script installs the Homebrew installed make, instead of the system Make,
+which is older in macOS.
 
-.. code:: shell
+.. code:: bash
 
-    #!/bin/sh
+    # Sourced script.  -*- mode: sh; -*-
+    # Name:     envfor-gmake
     # Abstract: Install latest GNU Make as the main make in the current shell.
-    # Last Modified Time-stamp: <2020-07-04 18:24:43, updated by Pierre Rouleau>
+    # Last Modified Time-stamp: <2021-05-15 20:33:48, updated by Pierre Rouleau>
     # -----------------------------------------------------------------------------
-    # This GNU Make is the latest, and replaces the old GNU Make
-    # distributed on macOS (GNU Make 3.81 from 2006)
-    # -----------------------------------------------------------------------------
+    # Description:
+    #
+    #    This file *must* be sourced.
+    #
+    #    Run with:  use-gmake
+    #
+    #    Activates the latest GNU Make taken from Homebrew, replacing the old GNU
+    #    Make distributed on macOS (GNU Make 3.81 from 2006).
+    #
+    #    -----------------------------------------------------------------------------
     if [ "$ROUP_USING_GMAKE" == "" ]; then
         export ROUP_USING_GMAKE=$PATH
         export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-        printf "Now using the Homebrew-installed GNU Make in this shell\n"
-        gmake --version
-        printf "\n"
+        if [ "$(gmake --version)" == "$(make --version)" ]; then
+            printf "Now using the Homebrew-installed GNU Make in this shell.\n"
+            printf "Both gmake and make now use the same GNU Make:\n"
+            gmake --version
+            printf "\n"
+        else
+            printf "Error! make and gmake differ!\n"
+            return 2
+        fi
     else
         printf "GNU GMAKE is already installed in this shell!\n"
         printf "The original path is inside ROUP_USING_GMAKE\n"
@@ -114,12 +159,17 @@ This uses another source script: ``envfor-gmake``, invoked via the
     fi
     # -----------------------------------------------------------------------------
 
+
+Two bashrc alias commands
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The 2 aliases I have in my ``.bashrc`` file for these are the following:
 
 .. code:: bash
 
     alias use-kerl='source envfor-kerl'
     alias use-gmake='source envfor-gmake'
+
 
 Kerl Commands
 -------------
@@ -413,32 +463,50 @@ Here's the script:
 
 .. code:: bash
 
-    #!/usr/bin/env bash
-    # Abstract: Install Erlang 23.0.2 (built with Kerl/native Clang)
-    # Last Modified Time-stamp: <2020-07-03 11:55:38, updated by Pierre Rouleau>
+    # Sourced script.  -*- mode: sh; -*-
+    # Name:     envfor-erlang-23-kn
+    # Abstract: Install Erlang 23.0.2 (built with Kerl/Native clang)
+    # Last Modified Time-stamp: <2021-05-15 20:52:11, updated by Pierre Rouleau>
     # -----------------------------------------------------------------------------
-    # This file *must* be sourced.
+    # Description:
     #
-    # Run with: use-erlang-23-kn
+    #   This file *must* be sourced.
+    #
+    #   Run with: use-erlang-23-kn
     #
     #
-    # It uses Kerl activate to install Erlang 23.0.2
+    #   It uses 'Kerl activate' to install Erlang 23.0.2
 
     # -----------------------------------------------------------------------------
     if [ "$DIR_ERLANG_DEV" == "" ]; then
         export DIR_ERLANG_DEV="$HOME/dev/erlang"
-        MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
-        export MANPATH
-        echo "+ Erlang 23.0.2 (built with Kerl/native Clang) environment set."
-        echo "+ Using OTP-23 Man pages."
-        echo "Use kerl_deactivate to deactivate it."
-        settitle "Erlang 23.0.2 Kerl/Native"
-        source ~/bin/erls/23.0.2/activate
+        if [ "$MAN_ONLY_ERLANG" == "" ]; then
+            MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
+        else
+            MANPATH=$HOME/docs/Erlang/otp-23.0/man/man
+        fi
+        if [ -f "$HOME/docs/Erlang/otp-23.0/man/man/whatis" ]; then
+            export PEL_ERLANG_VERSION=23.0.2
+            export MANPATH
+            echo "+ Erlang 23.0.2 (built with Kerl/native Clang) environment set."
+            echo "+ Using OTP-23 Man pages."
+            echo "Use kerl_deactivate to deactivate it."
+            settitle "Erlang 23.0.2 Kerl/Native"
+            source ~/bin/erls/23.0.2/activate
+        else
+            echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/man"
+            echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man/man"
+            echo " then try again."
+            echo "The whatis file is needed to use whatis on Erlang man files."
+            echo "Also Emacs uses it for man auto-completion."
+            return 1
+        fi
     else
         echo "! Erlang environment was already set for this shell."
     fi
 
     # -----------------------------------------------------------------------------
+
 
 For 23.0.2 the Man pages were not part of the build, so the script sets up
 ``MANPATH`` to use the manually downloaded version of the OTP-23 man pages.
