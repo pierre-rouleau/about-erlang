@@ -3,7 +3,7 @@ Using the Erlang Man files within Emacs
 =======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 16:18:20, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 16:52:44, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -162,5 +162,8 @@ Ideally that should be all controlled from the version of Erlang used in the
 shell or in the project.   The edts package does some of this.  I'm planning
 to wrap this all up with code controlled by my Emacs PEL system. But this is
 still work in progress at the moment.
+
+
+.. _Creating whatis files for Erlang man pages:  whatis-files.rst
 
 .. ---------------------------------------------------------------------------
