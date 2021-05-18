@@ -3,7 +3,7 @@ Creating whatis files for Erlang man pages
 ==========================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 17:21:23, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 17:22:39, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -87,7 +87,7 @@ I wrote the following Bash script to simplify the process:
     # Created   : Friday, July 17, 2020
     # Author    : Pierre Rouleau <prouleau001@gmail.com>
     # Time-stamp: <2021-05-18 17:19:52, updated by Pierre Rouleau>
-    # Copyright © 2021, Pierre Rouleau
+    # Copyright © 2020, 2021, Pierre Rouleau
     # License   : MIT
     # ----------------------------------------------------------------------------
     # Description
