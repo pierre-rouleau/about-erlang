@@ -3,7 +3,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 15:38:47, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 15:40:32, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -36,7 +36,7 @@ of OpenSSL I have on my system (as of this writing, version 1.1.1g released
 April 21, 2020).
 
 .. _asdf-vm: https://asdf-vm.com/#/
-.. _Get and manage asdf itself: https://asdf-vm.com/#/core-manage-asdf-vm
+.. _Get and manage asdf itself: https://asdf-vm.com/#/core-manage-asdf
 .. _List available plugins, get the ones you need, manage them.: https://asdf-vm.com/#/core-manage-plugins
 .. _Get, compile and install a specific version of the plugin.:  https://asdf-vm.com/#/core-manage-versions
 .. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
@@ -77,7 +77,7 @@ The ``envfor-asdf`` script is shown here:
     #      This is asdf-vm, not the Common Lisp ASDF tool!
     #
     # References:
-    # - Manage asdf-vm          : https://asdf-vm.com/#/core-manage-asdf-vm
+    # - Manage asdf-vm          : https://asdf-vm.com/#/core-manage-asdf
     # - Adopting Erlanf - Setup : https://adoptingerlang.org/docs/development/setup/
     #
 
