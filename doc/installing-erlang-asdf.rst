@@ -3,13 +3,23 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 15:45:45, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 16:05:57, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. contents::  **Table of Contents**
 .. sectnum::
 
+
+Installing asdf-vm
+==================
+
+Follow on of the `asdf installation methods described in the asdf-vm installation instructions`_.
+
+On macOS, I have used the method using Homebrew.
+
+
+.. _asdf installation methods described in the asdf-vm installation instructions: https://asdf-vm.com/#/core-manage-asdf?id=install
 
 
 Using asdf-vm
@@ -136,7 +146,7 @@ To install a new version of Erlang using asdf-vm_,  the important steps are:
 
 
 Once this is all done and you have compiled and installed one or several
-versions of a given *plugin* (sucha as Erlang)  it's possible to `identify a current version`_ of a given
+versions of a given *plugin* (such as Erlang)  it's possible to `identify a current version`_ of a given
 plugin to be used globally (it persists).  You can also use a command to
 activate that version just for the current shell.
 
@@ -153,7 +163,7 @@ asdf commands
 
 The asdf commands must be installed in the shell.  For that I execute my
 ``use-asdf`` (the alias to source my ``envfor-asdf`` script).
-Once that done, I can use all asdf commands to:
+Once that is done, I can use all asdf commands to:
 
 - `update asdf-vm`_
 - `manage asdf plugins`_
