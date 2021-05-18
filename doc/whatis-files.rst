@@ -3,7 +3,7 @@ Creating whatis files for Erlang man pages
 ==========================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 18:06:30, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 17:15:55, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -114,8 +114,8 @@ I wrote the following Bash script to simplify the process:
     fi
     # -----------------------------------------------------------------------------
 
-Using the make-loccal-whatis script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using the make-local-whatis script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here's a session that demonstrates using the above script:
 
