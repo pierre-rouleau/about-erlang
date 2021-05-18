@@ -3,7 +3,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 15:22:21, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 15:25:22, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -42,7 +42,7 @@ April 21, 2020).
 .. _identify a current version: https://asdf-vm.com/#/core-manage-versions?id=set-current-version
 
 Setting the Environment for asdf
-================================
+--------------------------------
 
 For asdf-vm_ I wrote the ``use-asdf`` alias to the ``envfor-asdf`` script that
 it sources.
