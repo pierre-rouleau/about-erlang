@@ -3,7 +3,7 @@ Creating whatis files for Erlang man pages
 ==========================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 17:15:55, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 17:21:23, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -80,11 +80,19 @@ I wrote the following Bash script to simplify the process:
 
 .. code::  bash
 
-    #!/usr/bin/env bash
-    # Name: make-local-whatis
-    # Abstract: Create a man whatis file for local man directory tree
-    # Last Modified Time-stamp: <2020-07-17 13:48:17, updated by Pierre Rouleau>
-    # -----------------------------------------------------------------------------
+    #!/bin/sh
+    # SH FILE: make-local-whatis
+    #
+    # Purpose   : Create a man whatis file for local man directory tree.
+    # Created   : Friday, July 17, 2020
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-05-18 17:19:52, updated by Pierre Rouleau>
+    # Copyright © 2021, Pierre Rouleau
+    # License   : MIT
+    # ----------------------------------------------------------------------------
+    # Description
+    # -----------
+    #
     #
     # Usage: make-local-whatis directory
     #
@@ -95,7 +103,11 @@ I wrote the following Bash script to simplify the process:
     #      cd ~/docs/Erlang/otp-22.3/man/man
     #      make-local-whatis `pwd`
     #
-    # -----------------------------------------------------------------------------
+
+    # ----------------------------------------------------------------------------
+    # Script
+    # ------
+    #
     if [ "$1" == "" ]; then
         echo "Error: please specify a root directory that contains man1, etc.."
         exit 2
@@ -113,6 +125,7 @@ I wrote the following Bash script to simplify the process:
         exit 3
     fi
     # -----------------------------------------------------------------------------
+
 
 Using the make-local-whatis script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
