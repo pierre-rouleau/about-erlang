@@ -434,14 +434,13 @@ Unlike the other tools (Erlang Solutions' Erlang Installer, Kerl-built
 versions), **you cannot use the same directory in 2 different shells and launch
 2 different versions of Erlang, one in each shell**.
 
-It's possible to run multiple versions of Erlang at the same time, but they
-must each be instantiated from a shell that has a different current directory.
-
-With asdf  if you open 2 shells and execute ``use-erlang-23-a`` in the
-first shell and then inside another shell execute ``use-erlang22-a`` in that
-other shells, **from the same directory** both shells will now use the Erlang set up by
-``use-erlang-22-a`` because they both use the same shim file identified by the
-same ``.tool-version`` file.
+- It's possible to run multiple versions of Erlang at the same time, but they
+  must each be instantiated from a shell that has a different current directory.
+- With asdf  if you open 2 shells and execute ``use-erlang-23-a`` in the
+  first shell and then inside another shell execute ``use-erlang22-a`` in that
+  other shells, **from the same directory** both shells will now use the Erlang set up by
+  ``use-erlang-22-a`` because they both use the same shim file identified by the
+  same ``.tool-version`` file.
 
 
 
