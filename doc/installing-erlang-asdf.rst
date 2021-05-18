@@ -3,7 +3,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 15:31:34, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 15:36:40, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -114,7 +114,7 @@ The alias in my ``.bashrc`` file is:
 Installation Steps
 ~~~~~~~~~~~~~~~~~~
 
-To install a new version of Erlang using asdf_vm_ ,  the important steps are:
+To install a new version of Erlang using asdf-vm_,  the important steps are:
 
 #. Set the shell for asdf-vm_ by executing the ``use-asdf``.
    This is an alias to the  ``envfor-asdf`` script it sources.
@@ -187,7 +187,7 @@ And list the Erlang versions I have built with asdf-vm_ so far.
 
 - ``asdf list erlang``
 
-The asdf_vm_ can identify a version of each *plugin* as being the global
+The asdf-vm_ can identify a version of each *plugin* as being the global
 current version.  I list them with the following command and see that I did
 not set any since I use a shell script to do that .  However, to have the
 version used automatically on system startup you would probably want to
