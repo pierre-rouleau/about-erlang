@@ -3,7 +3,7 @@ Using the Erlang Man files within Emacs
 =======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 16:52:44, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 16:57:35, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -125,7 +125,7 @@ file contains the following single line of text::
   https://erlang.org/download/otp_doc_man_17.5.tar.gz
 
 Also notice the ``whatis`` file in the ``man`` directory.  I created that file
-using the method explained in `Creating whatis files for man pages`_ to allow
+using the method explained in `Creating whatis files for Erlang man pages`_ to allow
 me to restrict the man pages to Erlang only and take advantage of Emacs
 completion using the Emacs man command.
 
