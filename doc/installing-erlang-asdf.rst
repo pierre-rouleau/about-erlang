@@ -92,10 +92,10 @@ The alias in my ``.bashrc`` file is:
   alias use-asdf='source envfor-asdf'
 
 
-Then, to install a new version of Erlang using asdf_vm_,  the important steps are:
+Then, to install a new version of Erlang using asdf_vm_ ,  the important steps are:
 
-#. Set the shell for asdf-vm_ by executing the ``use-asdf`` alias to the
-   ``envfor-asdf`` script it sources.
+#. Set the shell for asdf-vm_ by executing the ``use-asdf``.
+   This is an alias to the  ``envfor-asdf`` script it sources.
 #. `Get and manage asdf -vm itself`_.  These are the instructions to install
    and manage asdf-vm.  You have to do this the very first time and then only
    when you want tu upgrade asdf-vm_ itself.
@@ -123,8 +123,8 @@ asdf commands
 -------------
 
 The asdf commands must be installed in the shell.  For that I execute my
-``use-asdf`` alias to source my ``envfor-asdf`` script.  Once done, you can
-use all asdf commands to:
+``use-asdf`` (the alias to source my ``envfor-asdf`` script).
+Once that done, I can use all asdf commands to:
 
 - `update asdf-vm`_
 - `manage asdf plugins`_
@@ -133,7 +133,7 @@ use all asdf commands to:
 More information is available on the asdf-vm_ site.
 
 
-.. _update asdf-vm: https://asdf-vm.com/#/core-manage-asdf-vm
+.. _update asdf-vm: https://asdf-vm.com/#/core-manage-asdf?id=update
 .. _manage asdf plugins: https://asdf-vm.com/#/core-manage-plugins
 .. _manage asdf plugins versions: https://asdf-vm.com/#/core-manage-versions
 
@@ -426,12 +426,13 @@ several tools you can create a directory that will be the current directory
 where you will use all of these tool at the version specified inside the
 file ``.tool-version``.  Once set up, open a shell, execute ``use-asdf`` and
 then the version of the tool will be identified by the ``.tool-version`` file
-stored in the current directory.  So **asdf is sensitive to the current
-directory where the erl command is issued**.
+stored in the current directory.
+
+  ⚠️  Therefore  **asdf is sensitive to the current directory where the erl command is issued**.
 
 Unlike the other tools (Erlang Solutions' Erlang Installer, Kerl-built
-versions), you cannot use the same directory in 2 different shells and launch
-2 different versions of Erlang, on in each shell.
+versions), **you cannot use the same directory in 2 different shells and launch
+2 different versions of Erlang, one in each shell**.
 
 It's possible to run multiple versions of Erlang at the same time, but they
 must each be instantiated from a shell that has a different current directory.
