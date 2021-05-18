@@ -3,7 +3,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 15:25:22, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 15:31:34, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -44,8 +44,16 @@ April 21, 2020).
 Setting the Environment for asdf
 --------------------------------
 
-For asdf-vm_ I wrote the ``use-asdf`` alias to the ``envfor-asdf`` script that
-it sources.
+For asdf-vm_ I use the same strategy, I have:
+
+- `The envfor-asdf source script`_ to setup the environment.
+- The use-asdf alias inside by .bashrc file
+
+The envfor-asdf source script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``envfor-asdf`` script holds the logic used to set up a shell
+for asdf.
 
 The ``envfor-asdf`` script is shown here:
 
@@ -94,6 +102,8 @@ The ``envfor-asdf`` script is shown here:
     # -----------------------------------------------------------------------------
 
 
+The use-asdf alias
+~~~~~~~~~~~~~~~~~~
 
 The alias in my ``.bashrc`` file is:
 
@@ -101,8 +111,10 @@ The alias in my ``.bashrc`` file is:
 
   alias use-asdf='source envfor-asdf'
 
+Installation Steps
+~~~~~~~~~~~~~~~~~~
 
-Then, to install a new version of Erlang using asdf_vm_ ,  the important steps are:
+To install a new version of Erlang using asdf_vm_ ,  the important steps are:
 
 #. Set the shell for asdf-vm_ by executing the ``use-asdf``.
    This is an alias to the  ``envfor-asdf`` script it sources.
