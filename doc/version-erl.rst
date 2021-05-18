@@ -3,7 +3,7 @@ The version-erl script: print Erlang's version on stdout
 ========================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 18:06:45, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-18 17:13:46, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -20,16 +20,29 @@ Erlang's version information on the command line.
 
 .. code:: bash
 
-    #!/usr/bin/env sh
-    # Name:     version-erl
-    # Abstract: Print version of currently available Erlang on stdout.
-    # Requires: Accessible Erlang binaries: uses erl.
-    # Used by : PEL Emacs support for Erlang to auto-detect available Erlang version.
-    # Last Modified Time-stamp: <2020-07-22 17:08:27, updated by Pierre Rouleau>
-    # -----------------------------------------------------------------------------
+    #!/bin/sh
+    # SH FILE: version-erl
+    #
+    # Purpose   : Print version of currently available Erlang on stdout.
+    # Created   : Monday, May 11 2020.
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-05-18 17:13:11, updated by Pierre Rouleau>
+    # Copyright © 2020, 2021, Pierre Rouleau
+    # License   : MIT
+    # ----------------------------------------------------------------------------
+    # Description
+    # -----------
+    #
+    # Usage:  version-erl
+    #
+    #  This uses an inline Erlang statement passed to the Erlang interpreter.
+
+    # ----------------------------------------------------------------------------
+    # Script
+    # ------
+    #
     erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), "releases", erlang:system_info(otp_release), "OTP_VERSION"])), io:fwrite(Version), halt().' -noshell
     # -----------------------------------------------------------------------------
-
 
 
 .. ---------------------------------------------------------------------------
