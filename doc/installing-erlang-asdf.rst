@@ -428,7 +428,7 @@ file ``.tool-version``.  Once set up, open a shell, execute ``use-asdf`` and
 then the version of the tool will be identified by the ``.tool-version`` file
 stored in the current directory.
 
-  ⚠️  Therefore  **asdf is sensitive to the current directory where the erl command is issued**.
+  ⚠️   **asdf is sensitive to the current directory where the erl command is issued**.
 
 Unlike the other tools (Erlang Solutions' Erlang Installer, Kerl-built
 versions), **you cannot use the same directory in 2 different shells and launch
