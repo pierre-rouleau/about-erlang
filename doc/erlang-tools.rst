@@ -3,7 +3,7 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 07:54:41, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 07:57:12, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -12,6 +12,13 @@ Some of them are listed in this page.
 
 🚧 This page is under construction.  I will add  info about several other
 tools soon. 🚧
+
+.. contents::  **Table of Contents**
+.. sectnum::
+
+
+---------------------------------------------------------------------------
+
 
 rebar3
 ======
