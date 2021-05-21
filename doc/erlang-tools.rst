@@ -3,15 +3,21 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 07:57:12, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 16:31:12, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
-There are an increasing number of tools available for Erlang development.
+          There are an increasing number of tools available for Erlang development.
 Some of them are listed in this page.
+These include the `built-in Erlang tools`_ that are part of the Erlang system
+itself, and other tools provided by the community.
 
-🚧 This page is under construction.  I will add  info about several other
+🚧 This page is under_ construction.  I will add  info about several other
 tools soon. 🚧
+
+
+.. _built-in Erlang tools:  https://erlang.org/doc/apps/tools/index.html
+
 
 .. contents::  **Table of Contents**
 .. sectnum::
@@ -19,9 +25,12 @@ tools soon. 🚧
 
 ---------------------------------------------------------------------------
 
+Erlang Build Tools
+==================
+
 
 rebar3
-======
+------
 
 For Erlang projects you must use this tool.  It's used in Erlang but also
 other BEAM-based languages.  It is used for several tasks and controls the
@@ -44,8 +53,15 @@ To start from the beginning, read `rebar3 Getting Started`_
 .. _rebar home page:          https://rebar3.org
 
 
+
+.. ---------------------------------------------------------------------------
+
+
+Erlang Code Style Checkers & Formatters
+=======================================
+
 elvis - the Erlang Style Reviewer
-=================================
+---------------------------------
 
 See:
 
@@ -119,6 +135,69 @@ Next you will have to configure elvis.  See Elvis repo documentation for that.
 .. _elvis Github repo:
 .. _elvis @ Github: https://github.com/inaka/elvis
 .. _elvis video presentation by Inaka and Erlang Solutions on Youtube: https://www.youtube.com/watch?v=Q88hGUJUwHs
+
+
+rebar3 format
+-------------
+
+
+
+.. ---------------------------------------------------------------------------
+
+Erlang Code Analysis Tools
+==========================
+
+
+xref
+----
+
+The xref tool analyzes dependencies between functions, modules, applications
+and releases.
+
+If you use rebar3 to control your project, you can use the ``rebar3 xref``
+command to run the xref on the project's code.
+
+You will have to configure xref in the ``rebar.config`` file of the project,
+specifying the various `xref settings`_.
+
+
+See:
+
+- `xref reference @ Erlang.org`_
+- `Xref - The Cross Reference Tool @ Erlang.org`_
+- `rebar3- configurations for xref`_
+- `Removing Erlang dead code with Xref`_.  It describes how to remove unused
+  *exported* code from your project.
+
+
+
+.. _xref reference @ Erlang.org: https://erlang.org/doc/man/xref.html
+.. _Xref - The Cross Reference Tool @ Erlang.org:  https://erlang.org/doc/apps/tools/xref_chapter.html
+.. _Removing Erlang dead code with Xref: https://tech.nextroll.com/blog/dev/2018/10/09/remove-erlang-dead-code-xref.html
+.. _xref settings:
+.. _rebar3 configurations for xref:      https://www.rebar3.org/docs/configuration/configuration/#xref
+
+
+
+
+Use the ignore_xref attribute to mark functions called dynamically
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You should use the ``ignore_xref`` attribute to identify functions that are
+called dynamically and will otherwise be reported as not being called by xref.
+
+For example, if the function some_function/1 is called dynamically and is
+exported, then the following code snippet could be used:
+
+.. code:: erlang
+
+      -module(some_example).
+      -exports([some_function/1, some_other_function/1]).
+
+      %% This function should be dynamically invoked through sample:some_function/1
+      -ignore_xref([{?MODULE, some_other_function, 1}]).
+
+      ...
 
 
 .. ---------------------------------------------------------------------------
