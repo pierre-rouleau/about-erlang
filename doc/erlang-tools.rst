@@ -3,7 +3,7 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 07:51:20, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 07:54:41, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -34,6 +34,7 @@ To start from the beginning, read `rebar3 Getting Started`_
 .. _rebar3 documentation:     https://rebar3.org/docs/
 .. _rebar3 @ GitHub:          https://github.com/erlang/rebar3
 .. _rebar3 Getting Started:   https://rebar3.org/docs/getting-started/
+.. _rebar home page:          https://rebar3.org
 
 
 elvis - the Erlang Style Reviewer
