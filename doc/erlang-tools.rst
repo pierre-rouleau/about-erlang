@@ -3,7 +3,7 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 16:32:57, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 16:33:38, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -165,7 +165,7 @@ See:
 
 - `xref reference @ Erlang.org`_
 - `Xref - The Cross Reference Tool @ Erlang.org`_
-- `rebar3- configurations for xref`_
+- `rebar3 configurations for xref`_
 - `Removing Erlang dead code with Xref`_.  It describes how to remove unused
   *exported* code from your project.
 
