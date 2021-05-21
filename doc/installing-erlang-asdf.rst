@@ -3,9 +3,17 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 16:05:57, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 16:55:03, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
+
+
+This page describes the installation of Erlang on macOS using the `asdf-vm`_
+tool.  You may also be interested by this post by AJ Foster:
+`Installing Elixir and Erlang With ASDF`_.
+
+.. _Installing Elixir and Erlang With ASDF: https://www.pluralsight.com/guides/installing-elixir-erlang-with-asdf
+
 
 .. contents::  **Table of Contents**
 .. sectnum::
