@@ -3,7 +3,7 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 16:31:12, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 16:32:57, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -191,10 +191,10 @@ exported, then the following code snippet could be used:
 
 .. code:: erlang
 
-      -module(some_example).
+      -module(example).
       -exports([some_function/1, some_other_function/1]).
 
-      %% This function should be dynamically invoked through sample:some_function/1
+      %% This function should be dynamically invoked through example:some_function/1
       -ignore_xref([{?MODULE, some_other_function, 1}]).
 
       ...
