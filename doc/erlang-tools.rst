@@ -4,11 +4,11 @@ Tools for Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 13:06:35, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 13:19:22, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
-.. _Prev:  https://github.com/pierre-rouleau/about-erlang/blob/master/doc/editing-erlang.rst
+.. _Prev:  editing-erlang.rst
 .. _Top:   https://github.com/pierre-rouleau/about-erlang
 
 There are an increasing number of tools available for Erlang development.
