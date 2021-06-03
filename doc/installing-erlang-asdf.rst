@@ -3,10 +3,13 @@ Build, Install and Manage Erlang Versions with asdf-vm
 ======================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 16:55:03, updated by Pierre Rouleau>
+:Navigation: Prev_, Top_, Next_
+:Time-stamp: <2021-06-03 13:05:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
+.. _Prev:  installing-erlang-ei.rst
+.. _Top:   https://github.com/pierre-rouleau/about-erlang
 
 This page describes the installation of Erlang on macOS using the `asdf-vm`_
 tool.  You may also be interested by this post by AJ Foster:
@@ -17,6 +20,8 @@ tool.  You may also be interested by this post by AJ Foster:
 
 .. contents::  **Table of Contents**
 .. sectnum::
+
+.. ---------------------------------------------------------------------------
 
 
 Installing asdf-vm

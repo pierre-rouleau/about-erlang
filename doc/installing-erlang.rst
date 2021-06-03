@@ -4,16 +4,16 @@ Installing Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 12:54:22, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 13:03:21, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
-
-.. contents::  **Table of Contents**
-.. sectnum::
 
 .. _Prev:  learning-erlang.rst
 .. _Top:   https://github.com/pierre-rouleau/about-erlang
 .. _Next:  editing-erlang.rst
+
+.. contents::  **Table of Contents**
+.. sectnum::
 
 .. ---------------------------------------------------------------------------
 

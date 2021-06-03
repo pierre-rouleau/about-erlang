@@ -4,16 +4,15 @@ Install Erlang OTP Documentation and Man Files
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-03 12:53:33, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 13:04:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
-.. contents::  **Table of Contents**
-.. sectnum::
-
-
 .. _Top:   installing-erlang.rst
 .. _Next:  whatis-files.rst
+
+.. contents::  **Table of Contents**
+.. sectnum::
 
 .. ---------------------------------------------------------------------------
 
