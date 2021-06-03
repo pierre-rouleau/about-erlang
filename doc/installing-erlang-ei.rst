@@ -4,13 +4,13 @@ Install Erlang Using Erlang Installer from Erlang Solutions
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:09:20, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 13:14:19, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. _Prev:  installing-erlang-hb.rst
 .. _Top:   installing-erlang.rst
-.. _Next:  installing-erlang-ei.rst
+.. _Next:  installing-erlang-kerl.rst
 
 .. contents::  **Table of Contents**
 .. sectnum::
