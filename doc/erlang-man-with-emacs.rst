@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 13:25:27, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 15:05:53, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -102,28 +102,45 @@ of the directory tree (I removed several lines for clarity):
 
 .. code:: shell
 
-    > tree -L 3 otp-17.5
+    > tree -L 2 otp-17.5
     otp-17.5
-    ├── html
+    ├── COPYRIGHT
+    ├── PR.template
+    ├── README
+    ├── doc
+    │   ├── applications.html
+    │   ├── design_principles
+    │   ├── docbuild
+    ...
+    │   ├── programming_examples
+    │   ├── reference_manual
+    │   ├── system_architecture_intro
+    │   ├── system_principles
+    │   └── tutorial
+    ├── erlang_man_download_url
+    ├── erts-6.4
+    │   ├── doc
+    │   └── info
+    ├── lib
+    │   ├── asn1-3.0.4
+    │   ├── common_test-1.10
+    │   ├── compiler-5.0.4
+    ...
+    │   └── xmerl-1.3.7
     ├── man
-    │   ├── COPYRIGHT
-    │   ├── PR.template
-    │   ├── README
-    │   ├── erlang_man_download_url
-    │   └── man
-    │       ├── man1
-    │       ├── man3
-    │       ├── man4
-    │       ├── man6
-    │       ├── man7
-    │       └── whatis
+    │   ├── man1
+    │   ├── man3
+    │   ├── man4
+    │   ├── man6
+    │   ├── man7
+    │   └── whatis
     └── readme.txt
 
-    77 directories, 17 files
+    75 directories, 13 files
     >
 
 Notice the ``erlang_man_download_url`` file.  This is a file created and used
-by edts. It contains the URL where the man files can be downloaded.  The
+by edts_. It contains the URL where the man files can be downloaded.  The
 file contains the following single line of text::
 
   https://erlang.org/download/otp_doc_man_17.5.tar.gz
@@ -139,35 +156,42 @@ Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
 
 
     > cd ~/.emacs.d/edts/doc
-    > ln -s  /Users/roup/docs/Erlang/otp-22.3/man  22.3
-    > ln -s  /Users/roup/docs/Erlang/otp-22.2/man  22.2
-    > ln -s  /Users/roup/docs/Erlang/otp-21.3/man  21.3
-    > ln -s  /Users/roup/docs/Erlang/otp-20.3/man  20.3
-    > ln -s  /Users/roup/docs/Erlang/otp-19.3/man  19.3
-    > ln -s  /Users/roup/docs/Erlang/otp-18.3/man  18.3
-    > ln -s  /Users/roup/docs/Erlang/otp-17.5/man  17.5
-    > ll
-    total 0
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:47 17.5@ -> /Users/roup/docs/Erlang/otp-17.5/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:47 18.3@ -> /Users/roup/docs/Erlang/otp-18.3/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:46 19.3@ -> /Users/roup/docs/Erlang/otp-19.3/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:46 20.3@ -> /Users/roup/docs/Erlang/otp-20.3/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:46 21.3@ -> /Users/roup/docs/Erlang/otp-21.3/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:45 22.2@ -> /Users/roup/docs/Erlang/otp-22.2/man
-    lrwxr-xr-x  1 roup  staff  -  36 22 Jul 10:44 22.3@ -> /Users/roup/docs/Erlang/otp-22.3/man
-    drwxr-xr-x  6 roup  staff  - 192 20 Jul 17:47 23.0/
+    > ln -s  ~/docs/Erlang/otp-23.3/man  23.3
+    > ln -s  ~/docs/Erlang/otp-23.0/man  23.0
+    > ln -s  ~/docs/Erlang/otp-22.3/man  22.3
+    > ln -s  ~/docs/Erlang/otp-22.2/man  22.2
+    > ln -s  ~/docs/Erlang/otp-21.3/man  21.3
+    > ln -s  ~/docs/Erlang/otp-20.3/man  20.3
+    > ln -s  ~/docs/Erlang/otp-19.3/man  19.3
+    > ln -s  ~/docs/Erlang/otp-18.3/man  18.3
+    > ln -s  ~/docs/Erlang/otp-17.5/man  17.5
     >
+    > ls -l
+    total 0
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 17.5 -> /Users/roup/docs/Erlang/otp-17.5/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 18.3 -> /Users/roup/docs/Erlang/otp-18.3/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 19.3 -> /Users/roup/docs/Erlang/otp-19.3/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 20.3 -> /Users/roup/docs/Erlang/otp-20.3/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 21.3 -> /Users/roup/docs/Erlang/otp-21.3/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 22.2 -> /Users/roup/docs/Erlang/otp-22.2/man
+    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 22.3 -> /Users/roup/docs/Erlang/otp-22.3/man
+    lrwxr-xr-x  1 roup  staff  36  3 Jun 14:52 23.0 -> /Users/roup/docs/Erlang/otp-23.0/man
+    lrwxr-xr-x  1 roup  staff  36  3 Jun 15:02 23.3 -> /Users/roup/docs/Erlang/otp-23.3/man
+    >
+
+
 
 And then I create a symlink inside ``~/.emacs.d/cache`` called
 ``erlang_mode_man_pages`` to the location of the directory holding the man
 pages of the default Erlang version for the shell.
 
 Ideally that should be all controlled from the version of Erlang used in the
-shell or in the project.   The edts package does some of this.  I'm planning
+shell or in the project.   The edts_ package does some of this.  I'm planning
 to wrap this all up with code controlled by my Emacs PEL system. But this is
 still work in progress at the moment.
 
 
+.. _edts:  https://github.com/sebastiw/edts#readme
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst
 
 .. ---------------------------------------------------------------------------
