@@ -3,12 +3,18 @@ Building Erlang From Source Using Kerl
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-15 21:00:07, updated by Pierre Rouleau>
+:Navigation: Prev_, Top_, Next_
+:Time-stamp: <2021-06-03 13:10:00, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
+.. _Prev:  installing-erlang-ei.rst
+.. _Top:   installing-erlang.rst
+.. _Next:  installing-erlang-asdf.rst
+
 .. contents::  **Table of Contents**
 .. sectnum::
+
 
 .. ---------------------------------------------------------------------------
 
