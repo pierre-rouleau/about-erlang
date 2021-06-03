@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 17:42:16, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 17:46:48, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -27,7 +27,7 @@ install the man pages and how to consolidate them into one location.
 Consolidating all Erlang Man Files in one location
 ==================================================
 
-As described in the `Installing Erlang`_ sections, you may install Erlang in
+As described in the page titled `Installing Erlang`_ sections, you may install Erlang in
 various ways, with the file stored in various locations depending on the
 method used to install a specific version of Erlang.
 
@@ -67,11 +67,11 @@ For example, this directory holds the following files:
 Man Files Used by EDTS
 ----------------------
 
-The edts_ external package supports multiple versions of Erlang.
+The EDTS_ external package supports multiple versions of Erlang.
 And it has the ability to download the Erlang man files for each of them
 and store them in a directory specific to that version of Erlang.
 
-The edts_ package stores the Erlang man page files inside the directory
+The EDTS_ package stores the Erlang man page files inside the directory
 ``~/.emacs.d/edts/doc/VV`` where ``VV`` is the Erlang version.  There can be
 several ``VV`` directories, one per Erlang version supported.
 
@@ -147,7 +147,7 @@ of the directory tree (with several lines removed for clarity):
 
 
 Notice the ``erlang_man_download_url`` file.  This is a file created and used
-by edts_. It contains the URL where the man files can be downloaded.  The
+by EDTS_. It contains the URL where the man files can be downloaded.  The
 file contains the following single line of text::
 
   https://erlang.org/download/otp_doc_man_17.5.tar.gz
@@ -194,7 +194,7 @@ Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
    pages of the default Erlang version for the shell.
 
    Ideally that should be all controlled from the version of Erlang used in the
-   shell or in the project.   The edts_ package does some of this.  I'm planning
+   shell or in the project.   The EDTS_ package does some of this.  I'm planning
    to wrap this all up with code controlled by my Emacs PEL system. But this is
    still work in progress at the moment.
 
