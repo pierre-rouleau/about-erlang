@@ -4,7 +4,7 @@ Creating whatis files for Erlang man pages
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:04:01, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 14:42:13, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -74,8 +74,9 @@ For that, you'll use the `makewhatis command line utility`_. On macOS, this
 executable is stored in ``/usr/libexec/makewhatis``.
 
 To only create the missing whatis file, you must first set ``MANPATH`` to the
-directory holding the ``man1``, ``man3``, ``man7`` and other ``manX``
+directory holding the ``man1``, ``man3``, ``man4`` and ``man6``
 directories.
+
 Once you have that set up, you can run ``/usr/libexec/makewhatis`` and it will
 create the whatis file in that directory and will not touch anything else.
 
@@ -103,10 +104,10 @@ I wrote the following Bash script to simplify the process:
     # Usage: make-local-whatis directory
     #
     # Examples:
-    #      make-local-whatis ~/docs/Erlang/otp-22.3/man/man
+    #      make-local-whatis ~/docs/Erlang/otp-22.3/man
     #
     #  or:
-    #      cd ~/docs/Erlang/otp-22.3/man/man
+    #      cd ~/docs/Erlang/otp-22.3/man
     #      make-local-whatis `pwd`
     #
 
@@ -143,22 +144,22 @@ Here's a session that demonstrates using the above script:
     Last login: Fri Jul 17 17:00:30 on ttys004
     > echo $MANPATH
 
-    > cd docs/Erlang/otp-22.3/man/man
+    > cd docs/Erlang/otp-22.3/man
     > ls
     man1	man3	man4	man6	man7
     > MANPATH=`pwd`
     > echo $MANPATH
-    /Users/roup/docs/Erlang/otp-22.3/man/man
+    /Users/roup/docs/Erlang/otp-22.3/man
     > export MANPATH
     > man -w erl
-    /Users/roup/docs/Erlang/otp-22.3/man/man/man1/erl.1
+    /Users/roup/docs/Erlang/otp-22.3/man/man1/erl.1
     > whatis erlang
     erlang: nothing appropriate
     > make-local-whatis `pwd`
     > ls
     man1	man3	man4	man6	man7	whatis
     > man -w erl
-    /Users/roup/docs/Erlang/otp-22.3/man/man/man1/erl.1
+    /Users/roup/docs/Erlang/otp-22.3/man/man1/erl.1
     > whatis erlang
     auth(3)                  - Erlang network authentication server
     code(3)                  - Erlang code server
