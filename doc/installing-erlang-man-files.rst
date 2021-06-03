@@ -4,7 +4,7 @@ Install Erlang OTP Documentation and Man Files
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:23:07, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 15:40:03, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -21,26 +21,20 @@ Install Erlang OTP Documentation and Man Files
 Manual installation of Erlang OTP Documentation and Man Files
 -------------------------------------------------------------
 
-I normally have a directory where I store the extra documentation files I
-download from various sites.  Something like Python documentation, Erlang
-documentation and Man files.  By having these files locally I can perform
-search in the help files using my local tools and I can also integrate help
-providing tools with my editor.  I avoid having to perform web requests
-reducing my network traffic, my impact on overall energy consumption and
-my dependence on being connected to the public Internet.
+It's useful to store man files and official documentation locally.
+Erlang OTP man files and HTML documentation is available.
 
-I download the OTP HTML documentation files and the Man page files from
-the `Erlang/OTP download`_  page.  This page has a list of all Erlang/OTP
-versions on the right hand side that leads to a version specific page where
-you can download the documentation files as well as the source code archive and
-the Windows binaries.
+Download them from the `Erlang/OTP download`_ page.  It has a list of all
+Erlang/OTP versions on the right hand side with links that lead to a version
+specific page where you can download the documentation files as well as the
+source code archive and the Windows binaries.
 
 .. caution::
    ⚠️  Be aware that the list of Erlang versions are on the right hand
    side of the `Erlang/OTP download`_ page but will show **only if
    your browser window is wide enough!**
 
-I normally store these files inside the ``~/docs/Erlang/otp-XX.Y`` directory,
+I store these files inside the ``~/docs/Erlang/otp-XX.Y`` directory,
 where ``XX.Y`` is the OTP version number. I extract the content of both the
 html and the man zip tarball files into the corresponding ``otp-XX.Y``
 directory.  The html and the man zip tarball files contain a couple of files
