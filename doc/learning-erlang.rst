@@ -4,7 +4,7 @@ Learning Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-03 12:35:43, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 12:51:32, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -13,7 +13,7 @@ Learning Erlang
 .. sectnum::
 
 .. _Top:   https://github.com/pierre-rouleau/about-erlang
-.. _Next:  https://github.com/pierre-rouleau/about-erlang/blob/master/doc/installing-erlang.rst
+.. _Next:  installing-erlang.rst
 
 
 Authority Information
