@@ -4,7 +4,7 @@ Editing Erlang Source Code
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 12:39:07, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 12:52:52, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -31,9 +31,9 @@ A large number of programmer editors support Erlang.
 .. _Developing Erlang with PEL: https://github.com/pierre-rouleau/pel/blob/master/doc/developing-erlang.rst
 
 
-.. _Prev:  https://github.com/pierre-rouleau/about-erlang/blob/master/doc/installing-erlang.rst
+.. _Prev:  installing-erlang.rst
 .. _Top:   https://github.com/pierre-rouleau/about-erlang
-.. _Next:  https://github.com/pierre-rouleau/about-erlang/blob/master/doc/erlang-tools.rst
+.. _Next:  erlang-tools.rst
 
 
 .. ---------------------------------------------------------------------------
