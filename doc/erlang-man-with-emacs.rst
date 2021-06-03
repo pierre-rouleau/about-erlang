@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 17:40:36, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 17:42:16, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -75,7 +75,7 @@ The edts_ package stores the Erlang man page files inside the directory
 ``~/.emacs.d/edts/doc/VV`` where ``VV`` is the Erlang version.  There can be
 several ``VV`` directories, one per Erlang version supported.
 
-For example, EDTS would store the files for Erlang version 23.0 inside
+For example, EDTS_ would store the files for Erlang version 23.0 inside
 ``~/.emacs.d/edts/doc/23.0``.  The directory it creates would hold:
 
 .. code:: ls
@@ -201,7 +201,6 @@ Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
 
 .. _Installing Erlang: installing-erlang.rst
 .. _erlang.el:  https://github.com/erlang/otp/blob/maint/lib/tools/emacs/erlang.el
-.. _EDTS:
 .. _edts:  https://github.com/sebastiw/edts#readme
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst
 .. _Erlang source code repo: https://github.com/erlang/otp
