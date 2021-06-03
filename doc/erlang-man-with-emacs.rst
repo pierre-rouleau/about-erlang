@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 15:05:53, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 17:15:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -58,11 +58,11 @@ The directory holds:
 
 
 Consolidating all Erlang Man Files in one location
---------------------------------------------------
+==================================================
 
-As described above, you may install Erlang in various ways, with the file
-stored in various locations depending on the method used to install a specific
-version of Erlang.
+As described in the `Installing Erlang`_ sections, you may install Erlang in
+various ways, with the file stored in various locations depending on the
+method used to install a specific version of Erlang.
 
 Ideally, there would be a way to work on several projects *concurrently* even
 if those projects use different versions of Erlang. Also, ideally, when using
@@ -74,21 +74,26 @@ shell using the man command and maintain only one copy for each Erlang
 version.
 
 If you are using Emacs, you'll notice several Emacs packages that support Erlang.
-The erlang.el package supports on version of Erlang.  The edts package
-supports multiple versions of Erlang.  And each of them have the ability to
-download the Erlang man files and store them in a directory they control.
 
-- The erlang.el package stores the erlang man page files inside the directory
-  ``~/.emacs.d/cache/erlang_mode_man_pages/V``  where ``V`` is the Erlang
-  version.
-- The edts package stores the Erlang man page files inside the directory
-  ``~/.emacs.d/edts/doc/VV`` where ``VV`` is the Erlang version.  There can be
-  several ``VV`` directories, one per Erlang version supported.
+- The `erlang.el`_ package supports one version of Erlang and is part of the
+  `Erlang source code repo`_.
 
-Like I did, you may also have downloaded the Erlang man pages somewhere else
+  - By default, the `erlang.el`_ package stores the erlang man page files
+    inside the directory ``~/.emacs.d/cache/erlang_mode_man_pages/V`` where
+    ``V`` is the Erlang version.
+
+- The edts_ external package supports multiple versions of Erlang.  And each
+  of them have the ability to download the Erlang man files and store them in a
+  directory they control.
+
+  - The edts_ package stores the Erlang man page files inside the directory
+    ``~/.emacs.d/edts/doc/VV`` where ``VV`` is the Erlang version.  There can be
+    several ``VV`` directories, one per Erlang version supported.
+
+You may also have downloaded the Erlang man pages somewhere else
 because you downloaded the entire Erlang source package and built Erlang
 yourself, or because you are using an pre-built version of Erlang or for
-whatever else reason.
+whatever reason.
 
 One way to consolidate all of that is to use symbolic links.  What I did is
 to place symlinks inside the edts directory to the locations where I stored
@@ -98,7 +103,7 @@ tree of a each specific Erlang versions I am interested in.
 
 For example, the man man files for Erlang 17.5 are stored inside
 the directory ``~/docs/Erlang/otp-17.5/man``.  Here's a partial tree view
-of the directory tree (I removed several lines for clarity):
+of the directory tree (with several lines removed for clarity):
 
 .. code:: shell
 
@@ -191,7 +196,10 @@ to wrap this all up with code controlled by my Emacs PEL system. But this is
 still work in progress at the moment.
 
 
+.. _Installing Erlang: installing-erlang.rst
+.. _erlang.el:  https://github.com/erlang/otp/blob/maint/lib/tools/emacs/erlang.el
 .. _edts:  https://github.com/sebastiw/edts#readme
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst
+.. _Erlang source code repo: https://github.com/erlang/otp
 
 .. ---------------------------------------------------------------------------
