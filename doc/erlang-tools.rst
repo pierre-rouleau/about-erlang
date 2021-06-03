@@ -3,20 +3,23 @@ Tools for Erlang
 ================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-21 16:33:38, updated by Pierre Rouleau>
+:Time-stamp: <2021-05-21 17:45:59, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
-          There are an increasing number of tools available for Erlang development.
+There are an increasing number of tools available for Erlang development.
 Some of them are listed in this page.
 These include the `built-in Erlang tools`_ that are part of the Erlang system
-itself, and other tools provided by the community.
+itself, and other tools provided by the community such as the ones described
+in the Brujo Benavides' post `10 Essential Erlang Tools for Developers`_.
 
 🚧 This page is under_ construction.  I will add  info about several other
 tools soon. 🚧
 
 
 .. _built-in Erlang tools:  https://erlang.org/doc/apps/tools/index.html
+.. _10 Essential Erlang Tools for Developers: https://www.pluralsight.com/guides/10-essential-erlang-tools-for-erlang-developers
+
 
 
 .. contents::  **Table of Contents**
@@ -163,8 +166,8 @@ specifying the various `xref settings`_.
 
 See:
 
-- `xref reference @ Erlang.org`_
 - `Xref - The Cross Reference Tool @ Erlang.org`_
+- `xref reference @ Erlang.org`_
 - `rebar3 configurations for xref`_
 - `Removing Erlang dead code with Xref`_.  It describes how to remove unused
   *exported* code from your project.
@@ -198,6 +201,27 @@ exported, then the following code snippet could be used:
       -ignore_xref([{?MODULE, some_other_function, 1}]).
 
       ...
+
+
+.. ---------------------------------------------------------------------------
+
+Erlang Code Testing Tools
+=========================
+
+
+Coverage analysis with cover
+----------------------------
+
+Once you have unit test code for your Erlang application you can use the cover
+application to perform coverage analysis of your tests code.  Read the following:
+
+- `cover user guide @ Erlang.org`_
+- `cover reference @ Erlang.org`_
+
+
+.. _cover user guide @ Erlang.org:  https://erlang.org/doc/apps/tools/cover_chapter.html
+.. _cover reference @ Erlang.org: https://erlang.org/doc/man/cover.html
+
 
 
 .. ---------------------------------------------------------------------------
