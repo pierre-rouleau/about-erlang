@@ -3,7 +3,7 @@ Installing Erlang
 =================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Time-stamp: <2021-05-18 16:48:07, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 11:07:33, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -36,7 +36,7 @@ To install Erlang on your macOS system you can use one of the following ways:
    use.  I provide extra information on how to extends this.
 #. `Using Kerl`_ to build from source code using clones of the official Erlang
    git repositories.
-#. `Using asdf-vm`_ to build from source.  asdf-vm extends Kerl and provide
+#. `Using asdf-vm`_ to build from source.  asdf-vm extends Kerl and provides
    the ability to build lots of other tools, Elixir for instance.
    At the moment (and from what I currently know) this seems to be a very good
    choice because you can install Erlang but also Elixir and several other
@@ -59,7 +59,8 @@ See the following sections:
 Some extra information specific to macOS is available of my `macOS Development Environment`_ document.
 
 If you are not familiar with Emacs and would like to learn about it, you may
-be interested by my Emacs customization and document project, PEL_.
+be interested by my Emacs customization and document project, PEL_ and the
+Erlang specific document `Developing Erlang with PEL`_.
 
 .. _Erlang/OTP Build and Install instructions: https://github.com/erlang/otp/blob/master/HOWTO/INSTALL.md
 .. _Installing Erlang on macOS: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
@@ -75,6 +76,7 @@ be interested by my Emacs customization and document project, PEL_.
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst
 .. _Using Erlang Man files within Emacs:         erlang-man-with-emacs.rst
 .. _PEL:                                         https://github.com/pierre-rouleau/pel#readme
+.. _Developing Erlang with PEL: https://github.com/pierre-rouleau/pel/blob/master/doc/developing-erlang.rst
 
 
 
