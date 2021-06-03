@@ -4,7 +4,7 @@ Install Erlang OTP Documentation and Man Files
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 15:40:03, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-03 15:41:32, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -40,7 +40,7 @@ html and the man zip tarball files into the corresponding ``otp-XX.Y``
 directory.  The html and the man zip tarball files contain a couple of files
 at the root that are the same so the files first copied are written over by
 the second set but the files are identical anyway.  By doing this I end up
-with a directory structure that conforms to the normal OTP directory tree.
+with a directory structure that conforms to the usual OTP directory tree.
 
 Here's the directory layout with a view limited to a depth of 2:
 
