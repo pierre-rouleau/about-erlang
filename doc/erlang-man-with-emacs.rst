@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 17:51:01, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-04 09:58:04, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -103,13 +103,13 @@ I stored all Erlang documentation files
 inside the ``~/docs/Erlang`` directory along with the entire documentation
 tree of a each specific Erlang versions I am interested in.
 
-For example, the man man files for Erlang 17.5 are stored inside
+For example, the man files for Erlang 17.5 are stored inside
 the directory ``~/docs/Erlang/otp-17.5/man``.  Here's a partial tree view
 of the directory tree (with several lines removed for clarity):
 
 .. code:: shell
-
-    > tree -L 2 otp-17.5
+    > tree -L 2 ~/docs/Erlang/otp-17.5
+    /Users/roup/docs/Erlang/otp-17.5
     otp-17.5
     ├── COPYRIGHT
     ├── PR.template
