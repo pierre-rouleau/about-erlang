@@ -3,13 +3,14 @@ Using the Erlang Man files within Emacs
 =======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Navigation: Prev_, Top_
-:Time-stamp: <2021-06-03 17:46:48, updated by Pierre Rouleau>
+:Navigation: Prev_, Top_, Next_
+:Time-stamp: <2021-06-03 17:51:01, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
 .. _Prev:  whatis-files.rst
 .. _Top:   installing-erlang.rst
+.. _Next:  specialized-shells.rst
 
 .. contents::  **Table of Contents**
 .. sectnum::
