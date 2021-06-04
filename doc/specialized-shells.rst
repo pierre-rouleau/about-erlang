@@ -18,7 +18,7 @@ Using Specialized OS Shells for Erlang
 
 .. ---------------------------------------------------------------------------
 
-As described in the section of `Installing Erlang`_ I create a set of commands
+As described in the sections of `Installing Erlang`_ I create a set of commands
 to set up OS shells to use various versions of Erlang.  These commands have
 names that identify the Erlang version and the way it was installed or built.
 They are shell alias that source the actual script, allowing the setting of
@@ -178,6 +178,9 @@ The others are similar.  Here's the copy of envfor-erlang-23-a:
     fi
 
     # -----------------------------------------------------------------------------
+
+
+.. _Installing Erlang: installing-erlang.rst
 
 
 
