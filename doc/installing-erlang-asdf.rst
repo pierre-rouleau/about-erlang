@@ -4,7 +4,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:18:27, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-04 09:46:19, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -17,12 +17,44 @@ tool.  You may also be interested by this post by AJ Foster:
 `Installing Elixir and Erlang With ASDF`_.
 
 .. _Installing Elixir and Erlang With ASDF: https://www.pluralsight.com/guides/installing-elixir-erlang-with-asdf
+.. _Installing Erlang: installing-erlang.rst
 
 
 .. contents::  **Table of Contents**
 .. sectnum::
 
 .. ---------------------------------------------------------------------------
+
+Pros and Cons of asdf-vm
+========================
+
+- **Pros**:
+
+  - With asdf-vm you can install and build a large number of programming
+    language tools such as Erlang, Elixir and lot more.  You can select which
+    version to use and activate the various versions of each tool you want to
+    use.
+  - The asdf-vm remembers your settings inside a ``.tool-version`` file in the
+    directory where it was invoked.
+  - It is possible to set up an environment with several tools and remember
+    that exact setting inside the ``.tool-version`` file.  That file could be
+    stored somehow to remember the required setting.
+
+- **Cons**:
+
+  - For a given tool, by default only **one** version of that tool can be used
+    at any given time.
+
+    - Although for production and for most development environments that will
+      be exactly what you want, if you want to compare different versions of
+      Erlang or test running different of Erlang concurrently in a computer to
+      test this type of interaction you wont be able to use two asdf-vm based
+      environments unless you use some sort of container technology.
+
+      It is possible to run several version of Erlang concurrently with Erlang
+      installed with all other methods presented in `Installing Erlang`_.
+
+
 
 
 Installing asdf-vm
