@@ -4,7 +4,7 @@ Install Erlang Using Erlang Installer from Erlang Solutions
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:14:19, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:36:16, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -154,29 +154,73 @@ on my system's path:
 
 .. code:: bash
 
-    #!/usr/bin/env bash
-    # Abstract: Complete Erlang Solutions' Erlang Installer 23.0.2
-    # Last Modified Time-stamp: <2020-07-02 19:18:12, updated by Pierre Rouleau>
-    # -----------------------------------------------------------------------------
-    # This file *must* be sourced.
+    # Sourced script: envfor-erlang-23-ei  -*- mode: sh; -*-
+    #
+    # Purpose   : Activate Erlang 23.0.2 installed by Erlang Solution Installer
+    # Created   : Tuesday, May 18 2021.
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-06-04 15:44:07, updated by Pierre Rouleau>
+    # Copyright © 2021, Pierre Rouleau
+    # License   : MIT
+    # ----------------------------------------------------------------------------
+    # Description
+    # -----------
     #
     # Run with: use-erlang-23-ei
+    #
+    # This script:
+    # - Set PATH to get the specified Erlang version
+    # - Ensure that the Erlang man pages are available via the man command:
+    #   - Set MANPATH to provide access the Erlang man pages
+    #     - If MAN_ONLY_ERLANG environment variable is set, MANPATH
+    #       is set to that directory only, otherwise the Erlang man directory
+    #       is added in front of the current value of MANPATH.
+    # - Set following environment variables:
+    #   - DIR_ERLANG_DEV            : where Erlang projects are stored.
+    #                                 Also acts as a flag protecting against
+    #                                 multiple execution of scripts that
+    #                                 set Erlang environment.
+    #   - PEL_ERLANG_VERSION        : version of the active Erlang
+    #   - PEL_ERLANG_MAN_PARENT_DIR : Absolute path of directory that holds
+    #                                 Erlang man/man1 directory.
+    #
+    #  The PEL environment variables are used by Emacs PEL.
 
     # -----------------------------------------------------------------------------
+    # Script
+    # ------
+    #
     if [ "$DIR_ERLANG_DEV" == "" ]; then
         export DIR_ERLANG_DEV="$HOME/dev/erlang"
+        export PEL_ERLANG_MAN_PARENT_DIR="$HOME/docs/Erlang/otp-23.0"
         PATH=$HOME/.erlangInstaller/23.0.2/lib/erl_interface-4.0/bin:$HOME/.erlangInstaller/23.0.2/bin:${PATH}
         export PATH
-        MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
-        export MANPATH
-        echo "+ Erlang 23.0.2 (from Erlang Solutions Erlang Installer) environment set."
-        echo "+ Using OTP-23.0 Man pages."
-        settitle "Erlang 23.0.2 EI"
+        if [ "$MAN_ONLY_ERLANG" == "" ]; then
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man:`manpath`
+        else
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man
+        fi
+        if [ -f "$HOME/docs/Erlang/otp-23.0/man/whatis" ]; then
+            export PEL_ERLANG_VERSION=23.0.2
+            export MANPATH
+            echo "+ Erlang 23.0.2 (from Erlang Solutions' Erlang Installer) environment set."
+            echo "+ Using OTP-23.0 Man pages."
+            settitle "Erlang 23.0.2 EI"
+        else
+            echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/whatis"
+            echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man"
+            echo " then try again."
+            echo "Reason: The whatis file is needed to use whatis on Erlang man files."
+            echo "        Also Emacs uses it for man auto-completion."
+            return 1
+        fi
     else
         echo "! Erlang environment was already set for this shell: nothing done this time."
     fi
 
     # -----------------------------------------------------------------------------
+
+
 
 To use this, I start a new shell and I issue the ``use-erlang-23-ei`` command:
 

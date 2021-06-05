@@ -4,7 +4,7 @@ Installing Erlang with Homebrew
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-03 13:09:36, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:34:01, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -157,10 +157,13 @@ Here's the script:
 .. code:: bash
 
     # Sourced script.  -*- mode: sh; -*-
-    # Name:     envfor-erlang-hb
-    # Abstract: Complete Homebrew system Erlang 23.3.4
-    # Last Modified Time-stamp: <2021-05-14 18:13:50, updated by Pierre Rouleau>
-
+    # Name      : envfor-erlang-hb
+    # Purpose   : Complete Homebrew system Erlang 23.3.4
+    # Created   :
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-06-04 15:44:32, updated by Pierre Rouleau>
+    # Copyright © 2021, Pierre Rouleau
+    # License   : MIT
     # -----------------------------------------------------------------------------
     # This file *must* be sourced.
     #
@@ -170,21 +173,36 @@ Here's the script:
     # It sets up:
     # - the executable path for Erlang 23.3.4 (in fact nothing done; it's already there)
     # - the MANPATH for Erlang 23.3.4 man pages (while keeping access for others)
-    # - DIR_ERLANG_DEV environment variable: flag and root of Erlang developed code
     #
-    # This protects against multiple execution (via the DIR_ERLANG_DEV envvar).
-    #
-    # Assumes Erlang 23.3.4 installed with Homebrew:
+    # This assumes that Erlang 23.3.4 was installed with Homebrew:
     # - Erlang 23.3.4 executable files are accessible via symlinks in /usr/local/bin/
     # - Erlang 23.3.4 man files are located in /usr/local/Cellar/erlang/23.3.4/lib/erlang/man
+    #
+    # This script:
+    # - Ensure that the Erlang man pages are available via the man command:
+    #   - Set MANPATH to provide access the Erlang man pages
+    #     - If MAN_ONLY_ERLANG environment variable is set, MANPATH
+    #       is set to that directory only, otherwise the Erlang man directory
+    #       is added in front of the current value of MANPATH.
+    # - Set following environment variables:
+    #   - DIR_ERLANG_DEV            : where Erlang projects are stored.
+    #                                 Also acts as a flag protecting against
+    #                                 multiple execution of scripts that
+    #                                 set Erlang environment.
+    #   - PEL_ERLANG_VERSION        : version of the active Erlang
+    #   - PEL_ERLANG_MAN_PARENT_DIR : Absolute path of directory that holds
+    #                                 Erlang man/man1 directory.
+    #
+    #  The PEL environment variables are used by Emacs PEL
 
     # -----------------------------------------------------------------------------
     if [ "$DIR_ERLANG_DEV" == "" ]; then
         export DIR_ERLANG_DEV="$HOME/dev/erlang"
+        export PEL_ERLANG_MAN_PARENT_DIR=/usr/local/Cellar/erlang/23.3.4/lib/erlang
         if [ "$MAN_ONLY_ERLANG" == "" ]; then
-            MANPATH=/usr/local/Cellar/erlang/23.3.4/lib/erlang/man:`manpath`
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man:`manpath`
         else
-            MANPATH=/usr/local/Cellar/erlang/23.3.4/lib/erlang/man
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man
         fi
         if [ -f "/usr/local/Cellar/erlang/23.3.4/lib/erlang/man/whatis" ]; then
             export PEL_ERLANG_VERSION=23.3.4
@@ -193,7 +211,7 @@ Here's the script:
             echo "+ Using Cellar/Erlang/23.3.4 Man pages."
             settitle "Erlang 23.3.4 HB"
         else
-            echo "Error: missing: /usr/local/Cellar/erlang/23.3.4/lib/erlang/man"
+            echo "Error: missing: /usr/local/Cellar/erlang/23.3.4/lib/erlang/man/whatis"
             echo "Execute: make-local-whatis /usr/local/Cellar/erlang/23.3.4/lib/erlang/man"
             echo " then try again."
             echo "Reason: The whatis file is needed to use whatis on Erlang man files."
@@ -203,7 +221,9 @@ Here's the script:
     else
         echo "! Erlang environment was already set for this shell: nothing done this time."
     fi
+
     # -----------------------------------------------------------------------------
+
 
 
 It uses:

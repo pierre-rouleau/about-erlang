@@ -4,7 +4,7 @@ Build, Install and Manage Erlang Versions with asdf-vm
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-04 09:46:19, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:41:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -414,69 +414,77 @@ Here's the script:
 
 .. code:: bash
 
-          # Sourced script: envfor-erlang-23-a  -*- mode: sh; -*-
-          #
-          # Purpose   : Install Erlang 23.0.2 (built with asdf/native Clang)
-          # Created   : Tuesday, May 18 2021.
-          # Author    : Pierre Rouleau <prouleau001@gmail.com>
-          # Time-stamp: <2021-05-18 11:17:05, updated by Pierre Rouleau>
-          # Copyright © 2021, Pierre Rouleau
-          # License   : MIT
-          # ----------------------------------------------------------------------------
-          # Description
-          # -----------
-          #
-          # Run with: use-erlang-23-a
-          #
-          # This script uses:
-          # - `use-asdf` alias to source the `envfor-asdf` script, to setup asdf-vm
-          # - `asdf` command (asdf-vm) to activate Erlang 23.0.2 locally.
-          # - settitle script to set the terminal title.
-          #
-          # This script:
-          # - Ensure that the Erlang man pages are available via the man command
-          # - Set PEL_ERLANG_VERSION envvar, used by PEL to inform PEL Emacs Lisp code
-          # - Set terminal title to indicate which Erlang is used.`
-          # - Set DIR_ERLANG_DEV to directory root of Erlang projects.
-          #   This also acts as a flag protecting against multiple executions of
-          #   scripts that set the Erlang environment.
+    # Sourced script: envfor-erlang-23-a  -*- mode: sh; -*-
+    #
+    # Purpose   : Install Erlang 23.0.2 (built with asdf/native Clang)
+    # Created   : Tuesday, May 18 2021.
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-06-04 16:00:01, updated by Pierre Rouleau>
+    # Copyright © 2021, Pierre Rouleau
+    # License   : MIT
+    # ----------------------------------------------------------------------------
+    # Description
+    # -----------
+    #
+    # Run with: use-erlang-23-a
+    #
+    # This script uses:
+    # - `use-asdf` alias to source the `envfor-asdf` script, to setup asdf-vm
+    # - `asdf` command (asdf-vm) to activate Erlang 23.0.2 locally.
+    # - settitle script to set the terminal title.
+    #
+    # This script:
+    # - Set PATH to get the specified Erlang version (via asdf-vm)
+    # - Ensure that the Erlang man pages are available via the man command:
+    #   - Set MANPATH to provide access the Erlang man pages
+    #     - If MAN_ONLY_ERLANG environment variable is set, MANPATH
+    #       is set to that directory only, otherwise the Erlang man directory
+    #       is added in front of the current value of MANPATH.
+    # - Set following environment variables:
+    #   - DIR_ERLANG_DEV            : where Erlang projects are stored.
+    #                                 Also acts as a flag protecting against
+    #                                 multiple execution of scripts that
+    #                                 set Erlang environment.
+    #   - PEL_ERLANG_VERSION        : version of the active Erlang
+    #   - PEL_ERLANG_MAN_PARENT_DIR : Absolute path of directory that holds
+    #                                 Erlang man/man1 directory.
+    #
+    #  The PEL environment variables are used by Emacs PEL
 
-          # ----------------------------------------------------------------------------
-          # Script
-          # ------
-          #
-          if [ "$DIR_ERLANG_DEV" == "" ]; then
-              export DIR_ERLANG_DEV="$HOME/dev/erlang"
-              if [ "$MAN_ONLY_ERLANG" == "" ]; then
-                  MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
-              else
-                  MANPATH=$HOME/docs/Erlang/otp-23.0/man/man
-              fi
-              if [ -f "$HOME/docs/Erlang/otp-23.0/man/man/whatis" ]; then
-                  export PEL_ERLANG_VERSION=23.0.2
-                  export MANPATH
-                  echo "+ Erlang 23.0.2 (built with asdf-vm/native Clang) environment set."
-                  echo "+ Using OTP-23 Man pages."
-                  echo "Note: asdf is leaving a .tool-version in the current directory!"
-                  use-asdf
-                  asdf local erlang 23.0.2
-                  settitle "Erlang 23.0.2 asdf/Native"
-              else
-                  echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/man"
-                  echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man/man"
-                  echo " then try again."
-                  echo "The whatis file is needed to use whatis on Erlang man files."
-                  echo "Also Emacs uses it for man auto-completion."
-                  return 1
-              fi
+    # ----------------------------------------------------------------------------
+    # Script
+    # ------
+    #
+    if [ "$DIR_ERLANG_DEV" == "" ]; then
+        export DIR_ERLANG_DEV="$HOME/dev/erlang"
+        export PEL_ERLANG_MAN_PARENT_DIR="$HOME/docs/Erlang/otp-23.0"
+        if [ "$MAN_ONLY_ERLANG" == "" ]; then
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man:`manpath`
+        else
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man
+        fi
+        if [ -f "$PEL_ERLANG_MAN_PARENT_DIR/man/whatis" ]; then
+            export PEL_ERLANG_VERSION=23.0.2
+            export MANPATH
+            echo "+ Erlang 23.0.2 (built with asdf-vm/native Clang) environment set."
+            echo "+ Using OTP-23.0 Man pages."
+            echo "Note: asdf is leaving a .tool-version in the current directory!"
+            use-asdf
+            asdf local erlang 23.0.2
+            settitle "Erlang 23.0.2 asdf/Native"
+        else
+            echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/whatis"
+            echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man"
+            echo " then try again."
+            echo "Reason: The whatis file is needed to use whatis on Erlang man files."
+            echo "        Also Emacs uses it for man auto-completion."
+            return 1
+        fi
+    else
+        echo "! Erlang environment was already set for this shell."
+    fi
 
-          else
-              echo "! Erlang environment was already set for this shell."
-          fi
-
-          # -----------------------------------------------------------------------------
-
-
+    # -----------------------------------------------------------------------------
 
 And here's a session using it to install Erlang 23.0.2:
 

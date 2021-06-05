@@ -4,7 +4,7 @@ Building Erlang From Source Using Kerl
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:10:00, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:39:24, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -466,29 +466,54 @@ Here's the script:
 
 .. code:: bash
 
-    # Sourced script.  -*- mode: sh; -*-
-    # Name:     envfor-erlang-23-kn
-    # Abstract: Install Erlang 23.0.2 (built with Kerl/Native clang)
-    # Last Modified Time-stamp: <2021-05-15 20:52:11, updated by Pierre Rouleau>
-    # -----------------------------------------------------------------------------
-    # Description:
+    # Sourced script: envfor-erlang-23-kn  -*- mode: sh; -*-
     #
-    #   This file *must* be sourced.
+    # Purpose   : Install Erlang 23.0.2 (built with Kerl/Native clang)
+    # Created   : Tuesday, May 18 2021.
+    # Author    : Pierre Rouleau <prouleau001@gmail.com>
+    # Time-stamp: <2021-06-04 15:44:17, updated by Pierre Rouleau>
+    # Copyright © 2021, Pierre Rouleau
+    # License   : MIT
+    # ----------------------------------------------------------------------------
+    # Description
+    # -----------
     #
     #   Run with: use-erlang-23-kn
     #
     #
     #   It uses 'Kerl activate' to install Erlang 23.0.2
+    #
+    # This script:
+    # - Set PATH to get the specified Erlang version (via kerl)
+    # - Ensure that the Erlang man pages are available via the man command:
+    #   - Set MANPATH to provide access the Erlang man pages
+    #     - If MAN_ONLY_ERLANG environment variable is set, MANPATH
+    #       is set to that directory only, otherwise the Erlang man directory
+    #       is added in front of the current value of MANPATH.
+    # - Set following environment variables:
+    #   - DIR_ERLANG_DEV            : where Erlang projects are stored.
+    #                                 Also acts as a flag protecting against
+    #                                 multiple execution of scripts that
+    #                                 set Erlang environment.
+    #   - PEL_ERLANG_VERSION        : version of the active Erlang
+    #   - PEL_ERLANG_MAN_PARENT_DIR : Absolute path of directory that holds
+    #                                 Erlang man/man1 directory.
+    #
+    #  The PEL environment variables are used by Emacs PEL
 
-    # -----------------------------------------------------------------------------
+    # ----------------------------------------------------------------------------
+    # Script
+    # ------
+    #
     if [ "$DIR_ERLANG_DEV" == "" ]; then
         export DIR_ERLANG_DEV="$HOME/dev/erlang"
+        export PEL_ERLANG_MAN_PARENT_DIR="$HOME/docs/Erlang/otp-23.0"
         if [ "$MAN_ONLY_ERLANG" == "" ]; then
-            MANPATH=$HOME/docs/Erlang/otp-23.0/man/man:`manpath`
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man:`manpath`
         else
-            MANPATH=$HOME/docs/Erlang/otp-23.0/man/man
+            MANPATH=$PEL_ERLANG_MAN_PARENT_DIR/man
         fi
-        if [ -f "$HOME/docs/Erlang/otp-23.0/man/man/whatis" ]; then
+        if [ -f "$HOME/docs/Erlang/otp-23.0/man/whatis" ]; then
             export PEL_ERLANG_VERSION=23.0.2
             export MANPATH
             echo "+ Erlang 23.0.2 (built with Kerl/native Clang) environment set."
@@ -497,11 +522,11 @@ Here's the script:
             settitle "Erlang 23.0.2 Kerl/Native"
             source ~/bin/erls/23.0.2/activate
         else
-            echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/man"
-            echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man/man"
+            echo "Error: missing: $HOME/docs/Erlang/otp-23.0/man/whatis"
+            echo "Execute make-local-whatis $HOME/docs/Erlang/otp-23.0/man"
             echo " then try again."
-            echo "The whatis file is needed to use whatis on Erlang man files."
-            echo "Also Emacs uses it for man auto-completion."
+            echo "Reason: The whatis file is needed to use whatis on Erlang man files."
+            echo "        Also Emacs uses it for man auto-completion."
             return 1
         fi
     else
@@ -509,7 +534,6 @@ Here's the script:
     fi
 
     # -----------------------------------------------------------------------------
-
 
 For 23.0.2 the Man pages were not part of the build, so the script sets up
 ``MANPATH`` to use the manually downloaded version of the OTP-23 man pages.
