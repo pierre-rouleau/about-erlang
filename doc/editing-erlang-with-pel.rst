@@ -7,7 +7,7 @@ Using PEL with Specialized Shells for Erlang to Edit Erlang
 :Project:
 :Created:  Saturday, June  5 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
-:Modified: 2021-06-05 12:58:14, updated by Pierre Rouleau.
+:Modified: 2021-06-05 14:48:37, updated by Pierre Rouleau.
 :Copyright: © 2021, Pierre Rouleau
 
 .. _Prev:  specialized-shells.rst
@@ -64,9 +64,16 @@ the version of Erlang selected for the OS specialized shell.
 The following screen shot shows two terminal shells that have been specialized
 for different versions of Erlang. The one on the left is using Erlang 23.3.4
 as installed by Homebrew.   The one on the right is using Erlang 21.3.8.16
-installed by asdf-vm using the native compiler on macOS.  Each one show the
-end of the erl man page where you can read their corresponding version of
-Erlang erts.
+installed by asdf-vm using the native compiler on macOS.  Each one show 4
+windows:
+- A vterm window chowing the result of the command ``version-erl`` that
+  displays the version of Erlang available to the shell.
+- A Erlang file edited.  This window has the focus, so the Emacs menu at the
+  top  of the Emacs frame is for Erlang buffers,
+- A window with  the Erlang shell, erl, running.  The first thing this does is
+  print version information.
+- A window showing the end of the erl man page where you can read their
+  corresponding version of Erlang erts.
 
 
 .. image:: ../res/two-shells-two-versions.png
