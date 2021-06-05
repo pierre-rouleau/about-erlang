@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-04 09:58:04, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:03:12, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -17,31 +17,78 @@ Using the Erlang Man files within Emacs
 
 .. ---------------------------------------------------------------------------
 
-Erlang Man files to use with Emacs
-==================================
+Setup Goal
+==========
 
-Emacs support for Erlang uses the Erlang man files.  Several packages uses the
-Erlang man page files and they may install them in different location.
-This section describes where various Emacs packages for Erlang support
-install the man pages and how to consolidate them into one location.
+Emacs provides excellent support for `man pages`_. The `erlang.el`_ library
+provides a menu providing access to the Erlang man files when it is configured
+properly.
 
-Consolidating all Erlang Man Files in one location
-==================================================
+The goal here is:
 
-As described in the page titled `Installing Erlang`_ sections, you may install Erlang in
-various ways, with the file stored in various locations depending on the
-method used to install a specific version of Erlang.
+- to be able to use this facility to easily access Erlang man pages while also
+  having the choice to do the following:
 
-Ideally, there would be a way to work on several projects *concurrently* even
-if those projects use different versions of Erlang. Also, ideally, when using
-Emacs, you'd want to be able to use the various Emacs tools for Erlang and
-ensure they find the man files in their expected locations.
+  - *limit* access to non-Erlang man files so that when we search for a man page
+    we'll only hit Erlang man pages, or
+  - don't limit at all and provide access to *all* man pages available on the
+    computer, including the Erlang man pages.
 
-At the same time you'd want to be able to access Erlang Man files from the
-shell using the man command and maintain only one copy for each Erlang
-version.
+- To also be able to concurrently run several instances of Emacs inside
+  specialized OS shells that provide access to a given version of Erlang and
+  their version specific man pages and being able to access them from Emacs.
+  So if we have a OS shell that runs Erlang 17 and another that runs Erlang
+  23, and each one run Emacs in them, then the Emacs running in the first
+  shell would have access to the Erlang 17 man pages while the other would
+  have access to Erlang 23 man pages.
 
-If you are using Emacs, you'll notice several Emacs packages that support Erlang.
+This document describes how to setup Emacs to achieve this.
+
+
+For more information on Emacs man page support see:
+
+- `Emacs Man Page Lookup`_
+- `WoMan: Browse Unix Manual Pages "W.O. (without) Man"`_
+
+.. ---------------------------------------------------------------------------
+
+
+Step 1 - Organize your Erlang Man Files
+=======================================
+
+Your Erlang installation may or may not include the Erlang man files.
+That really depends on how you installed Erlang on your system
+as described in the page titled `Installing Erlang`_ sections.
+You may also have installed several versions of Erlang.
+
+The method promoted here is to install all Erlang man files inside a directory
+tree as described inside the `Install Erlang OTP Documentation and Man Files`_
+document.
+
+For example, the man1, man3 and other directories that contain the Erlang man
+files for Erlang/OTP 23.3 would be stored inside the directory
+``~/docs/Erlang/otp-23.3``.  Note that ``otp-23.3`` could also be a symlink to
+the directory holding the`` manN`` directories if the files have been stored
+somewhere else.
+
+
+
+Step 2 - Configure Emacs Erlang Support
+=======================================
+
+Several Emacs packages support Erlang.
+
+The `erlang.el`_ package is required and used by the others.  It provides a
+menu listing the man pages by sections.  But it also supports only *one*
+version of Erlang at any given time.
+
+The EDTS_ package extends it and does support several versions of Erlang.
+
+You may or may not want to use EDTS_.  Therefore we'll provide a mechanism
+that configures `erlang.el`_ for the Erlang version used in the current OS
+shell.
+
+The next 2 sections describe how these package handle the Erlang man pages.
 
 Man files Used by the standard Erlang mode (erlang.el)
 ------------------------------------------------------
@@ -49,21 +96,26 @@ Man files Used by the standard Erlang mode (erlang.el)
 The `erlang.el`_ package which is part of the `Erlang source code repo`_,
 supports one version of Erlang.
 
-By default, it stores the erlang man page files inside the directory
-``~/.emacs.d/cache/erlang_mode_man_pages/V`` where ``V`` is the Erlang
-version.
+It uses the user-option variable ``erlang-root-dir`` to control the location
+of the Erlang man files.  Despite its name of the user-option variable the
+directory does not need to hold the Erlang bin or other OTP directory.
 
-For example, this directory holds the following files:
+The ``erlang-root-dir`` may hold 2 types of values:
 
-.. code:: ls
+- A string that identifies the parent directory of the ``manN`` directories
+  holding the man page.  The string must not end with a slash or backslash.
+- The nil symbol.  In this case the `erlang.el`_ package checks for the
+  presence of the directory ``~/.emacs.d/cache/erlang-mode-man-pages`` and the
+  presence of the ``man`` sub-directory holding the ``manN`` directories.
 
-        -rw-r--r--  1 roup  staff    16239 17 Sep  2019 COPYRIGHT
-        -rw-r--r--  1 roup  staff      842 17 Sep  2019 PR.template
-        -rw-r--r--  1 roup  staff     4167 17 Sep  2019 README.md
-        -rw-r--r--  1 roup  staff       51 22 Jul 10:32 erlang_man_download_url
-        drwxr-xr-x  7 roup  staff      224 17 Sep  2019 man
-        -rw-r--r--  1 roup  staff  1355169 22 Jul 07:44 man.tar.gz
+  - If ``~/.emacs.d/cache/erlang-mode-man-pages/man/manN`` is present it uses
+    it.
+  - If that directory is not present it asks the user to download the man
+    files and then installs them inside that directory.
 
+It is therefore possible to force the use of a specific directory for a given
+version of Erlang by dynamically setting the value of ``erlang-root-dir``
+after the `erlang.el`_ is loaded but before the `erlang-start.el`_ file is loaded.
 
 Man Files Used by EDTS
 ----------------------
@@ -86,95 +138,60 @@ For example, EDTS_ would store the files for Erlang version 23.0 inside
         -rw-r--r--   1 roup  staff   4167 12 May 17:41 README.md
         drwxr-xr-x   7 roup  staff    224 12 May 17:30 man
 
+The important one is the man directory that holds the man1, man3, man4 and
+man6 directories that which the Erlang man files.
+
+
+The Erlang man directory tree
+-----------------------------
+
+The Erlang man directory tree for each version of Erlang is similar and looks
+like this::
+
+    otp-17.5
+      ├── man
+          ├── man1
+          ├── man3
+          ├── man4
+          ├── man6
+          ├── man7
+          └── whatis
+
+Each of the manN contain the Erlang man files except for man7. These
+directories contain:
+
+  - man1 : Commands
+  - man3 : Modules
+  - man4 : Files
+  - man6 : Applications
+  - man7 : SNMP MIBs
+
+The whatis file is important and provides support for the `whatis utility`_ for
+the Erlang man pages.  See `Creating whatis files for Erlang man pages`_ for
+more information.
+
 
 A Consolidation Strategy
 ------------------------
 
-You may also have downloaded the Erlang man pages somewhere else
-because you downloaded the entire Erlang source package and built Erlang
-yourself, or because you are using an pre-built version of Erlang or for
-whatever reason.
+To limit the copies of Erlang man directory trees, the strategy is to store
+the man directories, or symlinks to these directories in on or two locations:
 
-One way to consolidate all of that is to use symbolic links.  What I did is
-to place symlinks inside the ``~/.emacs.d/edts/doc`` directory to the
-locations of the Erlang man files.
-As described `here <installing-erlang-man-files.rst>`_,
-I stored all Erlang documentation files
-inside the ``~/docs/Erlang`` directory along with the entire documentation
-tree of a each specific Erlang versions I am interested in.
-
-For example, the man files for Erlang 17.5 are stored inside
-the directory ``~/docs/Erlang/otp-17.5/man``.  Here's a partial tree view
-of the directory tree (with several lines removed for clarity):
-
-.. code:: shell
-    > tree -L 2 ~/docs/Erlang/otp-17.5
-    /Users/roup/docs/Erlang/otp-17.5
-    otp-17.5
-    ├── COPYRIGHT
-    ├── PR.template
-    ├── README
-    ├── doc
-    │   ├── applications.html
-    │   ├── design_principles
-    │   ├── docbuild
-    ...
-    │   ├── programming_examples
-    │   ├── reference_manual
-    │   ├── system_architecture_intro
-    │   ├── system_principles
-    │   └── tutorial
-    ├── erlang_man_download_url
-    ├── erts-6.4
-    │   ├── doc
-    │   └── info
-    ├── lib
-    │   ├── asn1-3.0.4
-    │   ├── common_test-1.10
-    │   ├── compiler-5.0.4
-    ...
-    │   └── xmerl-1.3.7
-    ├── man
-    │   ├── man1
-    │   ├── man3
-    │   ├── man4
-    │   ├── man6
-    │   ├── man7
-    │   └── whatis
-    └── readme.txt
-
-    75 directories, 13 files
-    >
+- inside a directory like ``~/docs/Erlang`` that will also hold the Erlang HTML
+  documentation files, and
+- inside ``~/.emacs.d/edts/doc`` to support EDTS_.
 
 
-Notice the ``erlang_man_download_url`` file.  This is a file created and used
-by EDTS_. It contains the URL where the man files can be downloaded.  The
-file contains the following single line of text::
+Follow the instructions in the page titled
+`Install Erlang OTP Documentation and Man Files`_ if this is not already done,
+to store the HTML documentation and man files inside ``~/docs/Erlang``.
 
-  https://erlang.org/download/otp_doc_man_17.5.tar.gz
+Then create the symlinks to the man directory parents inside
+``~/.emacs.d/edts/doc``.  After creating the symlinks, you should have something like this:
 
-Also notice the ``whatis`` file in the ``man`` directory.  I created that file
-using the method explained in `Creating whatis files for Erlang man pages`_ to allow
-me to restrict the man pages to Erlang only and take advantage of Emacs
-completion using the Emacs man command.
+.. code:: ls
 
-Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
-
-.. code:: shell
-
-
-    > cd ~/.emacs.d/edts/doc
-    > ln -s  ~/docs/Erlang/otp-23.3/man  23.3
-    > ln -s  ~/docs/Erlang/otp-23.0/man  23.0
-    > ln -s  ~/docs/Erlang/otp-22.3/man  22.3
-    > ln -s  ~/docs/Erlang/otp-22.2/man  22.2
-    > ln -s  ~/docs/Erlang/otp-21.3/man  21.3
-    > ln -s  ~/docs/Erlang/otp-20.3/man  20.3
-    > ln -s  ~/docs/Erlang/otp-19.3/man  19.3
-    > ln -s  ~/docs/Erlang/otp-18.3/man  18.3
-    > ln -s  ~/docs/Erlang/otp-17.5/man  17.5
-    >
-    > ls -l
+    > ls -l ~/.emacs.d/edts/doc
     total 0
     lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 17.5 -> /Users/roup/docs/Erlang/otp-17.5/man
     lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 18.3 -> /Users/roup/docs/Erlang/otp-18.3/man
@@ -187,17 +204,48 @@ Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
     lrwxr-xr-x  1 roup  staff  36  3 Jun 15:02 23.3 -> /Users/roup/docs/Erlang/otp-23.3/man
     >
 
-..
+Each otp-XX.Y directory has the same files and sub-directories and look like
+this:
+
+.. code:: shell
+
+    > tree -L 1 ~/docs/Erlang/otp-17.5
+    /Users/roup/docs/Erlang/otp-17.5
+    ├── COPYRIGHT
+    ├── PR.template
+    ├── README
+    ├── doc
+    ├── erlang_man_download_url
+    ├── erts-6.4
+    ├── lib
+    ├── man
+    └── readme.txt
+
+    4 directories, 5 files
+    >
+
+The man directory holds the manN directories which contain the Erlang man files:
+
+::
+
+    ├── man
+    │   ├── man1
+    │   ├── man3
+    │   ├── man4
+    │   ├── man6
+    │   ├── man7
+    │   └── whatis
+    └── readme.txt
+
+The ``erlang_man_download_url`` file is created and used
+by EDTS_. It contains the URL where the man files can be downloaded.  The
+file contains the following single line of text::
+
+  https://erlang.org/download/otp_doc_man_17.5.tar.gz
 
 
-   And then I create a symlink inside ``~/.emacs.d/cache`` called
-   ``erlang_mode_man_pages`` to the location of the directory holding the man
-   pages of the default Erlang version for the shell.
-
-   Ideally that should be all controlled from the version of Erlang used in the
-   shell or in the project.   The EDTS_ package does some of this.  I'm planning
-   to wrap this all up with code controlled by my Emacs PEL system. But this is
-   still work in progress at the moment.
+Once you have this you might want specialized OS shells that will be
+supporting a specific version of Erlang. This is described next_.
 
 
 .. _Installing Erlang: installing-erlang.rst
@@ -206,5 +254,12 @@ Then I created the symlinks in the ``~/.emacs.d/edts/doc`` directory:
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst
 .. _Erlang source code repo: https://github.com/erlang/otp
 .. _erlang.el:  https://github.com/erlang/otp/blob/maint/lib/tools/emacs/erlang.el
+.. _man pages: https://en.wikipedia.org/wiki/Man_page
+.. _Emacs Man Page Lookup: https://www.gnu.org/software/emacs/manual/html_node/emacs/Man-Page.html
+.. _WoMan\: Browse Unix Manual Pages "W.O. (without) Man": https://www.gnu.org/software/emacs/manual/html_node/woman/index.html
+.. _Install Erlang OTP Documentation and Man Files: installing-erlang-man-files.rst
+.. _erlang-start.el: https://github.com/erlang/otp/blob/maint/lib/tools/emacs/erlang-start.el
+.. _whatis utility: https://en.wikipedia.org/wiki/Apropos_(Unix)#Related_utilities
+.. _Install Erlang OTP Documentation and Man Files:  installing-erlang-man-files.rst
 
 .. ---------------------------------------------------------------------------

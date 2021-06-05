@@ -1,10 +1,10 @@
 ==============================================
-Install Erlang OTP Documentation and Man Files
+`Install Erlang OTP Documentation and Man Files
 ==============================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 15:41:32, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 10:47:56, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -57,8 +57,7 @@ Here's the directory layout with a view limited to a depth of 2:
       │   ├── doc
       │   ├── erts-7.3
       │   ├── lib
-      │   ├── man
-      │   └── mn
+      │   └── man
       ├── otp-19.3
       │   ├── doc
       │   ├── erts-8.3
