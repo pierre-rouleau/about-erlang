@@ -3,7 +3,7 @@ Using Specialized OS Shells for Erlang
 ======================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Navigation: Prev_, Top_
+:Navigation: Prev_, Top_, Next_.
 :Created:  Thursday, June  3 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
 :Modified: 2021-06-03 17:50:26, by Pierre Rouleau.
@@ -11,6 +11,7 @@ Using Specialized OS Shells for Erlang
 
 .. _Prev:  erlang-man-with-emacs.rst
 .. _Top:   installing-erlang.rst
+.. _Next:  editing-erlang-with-pel.rst
 
 
 .. contents::  **Table of Contents**
