@@ -4,7 +4,7 @@ Installing Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:03:21, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:54:12, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -59,7 +59,9 @@ See the following sections:
 - `Creating whatis files for Erlang man pages`_ to understand the purpose
   of the whatis utility and its impact on the Erlang man pages, and
 - `Using Erlang Man files within Emacs`_ to get the best of Erlang when using Emacs.
-
+- `Using Specialized OS Shells for Erlang`_, to use several versions of Erlang
+  simultaneously.
+- `Using PEL with Specialized Shells for Erlang to Edit Erlang`_.
 
 Some extra information specific to macOS is available of my `macOS Development Environment`_ document.
 
@@ -76,6 +78,8 @@ Erlang specific document `Developing Erlang with PEL`_.
 .. _Using Erlang Installer from Erlang Solutions:  installing-erlang-ei.rst
 .. _Using Kerl:                                    installing-erlang-kerl.rst
 .. _Using asdf-vm:                                 installing-erlang-asdf.rst
+.. _Using Specialized OS Shells for Erlang:        specialized-shells.rst
+.. _Using PEL with Specialized Shells for Erlang to Edit Erlang: editing-erlang-with-pel.rst
 
 .. _Manual installation of Erlang OTP Documentation and Man Files: installing-erlang-man-files.rst
 .. _Creating whatis files for Erlang man pages:  whatis-files.rst

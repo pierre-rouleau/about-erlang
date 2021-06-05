@@ -4,7 +4,7 @@ Editing Erlang Source Code
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-03 13:05:00, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-05 11:52:25, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -25,6 +25,7 @@ A large number of programmer editors support Erlang.
   - For Erlang development you might be interested in the following:
 
     - `Developing Erlang with PEL`_
+    - `Using PEL with Specialized Shells for Erlang to Edit Erlang`_
     - `PEL Topic Index PDF`_ (best viewed in browser that renders PDF inline,
       like Firefox).
     - The `𝕻𝔩 - Erlang PDF`_, which describes Erlang specific commands and key bindings.
@@ -34,5 +35,6 @@ A large number of programmer editors support Erlang.
 .. _PEL Topic Index PDF: https://raw.githubusercontent.com/pierre-rouleau/pel/master/doc/pdf/-index.pdf
 .. _𝕻𝔩 - Erlang PDF: https://raw.githubusercontent.com/pierre-rouleau/pel/master/doc/pdf/pl-erlang.pdf
 .. _Developing Erlang with PEL: https://github.com/pierre-rouleau/pel/blob/master/doc/developing-erlang.rst
+.. _Using PEL with Specialized Shells for Erlang to Edit Erlang: editing-erlang-with-pel.rst
 
 .. ---------------------------------------------------------------------------
