@@ -7,7 +7,7 @@ Using PEL with Specialized Shells for Erlang to Edit Erlang
 :Project:
 :Created:  Saturday, June  5 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
-:Modified: 2021-06-05 11:53:53, by Pierre Rouleau.
+:Modified: 2021-06-05 12:58:14, updated by Pierre Rouleau.
 :Copyright: © 2021, Pierre Rouleau
 
 .. _Prev:  specialized-shells.rst
@@ -61,6 +61,15 @@ From then on, when you open a Erlang man page from within Emacs that is
 running inside a specialized shell, the man file selected will correspond to
 the version of Erlang selected for the OS specialized shell.
 
+The following screen shot shows two terminal shells that have been specialized
+for different versions of Erlang. The one on the left is using Erlang 23.3.4
+as installed by Homebrew.   The one on the right is using Erlang 21.3.8.16
+installed by asdf-vm using the native compiler on macOS.  Each one show the
+end of the erl man page where you can read their corresponding version of
+Erlang erts.
+
+
+.. image:: ../res/two-shells-two-versions.png
 
 PEL provides other support for Erlang.
 
