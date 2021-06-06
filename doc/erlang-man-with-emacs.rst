@@ -4,7 +4,7 @@ Using the Erlang Man files within Emacs
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-05 11:03:12, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-06 17:48:13, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -68,7 +68,7 @@ document.
 For example, the man1, man3 and other directories that contain the Erlang man
 files for Erlang/OTP 23.3 would be stored inside the directory
 ``~/docs/Erlang/otp-23.3``.  Note that ``otp-23.3`` could also be a symlink to
-the directory holding the`` manN`` directories if the files have been stored
+the directory holding the ``manN`` directories if the files have been stored
 somewhere else.
 
 
@@ -125,7 +125,7 @@ And it has the ability to download the Erlang man files for each of them
 and store them in a directory specific to that version of Erlang.
 
 The EDTS_ package stores the Erlang man page files inside the directory
-``~/.emacs.d/edts/doc/VV`` where ``VV`` is the Erlang version.  There can be
+``~/.emacs.d/edts/doc/VV/man`` where ``VV`` is the Erlang version.  There can be
 several ``VV`` directories, one per Erlang version supported.
 
 For example, EDTS_ would store the files for Erlang version 23.0 inside
@@ -187,44 +187,40 @@ Follow the instructions in the page titled
 to store the HTML documentation and man files inside ``~/docs/Erlang``.
 
 Then create the symlinks to the man directory parents inside
-``~/.emacs.d/edts/doc``.  After creating the symlinks, you should have something like this:
-
-.. code:: ls
-
-    > ls -l ~/.emacs.d/edts/doc
-    total 0
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 17.5 -> /Users/roup/docs/Erlang/otp-17.5/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 18.3 -> /Users/roup/docs/Erlang/otp-18.3/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 19.3 -> /Users/roup/docs/Erlang/otp-19.3/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 20.3 -> /Users/roup/docs/Erlang/otp-20.3/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 21.3 -> /Users/roup/docs/Erlang/otp-21.3/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 22.2 -> /Users/roup/docs/Erlang/otp-22.2/man
-    lrwxr-xr-x  1 roup  staff  36 22 Jul  2020 22.3 -> /Users/roup/docs/Erlang/otp-22.3/man
-    lrwxr-xr-x  1 roup  staff  36  3 Jun 14:52 23.0 -> /Users/roup/docs/Erlang/otp-23.0/man
-    lrwxr-xr-x  1 roup  staff  36  3 Jun 15:02 23.3 -> /Users/roup/docs/Erlang/otp-23.3/man
-    >
-
-Each otp-XX.Y directory has the same files and sub-directories and look like
-this:
+``~/.emacs.d/edts/doc/V`` for each Erlang version V.
+After creating the symlinks, you should have something like this:
 
 .. code:: shell
 
-    > tree -L 1 ~/docs/Erlang/otp-17.5
-    /Users/roup/docs/Erlang/otp-17.5
-    ├── COPYRIGHT
-    ├── PR.template
-    ├── README
-    ├── doc
-    ├── erlang_man_download_url
-    ├── erts-6.4
-    ├── lib
-    ├── man
-    └── readme.txt
+    > tree -L 2  ~/.emacs.d/edts/doc
+    /Users/roup/.emacs.d/edts/doc
+    ├── 17.5
+    │   └── man -> /Users/roup/Erlang/docs/otp-17.5/man
+    ├── 18.3
+    │   └── man -> /Users/roup/Erlang/docs/otp-18.3/man
+    ├── 19.3
+    │   └── man -> /Users/roup/Erlang/docs/otp-19.3/man
+    ├── 20.3
+    │   └── man -> /Users/roup/Erlang/docs/otp-20.3/man
+    ├── 21.3
+    │   └── man -> /Users/roup/Erlang/docs/otp-21.3/man
+    ├── 22.2
+    │   └── man -> /Users/roup/Erlang/docs/otp-22.2/man
+    ├── 22.3
+    │   └── man -> /Users/roup/Erlang/docs/otp-22.3/man
+    ├── 23.0
+    │   └── man -> /Users/roup/docs/Erlang/otp-23.0/man
+    └── 23.3
+        └── man -> /Users/roup/Erlang/docs/otp-23.3/man
 
-    4 directories, 5 files
+    10 directories, 8 files
     >
 
-The man directory holds the manN directories which contain the Erlang man files:
+Each ~/.emacs.d/edts/doc/otp-XX.Y directory holds one man symlink that points
+to the real man directory that holds the manN directories: inside the ~/Erlang/docs/otp-XX.Y directory.
+
+For each of them, the man directories holds the manN directories which contain
+the Erlang man files:
 
 ::
 
