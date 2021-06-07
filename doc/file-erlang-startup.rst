@@ -6,10 +6,10 @@ The ~/.erlang startup file
 :Navigation: Prev_, Top_
 :Created:  Monday, June  7 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
-:Modified: 2021-06-07 15:38:26, updated by Pierre Rouleau.
+:Modified: 2021-06-07 15:57:00, updated by Pierre Rouleau.
 :Copyright: © 2021, Pierre Rouleau
 
-.. _Prev:  erlang-man-with-emacs.rst
+.. _Prev:  editing-erlang-with-pel.rst
 .. _Top:   installing-erlang.rst
 
 

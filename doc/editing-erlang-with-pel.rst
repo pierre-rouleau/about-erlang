@@ -3,15 +3,16 @@ Using PEL with Specialized Shells for Erlang to Edit Erlang
 ===========================================================
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
-:Navigation: Prev_, Top_.
+:Navigation: Prev_, Top_, Next_.
 :Project:
 :Created:  Saturday, June  5 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
-:Modified: 2021-06-05 14:51:05, updated by Pierre Rouleau.
+:Modified: 2021-06-07 15:56:58, updated by Pierre Rouleau.
 :Copyright: © 2021, Pierre Rouleau
 
 .. _Prev:  specialized-shells.rst
 .. _Top:   installing-erlang.rst
+.. _Next:  file-erlang-startup.rst
 
 
 .. contents::  **Table of Contents**

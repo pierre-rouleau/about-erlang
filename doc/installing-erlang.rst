@@ -4,7 +4,7 @@ Installing Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-07 14:08:33, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-07 16:22:15, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -65,7 +65,7 @@ See the following sections:
 The next step is to setup files that are important when using Erlang.
 These files are described in the following sections.
 
-- The ~/.erlang startup file
+- `The ~/.erlang startup file`_
 
 
 Some extra information specific to macOS is available of my `macOS Development Environment`_ document.
@@ -74,23 +74,22 @@ If you are not familiar with Emacs and would like to learn about it, you may
 be interested by my Emacs customization and document project, PEL_ and the
 Erlang specific document `Developing Erlang with PEL`_.
 
-.. _Erlang/OTP Build and Install instructions: https://github.com/erlang/otp/blob/master/HOWTO/INSTALL.md
-.. _Installing Erlang on macOS: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
-.. _Erlang OTP Download page:   https://www.erlang.org/downloads
-.. _macOS Development Environment: https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst
-
-.. _Using Homebrew:                                installing-erlang-hb.rst
-.. _Using Erlang Installer from Erlang Solutions:  installing-erlang-ei.rst
-.. _Using Kerl:                                    installing-erlang-kerl.rst
-.. _Using asdf-vm:                                 installing-erlang-asdf.rst
-.. _Using Specialized OS Shells for Erlang:        specialized-shells.rst
-.. _Using PEL with Specialized Shells for Erlang to Edit Erlang: editing-erlang-with-pel.rst
-
+.. _Erlang OTP Download page:                                      https://www.erlang.org/downloads
+.. _Erlang/OTP Build and Install instructions:                     https://github.com/erlang/otp/blob/master/HOWTO/INSTALL.md
+.. _Installing Erlang on macOS:                                    https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst#environment-for-erlang
+.. _PEL:                                                           https://github.com/pierre-rouleau/pel#readme
+.. _Developing Erlang with PEL:                                    https://github.com/pierre-rouleau/pel/blob/master/doc/developing-erlang.rst
+.. _macOS Development Environment:                                 https://github.com/pierre-rouleau/about-macOS/blob/master/doc/macos-env.rst
+.. _Using Homebrew:                                                installing-erlang-hb.rst
+.. _Using Erlang Installer from Erlang Solutions:                  installing-erlang-ei.rst
+.. _Using Kerl:                                                    installing-erlang-kerl.rst
+.. _Using asdf-vm:                                                 installing-erlang-asdf.rst
+.. _Using Specialized OS Shells for Erlang:                        specialized-shells.rst
+.. _Using PEL with Specialized Shells for Erlang to Edit Erlang:   editing-erlang-with-pel.rst
 .. _Manual installation of Erlang OTP Documentation and Man Files: installing-erlang-man-files.rst
-.. _Creating whatis files for Erlang man pages:  whatis-files.rst
-.. _Using Erlang Man files within Emacs:         erlang-man-with-emacs.rst
-.. _PEL:                                         https://github.com/pierre-rouleau/pel#readme
-.. _Developing Erlang with PEL: https://github.com/pierre-rouleau/pel/blob/master/doc/developing-erlang.rst
+.. _Creating whatis files for Erlang man pages:                    whatis-files.rst
+.. _Using Erlang Man files within Emacs:                           erlang-man-with-emacs.rst
+.. _The ~/.erlang startup file:                                    file-erlang-startup.rst
 
 
 
