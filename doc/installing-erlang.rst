@@ -4,7 +4,7 @@ Installing Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Prev_, Top_, Next_
-:Time-stamp: <2021-06-05 11:54:12, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-07 14:08:33, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -50,7 +50,6 @@ To install Erlang on your macOS system you can use one of the following ways:
    the `Erlang/OTP Build and Install instructions`_. I have not yet gone
    through the entire process yet. Once I do I will provide more information.
 
-
 You will probably want to use Erlang man pages when developing code.
 See the following sections:
 
@@ -62,6 +61,12 @@ See the following sections:
 - `Using Specialized OS Shells for Erlang`_, to use several versions of Erlang
   simultaneously.
 - `Using PEL with Specialized Shells for Erlang to Edit Erlang`_.
+
+The next step is to setup files that are important when using Erlang.
+These files are described in the following sections.
+
+- The ~/.erlang startup file
+
 
 Some extra information specific to macOS is available of my `macOS Development Environment`_ document.
 
