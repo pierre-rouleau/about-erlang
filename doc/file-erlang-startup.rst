@@ -6,7 +6,7 @@ The ~/.erlang startup file
 :Navigation: Prev_, Top_
 :Created:  Monday, June  7 2021.
 :Author:  Pierre Rouleau <prouleau001@gmail.com>
-:Modified: 2021-06-07 14:07:21, by Pierre Rouleau.
+:Modified: 2021-06-07 15:38:26, updated by Pierre Rouleau.
 :Copyright: © 2021, Pierre Rouleau
 
 .. _Prev:  erlang-man-with-emacs.rst
@@ -53,7 +53,7 @@ Here's an example for the content of a ``.erlang file``:
     %%%
     %%% ================================================================================================
     io:format("Executing user profile in ~~/.erlang\n", []).
-    UD = "/Users/roup/dev/erlang/base/user_default.erl".
+    UD = filename:absname_join(os:getenv("HOME"), "dev/erlang/base/user_default.erl").
     shell_default:c(UD).
     io:format("Completed ~~/.erlang\n", []).
     %%% ------------------------------------------------------------------------------------------------
