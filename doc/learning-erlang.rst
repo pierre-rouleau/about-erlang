@@ -4,7 +4,7 @@ Learning Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-03 13:03:37, updated by Pierre Rouleau>
+:Time-stamp: <2021-06-08 22:46:48, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -360,6 +360,26 @@ Topic                        Content
 ============================ ===========================================================================================================================
 
 
+
+Programming Topics Pages
+========================
+
+Sequential Erlang
+-----------------
+
+
+Syntax
+~~~~~~
+
+
+- `Binary Strings`_
+
+
+
+.. ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 .. _erlang.org:
 .. _Erlang Project Homepage:                      https://www.erlang.org
 .. _Erlang On-Line Documentation, Books & Papers: https://www.erlang.org/docs
@@ -475,6 +495,7 @@ Topic                        Content
 .. _Core Erlang 1.0.3 language specifications:   https://www.it.uu.se/research/group/hipe/cerl/doc/core_erlang-1.0.3.pdf
 .. _Github repo of an Erlang Language specification draft: https://github.com/erlang/spec
 .. _Function names:                https://erlang.org/doc/reference_manual/functions.html
+.. _Binary Strings:                topics/syntax/binary-strings.rst
 
 
 
