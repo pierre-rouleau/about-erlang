@@ -39,4 +39,7 @@ tmp-copies/*
 # Mercurial DVCS files (when double repository is used)
 .hg*
 
+# Erlang output files
+*.beam
+
 # -----------------------------------------------------------------------------
