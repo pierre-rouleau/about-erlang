@@ -4,7 +4,7 @@ Installing Erlang with Homebrew
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-09-13 14:26:48, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-13 14:33:43, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -281,8 +281,8 @@ issues an error not finding the whatis library for Erlang.
             Also Emacs uses it for man auto-completion.
 
 The solution is to edit the script.  Here's a snapshot showing the file edited
-with Emacs with PEL:  On the left hand side window the file is edited using
-iedit to change the 15 instances of the Erlang version number at once.  On the
+with Emacs and PEL_:  On the left hand side window the file is edited using
+iedit_ to change the 15 instances of the Erlang version number at once.  On the
 right hand side window we can see the diff between the old version of the file
 and the new one.
 
@@ -303,6 +303,8 @@ information about mnesia.
 .. figure:: res/hb-erlang-ok.png
    :scale: 50 %
 
+.. _PEL:    https://github.com/pierre-rouleau/pel#readme
+.. _iedit:  https://github.com/victorhge/iedit#readme
 
 Starting a new Erlang session
 =============================
