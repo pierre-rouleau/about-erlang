@@ -4,7 +4,7 @@ Installing Erlang with Homebrew
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-09-13 14:33:43, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-13 14:38:26, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -298,7 +298,9 @@ is correct.  I issue the ``make-local-whatis`` command.
 
 Now I can open another shell and run the command again.  The script succeeds
 identifying Erlang version and the Erlang Man pages.  I can get whatis
-information about mnesia.
+information about mnesia.  The version-erl script shows that Erlang version
+24.0.5 is now installed and that's also what I get when running the Erlang
+shell.
 
 .. figure:: res/hb-erlang-ok.png
    :scale: 50 %
