@@ -4,7 +4,7 @@ Installing Erlang with Homebrew
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-09-13 14:38:26, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-13 14:43:51, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -312,7 +312,8 @@ Starting a new Erlang session
 =============================
 
 
-To use it I start a new Bash shell and type ``use-erlang``, as shown here:
+To use it I start a new Bash shell and type ``use-erlang-hb`` to install the
+Homebrew version of Erlang in the shell, as shown here:
 
 .. code:: bash
 
