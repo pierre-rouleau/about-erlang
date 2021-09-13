@@ -4,7 +4,7 @@ Installing Erlang with Homebrew
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-05 11:34:01, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-13 14:26:48, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020-2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -19,14 +19,26 @@ Installing Erlang with Homebrew
 Homebrew_ is a popular package manager for macOS (and now also for Linux).
 You can install Erlang with it.  But be aware of the following pros and cons:
 
-**Pros**:  It is very easy to install Erlang with Homebrew. See the
-instructions below.
+- **Pros**:
 
-**Cons**: Homebrew installs a version that it will eventually want to
-upgrade. It is fine when just experimenting with Erlang but this will not help
-you if you want to create a system that will be running for a long time.
-It's possible to prevent homebrew from upgrading it by using the ``brew pin
-erlang`` command though.  See `Homebrew FAQ`_ if you want to do that.
+  - It is very easy to install Erlang with Homebrew. See the
+    instructions below.
+
+- **Cons**:
+
+  - Homebrew installs a version that it will eventually want to
+    upgrade. It is fine when just experimenting with Erlang but this will not help
+    you if you want to create a system that will be running for a long time.
+
+    - It's possible to prevent homebrew from upgrading it by using the ``brew pin
+      erlang`` command though.  See `Homebrew FAQ`_ if you want to do that.
+    - If Homebrew upgrades Erlang to a new version, and you use a script
+      similar to the example `envfor-erlang-hb`_ below, you will have to:
+
+      - update the script to specify the new Erlang version path, and
+      - run the ``make-local-whatis`` utility to create the whatis file.
+      - See an example below in the section titled `Updating Homebrew Erlang Environment`_.
+
 
 Installation Instructions
 =========================
@@ -243,6 +255,53 @@ The ``.bashrc`` file holds the alias:
 .. code:: bash
 
    alias use-erlang='source envfor-erlang-23.3.4'
+
+
+Updating Homebrew Erlang Environment
+------------------------------------
+
+If you upgrade Homebrew's version of Erlang, and use the scripts described in
+the above sections, then you have to update the ``envfor-erlang-hb`` script to
+identify the new version of Erlang.
+
+Here's a session where the Homebrew version of Erlang identified by
+the script is invalid because Homebrew upgraded Erlang.
+
+Originally the Homebrew version of Erlang was 24.0.2_1.  Homebrew upgraded
+Erlang to 24.0.5. If I open a shell and issue the ``use-erlang-hb`` command it
+issues an error not finding the whatis library for Erlang.
+
+.. code:: bash
+
+    > use-erlang-hb
+    Error: missing: /usr/local/Cellar/erlang/24.0.2_1/lib/erlang/man/whatis
+    Execute: make-local-whatis /usr/local/Cellar/erlang/24.0.2_1/lib/erlang/man
+     then try again.
+    Reason: The whatis file is needed to use whatis on Erlang man files.
+            Also Emacs uses it for man auto-completion.
+
+The solution is to edit the script.  Here's a snapshot showing the file edited
+with Emacs with PEL:  On the left hand side window the file is edited using
+iedit to change the 15 instances of the Erlang version number at once.  On the
+right hand side window we can see the diff between the old version of the file
+and the new one.
+
+.. figure:: res/hb-erlang-edit.png
+   :scale: 50 %
+
+With the file saved, I open a new shell and issue the ``user-erlang-hb``
+command again.  It tells me that the whatis files is missing but the version
+is correct.  I issue the ``make-local-whatis`` command.
+
+.. figure:: res/hb-erlang-updated.png
+   :scale: 50 %
+
+Now I can open another shell and run the command again.  The script succeeds
+identifying Erlang version and the Erlang Man pages.  I can get whatis
+information about mnesia.
+
+.. figure:: res/hb-erlang-ok.png
+   :scale: 50 %
 
 
 Starting a new Erlang session
