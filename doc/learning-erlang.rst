@@ -4,7 +4,7 @@ Learning Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-06-08 22:46:48, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-15 08:45:09, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -103,6 +103,12 @@ Topic                        Content
                                - How to document Erlang code with EDoc annotations.
 
 **Quick-Sheets**
+                             - `A Concise Guide to Erlang`_
+
+                               - An excellent and very concise guide to Erlang, written by David Matuszek,
+                                 from University of Pennsylvania in 2010.
+                                 Missing information about more recent Erlang features like maps.
+
                              - `Learn X in Y minutes, where X=erlang`_
 
                                - A quick overview of Erlang.
@@ -496,6 +502,7 @@ Syntax
 .. _Github repo of an Erlang Language specification draft: https://github.com/erlang/spec
 .. _Function names:                https://erlang.org/doc/reference_manual/functions.html
 .. _Binary Strings:                topics/syntax/binary-strings.rst
+.. _A Concise Guide to Erlang:     https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Erlang.html
 
 
 
