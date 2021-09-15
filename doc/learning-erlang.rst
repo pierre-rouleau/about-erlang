@@ -4,7 +4,7 @@ Learning Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-09-15 08:45:09, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-15 09:33:01, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -426,8 +426,8 @@ Syntax
 .. _The Erlang Runtime System:                    https://blog.stenmans.org/theBeamBook/
 .. _LYSEFGG:
 .. _Learn You Some Erlang for Great Good!:        https://learnyousomeerlang.com
-.. _Ericsson Erlang Programming Rules and Conventions: http://www.erlang.se/doc/programming_rules.shtml#REF17122
-.. _The Actor Model @ wikipedia:                  http://www.erlang.se/doc/programming_rules.shtml#REF17122
+.. _Ericsson Erlang Programming Rules and Conventions: http://www.erlang.se/doc/programming_rules.shtml
+.. _The Actor Model @ wikipedia:                  https://en.wikipedia.org/wiki/Actor_model
 .. _It's Actors All the Way Down:                 http://www.dalnefre.com/wp/
 .. _Erlang-style Mailboxes:                       http://www.dalnefre.com/wp/2011/10/erlang-style-mailboxes/
 .. _Actor Model of Computation\: Scalable Robust Information Systems: https://arxiv.org/abs/1008.1459
