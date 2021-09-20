@@ -4,7 +4,7 @@ Learning Erlang
 
 :Home page: https://github.com/pierre-rouleau/about-erlang
 :Navigation: Top_, Next_
-:Time-stamp: <2021-09-15 09:33:01, updated by Pierre Rouleau>
+:Time-stamp: <2021-09-20 13:47:42, updated by Pierre Rouleau>
 :Copyright:  Copyright © 2020, 2021, Pierre Rouleau
 :License: `MIT <../LICENSE>`_
 
@@ -41,7 +41,7 @@ Topic                        Content
                              - `Erlang/OTP FAQ`_
                              - erldocs.com_, an alternative to the official Erlang
                                documentation.
-                             - `Erlang Reference Manual - User's Guide`_
+                             - `Erlang Reference Manual - User's Guide`_ (Erlang syntax)
                              - `Efficiency Guide - User's Guide`_
                              - `Systems Principles - User's Guide`_
                              - `OTP Design Principles - User's Guide`_
